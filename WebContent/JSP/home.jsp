@@ -31,22 +31,14 @@
 
 </head>
 <body>
-  <%@include file="topmenu.jsp" %>
+  	<%@include file="topmenu.jsp" %>
   
-  <!-- wrapper div -->
-  <div id="wrapper" style="margin-top:54px;">
+  	<!-- wrapper div -->
+  	<div id="wrapper" style="margin-top:54px;">
   
-  	<!-- left menu -->
-  	<div id="sidebar-wrapper">
-         <ul class="sidebar-nav">
-            <li><a href="Home.html" class="mynav-left"><i class="fa fa-home"></i>Dashboard</a></li>
-			<li><a href="class.html" class="mynav-left" ><i class="fa fa-building"></i>Class Room</a></li>
-			<li><a href="studentlist.html" class="mynav-left"><i class="fa fa-user-plus"></i>Student Enrolment</a></li>
-			<li><a href="scoremanage.html" class="mynav-left"><i class="fa fa-bar-chart"></i>Score Management</a></li>
-			<li><a href="studentAttendance.html" class="mynav-left"><i class="fa fa-pencil"></i>Attendance Management</a></li>
-			<li><a href="studentresult.html" class="mynav-left"><i class="fa fa-graduation-cap"></i>Student Result</a></li>
-         </ul>
-    </div> <!-- end of left menu -->
+	  	<!-- left menu -->
+	  	<%@include file="leftmenu.jsp" %>
+	    <!-- end of left menu -->
     
     <!--content right-->
 	<div id="page-content-wrapper" >
@@ -117,18 +109,7 @@
 									</a>
 								</div>	
 								
-								<div class="col-sm-3">
-									<a href="#">
-									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#78909C;">
-										<div class="col-sm-12" align="center">
-											<i class="fa fa-pie-chart fa-5x iconstyle"></i>
-										</div>
-										<div class="col-sm-12">
-											<h4 class="textdash">Student Attendance</h4>
-										</div>
-									</div>
-									</a>
-								</div>	
+								
 							</div>	
 							
 							
@@ -146,7 +127,7 @@
 											<div class="col-sm-12">
 												<div class="col-sm-12 topstustyle">
 													<div style="width:20%;float:left;">
-														<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 													</div>
 													<div style="width:80%;float:left;">
 														<div style="width:70%;float:left;">
@@ -173,7 +154,7 @@
 											<div class="col-sm-12">
 												<div class="col-sm-12 topstustyle">
 													<div style="width:20%;float:left;">
-														<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 													</div>
 													<div style="width:80%;float:left;">
 														<div style="width:70%;float:left;">
@@ -200,7 +181,7 @@
 											<div class="col-sm-12">
 												<div class="col-sm-12 topstustyle">
 													<div style="width:20%;float:left;">
-														<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 													</div>
 													<div style="width:80%;float:left;">
 														<div style="width:70%;float:left;">
@@ -227,7 +208,7 @@
 											<div class="col-sm-12">
 												<div class="col-sm-12 topstustyle">
 													<div style="width:20%;float:left;">
-														<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 													</div>
 													<div style="width:80%;float:left;">
 														<div style="width:70%;float:left;">
@@ -254,7 +235,7 @@
 											<div class="col-sm-12">
 												<div class="col-sm-12 topstustyle">
 													<div style="width:20%;float:left;">
-														<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 													</div>
 													<div style="width:80%;float:left;">
 														<div style="width:70%;float:left;">
