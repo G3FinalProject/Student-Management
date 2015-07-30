@@ -4,6 +4,15 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+ 	<link rel="stylesheet" href="css/home.css">
+  	<link rel="stylesheet" href="css/formstyle.css">
+  	<link rel="stylesheet" href="css/simple-sidebar.css">
+  	<link rel="stylesheet" href="css/fixedbar.css">
+	
+  	<script src="js/jquery.js"></script>
+  	<script src="bootstrape/js/bootstrap.min.js"></script>
 <title>Insert title here</title>
 <style>
 	div.mybox{

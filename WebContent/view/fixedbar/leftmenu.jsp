@@ -5,7 +5,7 @@
             <li><a href="addgeneration.jsp" class="mynav-left" ><i class="fa fa-building"></i>Generation</a></li>
             <li><a href="generation.jsp" class="mynav-left" ><i class="fa fa-file-text-o"></i>Courses</a></li>
             <li><a href="generation.jsp" class="mynav-left" ><i class="fa fa-building"></i>Subjects</a></li>
-            <li><a href="class.jsp" class="mynav-left" ><i class="fa fa-building"></i>Class Rooms</a></li>
+            <li><a href="classlist.jsp" class="mynav-left" ><i class="fa fa-building"></i>Class Rooms</a></li>
 			<li><a href="studentlist.jsp" class="mynav-left"><i class="fa fa-user-plus"></i>Student Enrolment</a></li>
 			<li><a href="studentlist.jsp" class="mynav-left"><i class="fa fa-users"></i>Staff Management</a></li>
 			<li><a href="scoremanage.jsp" class="mynav-left"><i class="fa fa-bar-chart"></i>Score Management</a></li>

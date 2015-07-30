@@ -5,6 +5,15 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 <title>Insert title here</title>
+<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+ 	<link rel="stylesheet" href="css/home.css">
+  	<link rel="stylesheet" href="css/formstyle.css">
+  	<link rel="stylesheet" href="css/simple-sidebar.css">
+  	<link rel="stylesheet" href="css/fixedbar.css">
+	
+  	<script src="js/jquery.js"></script>
+  	<script src="bootstrape/js/bootstrap.min.js"></script>
 <style>
 	a.mylink{
 		display:inline;
@@ -80,7 +89,7 @@
 							<div class="col-sm-12" >
 								<div class="col-sm-12 myspace"></div>
 								<div class="col-sm-12">
-									<a href="addclass.html" class="navbar-left btn btn-primary  btnownstyle"><i class="fa fa-building"></i>Add Class</a>
+									<a href="addclass.jsp" class="navbar-left btn btn-primary  btnownstyle"><i class="fa fa-building"></i>Add Class</a>
 								</div>
 								
 								<div class="col-sm-12" style="padding-bottom: 20px;">
