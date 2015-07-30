@@ -14,8 +14,37 @@
   
   <!--Data Table-->
 <link rel="stylesheet" href="../plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
-<script src="../plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
 
+	<link rel="stylesheet" href="../bootstrape/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="../plugin/fontawesome/css/font-awesome.min.css">	
+  	<link rel="stylesheet" href="../css/home.css">
+  	
+  	<link href="../css/simple-sidebar.css" rel="stylesheet">
+	<script src="../js/jquery.js"></script>
+	
+	
+ <style>
+	div.mybox{
+		border-radius:0;
+	
+	}
+	i.iconstyle{
+		margin-top: 15px;
+		color:white;
+	}
+	h4.textdash{
+		color:white;
+		text-align:center;
+	}
+	div.mybox:hover .iconstyle,div.mybox:hover .textdash{
+		opacity: 0.8;
+	}
+
+	p.stutext{
+		color: white;
+		font-weight: bold;
+	}
+  </style>
 </head>
 <body>
 	<%@include file="topmenu.jsp" %>
@@ -50,7 +79,7 @@
 											<select name="classlist" class="mysearch  form-control " id="mySelect"  onchange="myFun()"> 
 												<option value="all">All</option>
 												<option value="Siem Reap">SiemReap</option>
-												<option value="Battombong">Battombong</option>
+												<option value="Battambong">Battambong</option>
 												<option value="Phnom Penh">PhnomPenh</option>
 												<option value="Kom Pot">KomPot</option>
 											</select>
@@ -130,8 +159,8 @@
 			</div> <!-- end of row -->
 		</div> <!-- end of page-content-wrapper -->
 	</div> <!-- end of wrapper -->
-
- <script>
+<script src="../plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
+<script>
     
 $(document).ready( function () {
     $('#myTable').DataTable();

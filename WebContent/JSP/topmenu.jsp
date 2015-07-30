@@ -1,46 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%> <!--  ISO-8859-1 -->
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<title>Insert title here</title>
-	<meta charset="utf-8">
-  	<meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link rel="stylesheet" href="../bootstrape/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="../plugin/fontawesome/css/font-awesome.min.css">	
-  	<link rel="stylesheet" href="../css/home.css">
-  	
-  	<link href="../css/simple-sidebar.css" rel="stylesheet">
-	<script src="../js/jquery.js"></script>
-	
-	
- <style>
-	div.mybox{
-		border-radius:0;
-	
-	}
-	i.iconstyle{
-		margin-top: 15px;
-		color:white;
-	}
-	h4.textdash{
-		color:white;
-		text-align:center;
-	}
-	div.mybox:hover .iconstyle,div.mybox:hover .textdash{
-		opacity: 0.8;
-	}
 
-	p.stutext{
-		color: white;
-		font-weight: bold;
-	}
-  </style>
-  
-	
-</head>
-<body>
 	<!--head fix -->
 	<nav class="navbar jar navbar-inverse navbar-fixed-top " >
 	  <div class="container-fluid" >
@@ -84,6 +42,3 @@
    
     </script>
     
-    
-</body>
-</html>
