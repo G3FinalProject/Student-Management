@@ -39,6 +39,7 @@
 		}
 		div.mycard{
 			background:white;
+			padding-bottom: 15px;
 		}
 	</style>
 
