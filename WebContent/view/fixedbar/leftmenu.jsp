@@ -2,9 +2,9 @@
 	<div id="sidebar-wrapper">
          <ul class="sidebar-nav">
             <li><a href="dashboard.jsp" class="mynav-left"><i class="fa fa-home"></i>Dashboard</a></li>
-            <li><a href="generation.jsp" class="mynav-left" ><i class="fa fa-building"></i>Generation</a></li>
+            <li><a href="addgeneration.jsp" class="mynav-left" ><i class="fa fa-building"></i>Generation</a></li>
             <li><a href="#" class="mynav-left" ><i class="fa fa-file-text-o"></i>Courses</a></li>
-            <li><a href="generation.jsp" class="mynav-left" ><i class="fa fa-building"></i>Subjects</a></li>
+            <li><a href="#" class="mynav-left" ><i class="fa fa-building"></i>Subjects</a></li>
             <li><a href="classlist.jsp" class="mynav-left" ><i class="fa fa-building"></i>Class Rooms</a></li>
 			<li><a href="studentlist.jsp" class="mynav-left"><i class="fa fa-user-plus"></i>Student Enrolment</a></li>
 			<li><a href="studentlist.jsp" class="mynav-left"><i class="fa fa-users"></i>Staff Management</a></li>
