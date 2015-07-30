@@ -33,22 +33,8 @@ div.mybox {
 	margin-top: 5px;
 	border: 2px solid black;
 }
-</style>
-</head>
-<body>
-	<%@include file="fixedbar/topmenu.jsp"%>
 
-	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
- 	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
- 	<link rel="stylesheet" href="css/home.css">
- 	<link rel="stylesheet" href="css/studentlist.css">
-  	<link rel="stylesheet" href="css/formstyle.css">
-  	<link href="css/simple-sidebar.css" rel="stylesheet">
-   
-	<script src="js/jquery.js"></script>
-	<script src="bootstrape/js/bootstrap.min.js"></script>
-	<style>
-		div.mybox{
+div.mybox{
 			border-radius:0;
 		
 		}
@@ -63,7 +49,21 @@ div.mybox {
 		div.mybox:hover .iconstyle,div.mybox:hover .textdash{
 			opacity: 0.8;
 		}
+</style>
+</head>
+<body>
+	<%@include file="fixedbar/topmenu.jsp"%>
 
+	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+ 	<link rel="stylesheet" href="css/home.css">
+ 	<link rel="stylesheet" href="css/studentlist.css">
+  	<link rel="stylesheet" href="css/formstyle.css">
+  	<link href="css/simple-sidebar.css" rel="stylesheet">
+   
+	<script src="js/jquery.js"></script>
+	<script src="bootstrape/js/bootstrap.min.js"></script>
+	
 	<!-- wrapper div -->
 	<div id="wrapper" style="margin-top: 54px;">
 
