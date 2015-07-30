@@ -17,8 +17,7 @@
   
     <!--for calendar time picker-->
     <script type="text/javascript" src="plugin/TimePicki-master/TimePicki-master/js/jquery.min.js"></script>
-    <script type="text/javascript" src="plugin/Zebra_Datepicker-master/public/javascript/zebra_datepicker.js"></script>
- 
+   
     <link rel="stylesheet" href="plugin/Zebra_Datepicker-master/public/css/default.css" type="text/css"/>
  
   <style>
@@ -74,10 +73,7 @@
 											<div class="col-sm-3">
 												<input class="form-control txttext" type="text" name="sid" placeholder="Enter Student ID" onkeypress="focusMe(this)" id="sid"/>
 											</div>
-											<p class="col-sm-2 mylabel" style="margin-top:10px;">Account Password :<p>
-											<div class="col-sm-4">
-												<input class="form-control txttext" type="text" name="sid" placeholder="Account Password" onkeypress="focusMe(this)" id="ap"/>
-											</div>
+											
 											<div class="col-sm-1"></div>
 										</div>
 										<div class="col-sm-12">
@@ -121,6 +117,25 @@
 										</div>
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Class's detail :<p>
+											<p class="col-sm-1 mylabel">Generation<p>
+											<div class="col-sm-2">
+												<select  class="form-control txttext"name="" id="">
+											    <option value="">1st</option>
+											    <option value="">2nd</option>
+											   
+											    
+											</select>
+											</div>
+											<p class="col-sm-1 mylabel">Course<p>
+											
+											<div class="col-sm-2">
+												<select  class="form-control txttext"name="" id="">
+											    <option value="">BASIC</option>
+											    <option value="">ADVANCED</option>
+											    
+											    
+											</select>
+											</div>
 											<p class="col-sm-1 mylabel">Room<p>
 											<div class="col-sm-2">
 												<select name="class" class="form-control txttext">
@@ -129,31 +144,14 @@
 													<option value="female">Battombong</option>
 												</select>
 											</div>
-											<div class="col-sm-3">
-												<select  class="form-control txttext"name="" id="">
-											    <option value="">7:30AM</option>
-											    <option value="">8:00AM</option>
-											    <option value="">8:30AM</option>
-											    <option value="">9:00AM</option>
-											    
-											    
-											</select>
-											</div>
-											<div class="col-sm-3">
-												<select  class="form-control txttext"name="" id="">
-											    <option value="">4:00PM</option>
-											    <option value="">5:30PM</option>
-											    <option value="">6:00PM</option>
-											    
-											    
-											</select>
-											</div>
+											
+											
 											<div class="col-sm-1"></div>
 											
 										</div>
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;"><p>
-											<p class="col-sm-1 mylabel">Start Date<p>
+											<p class="col-sm-1 mylabel">Register Date<p>
 											<div class="col-sm-8">
 											
 												<input class="form-control txttext datepicker" type="text" name="txtstartdate" placeholder="DD/MM/YYYY" onblur="focusMe(this)" id="stdate"/>
@@ -186,13 +184,7 @@
 										
 											<div class="col-sm-1" ></div>
 										</div>
-										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;"><p>
-											<div class="col-sm-9">
-												<textarea class="form-control txttext" name="listaddfather" placeholder="Address ( N , Serg Khat , Khan , city/province... )" onkeypress="focusMe(this)"  id="faadd"></textarea>
-											</div>
-											<div class="col-sm-1"></div>
-										</div>
+										
 										
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Mother's Detail :<p>
@@ -209,12 +201,15 @@
 											<div class="col-sm-1" ></div>
 										</div>
 										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;"><p>
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Parents' Address :<p>
 											<div class="col-sm-9">
-												<textarea class="form-control txttext" name="listaddmother" placeholder="Address ( N , Serg Khat , Khan , city/province... )" onkeypress="focusMe(this)"  id="madd"></textarea>
+												<textarea class="form-control txttext" name="listadd" placeholder="( N , Serg Khat , Khan , city/province... )" onkeypress="focusMe(this)"  id="padd"></textarea>
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
+										
+										
+										
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Emergency Contact :<p>
 											<div class="col-sm-9">
@@ -249,5 +244,16 @@
 			<!--close row-->
 		</div>
 	</div>
+	 <script type="text/javascript" src="plugin/Zebra_Datepicker-master/public/javascript/zebra_datepicker.js"></script>
+	 <script>
+			$(document).ready(function() {
+
+				// assuming the controls you want to attach the plugin to 
+				// have the "datepicker" class set
+				$('input.datepicker').Zebra_DatePicker();
+
+			});
+		</script>
+ 
 </body>
 </html>

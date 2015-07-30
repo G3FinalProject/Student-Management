@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
-<title>Insert title here</title>
+<title>Addcourse</title>
 
 <style>
 div.mybox {
@@ -28,7 +28,7 @@ div.mybox {
     background-image: none !important;
     text-align:center;
 } 
-.dataTable{   text-align:center;}
+.dataTable{text-align:center;}
 .bcolor {
 	width: 70px;
 	height: 70px;
@@ -91,50 +91,27 @@ div.mybox{
 								<div class="col-sm-12"
 									style="margin-top: 20px; padding-bottom: 50px;">
 									<div class="col-sm-12">
-										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Generation's
+										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Course's
 											Name :
 										<p>
 										<div class="col-sm-3">
 											<input class="form-control txttext" type="text" id="clid"
 												onkeypress="focusMe(this)" name="cid"
-												placeholder="Enter Generation's Name" />
+												placeholder="Enter Course's Name" />
 										</div>
+										
 										<p class="col-sm-1 mylabel" style="margin-top: 4px;">
-											Status :
+											Generation :
 										<p>
 										<div class="col-sm-2">
-											<select  class="form-control"><option>Active</option><option>Inactive</option></select>
-										</div>
-										<p class="col-sm-1 mylabel" style="margin-top: 4px;">
-											Course :
-										<p>
-										<div class="col-sm-2">
-											<select  class="form-control"><option>--SELECT COURSE--</option>
+											<select  class="form-control"><option>--SELECT Generation--</option>
 											<option>BASIC</option>
 											<option>ADVANCED</option></select>
 										</div>
 										
 										<div class="col-sm-1"></div>
 									</div>
-									<div class="col-sm-12">
-										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Orientation
-											Date :
-										<p>
-										<div class="col-sm-3">
-											<input class="form-control txttext datepicker" type="text"
-												id="clname" onkeypress="focusMe(this)" name="cname"
-												placeholder="" />
-										</div>
-										<p class="col-sm-1 mylabel" style="margin-top: 4px;">Finish
-											Date :
-										<p>
-										<div class="col-sm-3">
-											<input class="form-control txttext datepicker" type="text"
-												id="clname" onkeypress="focusMe(this)" name="cname"
-												placeholder="" />
-										</div>
-										<div class="col-sm-1"></div>
-									</div>
+									
 									<div class="col-sm-12">
 										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Generation
 											Description :
@@ -151,7 +128,7 @@ div.mybox{
 										<div class="col-sm-8"></div>
 										<div class="col-sm-3">
 											<div class="col-sm-12">
-												<input type="button"
+												<input type="submit"
 													class=" navbar-right btn btn-primary  btnownstyle "
 													onclick="saveInfo()" value="Save" />
 											</div>
@@ -174,48 +151,43 @@ div.mybox{
 							<div class="col-sm-12">
 								<legend>
 									<h3>
-										<i class="fa fa-list"></i>List of Generation
+										<i class="fa fa-list"></i>List of Courses
 									</h3>
 								</legend>
 							</div>
 
-							<table class="display" id="myTable" cellspacing="0" width="100%">
-								<thead>
+							<table class="display" id="myTable"  cellspacing="0" width="100%">
+								<thead style="text-align:center">
 									<tr>
 										<th class="col-sm-1">ID</th>
-										<th class="col-sm-1">Generation Name</th>
-										<th class="col-sm-1">Orientation Date</th>
-										<th class="col-sm-1">Finish Date</th>
+										<th class="col-sm-1">Course Type</th>
 										<th class="col-sm-1">Description</th>
+										<th class="col-sm-1">Created Date</th>
 										<th class="col-sm-1">Action</th>
+										
 									</tr>
 									
-								</thead>
+								</thead style="text-align:center">
 								<tbody>
 									<tr class="" id="">
 										<td>001</td>
-										<td>1st Generation</a></td>
-										<td>2014-04-01</td>
-										<td>2015-08-30</td>
-										<td>1st generation of KSHRD</td>
+										<td>BASIC</a></td>
+										<td>BASIC COURSE</td>
+										<td>2013-01-04</td>
 										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										
 									</tr>
-									<tr class="myrow" id="stdrow">
+									<tr class="" id="">
 										<td>002</td>
-										<td>2nd Generation</a></td>
-										<td>2014-04-01</td>
-										<td>2015-08-30</td>
-										<td>2nd generation of KSHRD</td>
+										<td>BASIC</a></td>
+										<td>ADVANCED COURSE</td>
+										<td>2013-01-04</td>
 										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										
 									</tr>
-									<tr class="myrow" id="stdrow">
-										<td>002</td>
-										<td>3rd Generation</a></td>
-										<td>2014-04-01</td>
-										<td>2015-08-30</td>
-										<td>3rd generation of KSHRD</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-									</tr>
+									
+									
+									
 									
 								</tbody>
 
