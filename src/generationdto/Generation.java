@@ -11,7 +11,51 @@ public class Generation {
 	   private Date c_date;
 	   
 	   public Generation(){
-		   
+		      
 	   }
+	   public Generation(int id,String name,Date orient_date,Date finish_date,int status,Date c_date){
+		      this.id=id;
+		      this.name=name;
+		      this.orient_date=orient_date;
+		      this.finish_date=finish_date;
+		      this.status=status;
+		      this.c_date=c_date;
+	   }
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public Date getOrient_date() {
+		return orient_date;
+	}
+	public void setOrient_date(Date orient_date) {
+		this.orient_date = orient_date;
+	}
+	public Date getFinish_date() {
+		return finish_date;
+	}
+	public void setFinish_date(Date finish_date) {
+		this.finish_date = finish_date;
+	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	public Date getC_date() {
+		return c_date;
+	}
+	public void setC_date(Date c_date) {
+		this.c_date = c_date;
+	}
 
 }
