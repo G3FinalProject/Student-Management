@@ -1,4 +1,4 @@
-package course_generation_dto;
+package model.dto;
 
 public class CourseGeneration {
 	private int id;

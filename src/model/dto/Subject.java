@@ -1,4 +1,4 @@
-package subject;
+package model.dto;
 
 import java.util.Date;
 

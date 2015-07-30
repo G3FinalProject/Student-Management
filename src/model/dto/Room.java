@@ -1,4 +1,4 @@
-package room.dto;
+package model.dto;
 
 import java.util.Date;
 

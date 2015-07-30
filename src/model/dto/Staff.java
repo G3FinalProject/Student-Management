@@ -1,4 +1,4 @@
-package staffdto;
+package model.dto;
 
 import java.util.Date;
 

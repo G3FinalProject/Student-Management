@@ -1,4 +1,4 @@
-package generationdto;
+package model.dto;
 
 import java.util.Date;
 

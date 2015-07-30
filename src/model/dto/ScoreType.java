@@ -1,4 +1,4 @@
-package score_type_dto;
+package model.dto;
 
 import java.util.Date;
 

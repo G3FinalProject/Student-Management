@@ -1,4 +1,4 @@
-package logindto;
+package model.dto;
 
 import java.util.Date;
 

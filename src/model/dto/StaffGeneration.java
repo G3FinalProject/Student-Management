@@ -1,4 +1,4 @@
-package staff_generation_dto;
+package model.dto;
 
 public class StaffGeneration {
 	private int id;

@@ -1,4 +1,4 @@
-package staff_class_dto;
+package model.dto;
 
 public class StaffClass {
 	   private int id;

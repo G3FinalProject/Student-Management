@@ -1,4 +1,4 @@
-package subject_class_dto;
+package model.dto;
 
 public class SubjectClass {
 	private int id;

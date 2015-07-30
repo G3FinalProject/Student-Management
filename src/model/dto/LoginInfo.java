@@ -1,4 +1,4 @@
-package logininfo;
+package model.dto;
 
 import java.util.Date;
 

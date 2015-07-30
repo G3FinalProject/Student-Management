@@ -1,4 +1,4 @@
-package login_class_dto;
+package model.dto;
 
 public class LoginHasClass {
 	private int id;

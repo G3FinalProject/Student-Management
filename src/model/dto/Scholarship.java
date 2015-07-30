@@ -1,4 +1,4 @@
-package scholarship_dto;
+package model.dto;
 
 import java.util.Date;
 
