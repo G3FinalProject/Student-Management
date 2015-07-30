@@ -22,12 +22,10 @@
   	<script src="bootstrape/js/bootstrap.min.js"></script>
      <title>Insert title here</title>
 	<style>
-		div.card-box{
-			background:white;
-			max-height: 100px;
-		}
+	
 		ul.ul-style{
 			background:white;
+			
 		}
 		i.eye-icon{
 			margin-left: 10px;
@@ -127,14 +125,47 @@
 							<div class="col-md-4">
 								<div class="col-md-12">
 								<div class="card-box">
-									<div class="card-head">
+									<div class="card-head" style="background:#42A5F5;color:white">
 										<header class="box-text-style">TOP STUDENTS</header>
 										<div class="tools hidden-md">
 											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
 									</div><!--end .card-head -->
-									<div class="card-body no-padding height-9 scroll">
+									<div class="">
 										<ul class="list divider-full-bleed ul-style">
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
 											<li class="tile">
 												<div class="tile-content">
 													<div class="tile-icon">
@@ -203,14 +234,47 @@
 							<div class="col-md-4">
 								<div class="col-md-12">
 								<div class="card-box">
-									<div class="card-head">
+									<div class="card-head" style="background:#42A5F5;color:white">
 										<header class="box-text-style">TOP ATTENDENCE</header>
 										<div class="tools hidden-md">
 											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
 									</div><!--end .card-head -->
-									<div class="card-body no-padding height-9 scroll">
+									<div class="">
 										<ul class="list divider-full-bleed ul-style">
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
 											<li class="tile">
 												<div class="tile-content">
 													<div class="tile-icon">
@@ -278,14 +342,47 @@
 							<div class="col-md-4">
 								<div class="col-md-12">
 								<div class="card-box">
-									<div class="card-head">
+									<div class="card-head" style="background:#42A5F5;color:white">
 										<header class="box-text-style">NEW USERS</header>
 										<div class="tools hidden-md">
 											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
 									</div><!--end .card-head -->
-									<div class="card-body no-padding height-9 scroll">
+									<div class="">
 										<ul class="list divider-full-bleed ul-style">
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
 											<li class="tile">
 												<div class="tile-content">
 													<div class="tile-icon">
