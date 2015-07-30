@@ -131,5 +131,94 @@
 							</div>
 						</form>
 					</div>
+	
+	<script>				
+	var ID=function(id){
+	    return document.getElementById(id);
+	 }
+	 
+	 function validate(txt,txt1){
+	    if(txt.value==""){
+		   txt.setAttribute("placeholder",txt1);
+		    txt.style.borderColor="red";
+			txt.select();
+		   txt.focus();
+		   return false;
+		}else{
+			txt.style.borderColor="gray";
+			return true;
+		}
+	 }
+	 
+	  var classId=ID("clid");
+      var className=ID("clname");
+      var cldes=ID("cldesc");
+		
+	 function saveInfo(){
+		if(validate(classId,"Class id can't blank")&&
+		   validate(className,"Class name can't blank")&&
+		   validate(cldes,"Class descript can't blank")){
+		    clearValue();
+		    alert("Information was saved..!");
+		    setPl();
+		}else{
+		 if(classId.value==""){
+		    classId.style.borderColor="red";
+		 } 
+          else{
+		    classId.style.borderColor="gray"; 
+		  }	
+          if(className.value==""){
+		     className.style.borderColor="red";
+		  }else{
+		     className.style.borderColor="gray";
+		  }	
+          if(cldes.value==""){
+		     cldes.style.borderColor="red";
+		  }else{
+		     cldes.style.borderColor="gray";
+		  }		  
+		}
+	 }
+	 function focusMe(id){
+	    id.style.borderColor="gray";
+	 }
+	 function clearValue(){
+	    ID("clid").value="";
+		ID("clid").focus();
+        ID("clname").value="";
+        ID("cldesc").value="";
+	 }
+	 function setPl(){
+	    ID("clid").setAttribute("placeholder","Enter Class ID");
+		ID("clid").focus();
+        ID("clname").setAttribute("placeholder","Enter Class Name");
+        ID("cldesc").setAttribute("placeholder","( size , location... )");
+	    
+	 }
+	 function checkRd1(){
+	    ID("rd1").checked=true;
+	 }
+	 function checkRd2(){
+	    ID("rd2").checked=true;
+	 }
+	 function checkRd3(){
+	    ID("rd3").checked=true;
+	 }
+	 function checkRd4(){
+	    ID("rd4").checked=true;
+	 }
+    </script>
+	<script>
+   $('select[name="colorpicker"]').simplecolorpicker();
+   $('select[name="colorpicker"]').simplecolorpicker('selectColor', '#7bd148');
+   $('select[name="colorpicker"]').simplecolorpicker('destroy');
+
+   $('select[name="colorpicker"]').simplecolorpicker({
+  picker: true
+  }).on('change', function() {
+  $("#colo").css('background-color', $('select[name="colorpicker"]').val());
+  });
+   </script>
 </body>
 </html>
