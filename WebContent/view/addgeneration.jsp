@@ -18,7 +18,7 @@
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
 <title>Insert title here</title>
-<<<<<<< .mine
+
 <style>
 div.mybox {
 	border-radius: 0;
@@ -37,7 +37,7 @@ div.mybox {
 </head>
 <body>
 	<%@include file="fixedbar/topmenu.jsp"%>
-=======
+
 	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
  	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
  	<link rel="stylesheet" href="css/home.css">
@@ -63,8 +63,7 @@ div.mybox {
 		div.mybox:hover .iconstyle,div.mybox:hover .textdash{
 			opacity: 0.8;
 		}
->>>>>>> .r28
-	
+
 	<!-- wrapper div -->
 	<div id="wrapper" style="margin-top: 54px;">
 
