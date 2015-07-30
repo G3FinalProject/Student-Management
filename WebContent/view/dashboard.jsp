@@ -73,7 +73,7 @@
 						<div class="col-sm-12" style="height:30px;"></div>
 							<div class="col-sm-12">
 								<div class="col-sm-3 ">
-									<a href="studentlist.html">
+									<a href="studentlist.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#EF5350;">
 										<div class="col-sm-12" align="center">
 											<i class="fa fa-users fa-5x iconstyle" ></i>
@@ -85,7 +85,7 @@
 									</a>
 								</div>
 								<div class="col-sm-3">
-									<a href="class.html">
+									<a href="classlist.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#66BB6A;">
 										<div class="col-sm-12" align="center">
 											<i class="fa fa-sitemap fa-5x iconstyle"></i>
@@ -98,7 +98,7 @@
 									</a>
 								</div>
 								<div class="col-sm-3">
-									<a href="scoremanage.html">
+									<a href="scoremanage.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#42A5F5;">
 										<div class="col-sm-12" align="center">
 											<i class="fa fa-bar-chart fa-5x iconstyle"></i>
@@ -111,7 +111,7 @@
 									</a>
 								</div>	
 								<div class="col-sm-3">
-									<a href="#">
+									<a href="checkAttendance.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#78909C;">
 										<div class="col-sm-12" align="center">
 											<i class="fa fa-pie-chart fa-5x iconstyle"></i>

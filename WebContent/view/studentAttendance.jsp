@@ -47,7 +47,7 @@
 							<div class="col-sm-12">
 								
 								<div class="col-sm-12">
-									<a href="checkAttendance.html" class=" navbar-left btn btn-primary  btnownstyle" ><i class="fa fa-user-plus" ></i>Check Attendance</a>
+									<a href="checkAttendance.jsp" class=" navbar-left btn btn-primary  btnownstyle" ><i class="fa fa-user-plus" ></i>Check Attendance</a>
 								</div>
 				</div>
                            <h3 class="col-sm-12"><i class="fa fa-list"></i>Student Attendance List</h3>

@@ -120,7 +120,7 @@
 											</div>
 										
 										</div>
-										<a href="specificstudent.html">
+										<a href="specificstudent.jsp">
 										<div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #EF5350;">
 												<p class="textpple"><i class="fa fa-user iconstyle"></i>21 Students<p>
@@ -128,7 +128,7 @@
 										</div></a>
 										<div class="col-sm-12">
 											<div class="boxaction col-sm-12" align="center">
-												<a href="addclass.html" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
+												<a href="addclass.jsp" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
 											</div>
 										</div>
 									</div>
@@ -147,14 +147,14 @@
 											</div>
 										
 										</div>
-										<a href="specificstudent.html"><div class="col-sm-12">
+										<a href="specificstudent.jsp"><div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #42A5F5;">
 												<p class="textpple"><i class="fa fa-user iconstyle"></i>20 Students<p>
 											</div>
 										</div></a>
 										<div class="col-sm-12">
 											<div class="boxaction col-sm-12" align="center">
-												<a href="addclass.html" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
+												<a href="addclass.jsp" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
 											</div>
 										</div>
 									</div>
@@ -173,14 +173,14 @@
 											</div>
 										
 										</div>
-										<a href="specificstudent.html"><div class="col-sm-12">
+										<a href="specificstudent.jsp"><div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #66BB6A;">
 												<p class="textpple"><i class="fa fa-user iconstyle"></i>20 Students<p>
 											</div>
 										</div></a>
 										<div class="col-sm-12">
 											<div class="boxaction col-sm-12" align="center">
-												<a href="addclass.html" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
+												<a href="addclass.jsp" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
 											</div>
 										</div>
 									</div>
@@ -199,14 +199,14 @@
 											</div>
 										
 										</div>
-										<a href="specificstudent.html"><div class="col-sm-12">
+										<a href="specificstudent.jsp"><div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #BDBDBD;">
 												<p class="textpple"><i class="fa fa-user iconstyle"></i>18 Students<p>
 											</div>
 										</div></a>
 										<div class="col-sm-12">
 											<div class="boxaction col-sm-12" align="center">
-												<a href="addclass.html" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
+												<a href="addclass.jsp" class="mylink"><i class="fa fa-pencil" title="Edit class"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete class"></i></a>
 											</div>
 										</div>
 									</div>

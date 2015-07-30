@@ -117,47 +117,47 @@
 									<tbody>
 									<tr class="myrow">
 										<td>001</td><td><a href="#"  class="linkname hastip" title="សូម៉ានី">Somani</a></td><td>female</td><td>Siem Reap</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="scorebysubject.html" class="mylink"><i class="fa fa-plus-square hastip" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart hastip" title="Statistic Score"></i></a>
+										<td><a href="scorebysubject.jsp" class="mylink"><i class="fa fa-plus-square hastip" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart hastip" title="Statistic Score"></i></a>
 										</td></a>
 									</tr>
 
 									<tr class="myrow">
 										<td>002</td><td><a href="#" class="linkname hastip" title="កក្កដា">Kakada</a></td><td>female</td><td>Siem Reap</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									<tr class="myrow">
 										<td>003</td><td><a href="#" class="linkname">Sok</a></td><td>male</td><td>Siem Reap</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									
 									<tr class="myrow">
 										<td>005</td><td><a href="#"  class="linkname">Sitha</a></td><td>male</td><td>Siem Reap</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									
 									<tr class="myrow">
 										<td>012</td><td><a href="#"  class="linkname">David</a></td><td>male</td><td>Siem Reap</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									<tr class="myrow">
 										<td>013</td><td><a href="#"  class="linkname">Panha</a></td><td>male</td><td>Siem Reap</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									<tr class="myrow">
 										<td>014</td><td><a href="#"  class="linkname">Somani</a></td><td>female</td><td>Siem Reap</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 								</table>
@@ -172,47 +172,47 @@
 									
 									<tr class="myrow">
 										<td>001</td><td><a href="#"  class="linkname hastip" title="យិន កុកផេង">Yin Kokpheng</a></td><td>Male</td><td>Phnom Penh</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square hastip" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart hastip" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square hastip" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart hastip" title="Statistic Score"></i></a>
 										</td></a>
 									</tr>
 
 									<tr class="myrow">
 										<td>002</td><td><a href="#" class="linkname hastip" title="ផាន ភីរាំង">Phan Pirang</a></td><td>Male</td><td>Phnom Penh</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									<tr class="myrow">
 										<td>003</td><td><a href="#" class="linkname hastip" title="វិន អាយស៊ីន">Win Ishin</a></td><td>male</td><td>Phnom Penh</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									
 									<tr class="myrow">
 										<td>005</td><td><a href="#"  class="linkname">Sitha</a></td><td>male</td><td>Phnom Penh</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									
 									<tr class="myrow">
 										<td>012</td><td><a href="#"  class="linkname">David</a></td><td>male</td><td>Phnom Penh</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									<tr class="myrow">
 										<td>013</td><td><a href="#"  class="linkname">Panha</a></td><td>male</td><td>Phnom Penh</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									<tr class="myrow">
 										<td>014</td><td><a href="#"  class="linkname">Somani</a></td><td>female</td><td>Phnom Penh</td><td>85</td><td>85</td><td>85</td><td>85</td>
-										<td><a href="studenteach.html" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
-										<a href="statistic.html" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
+										<td><a href="studenteach.jsp" class="mylink"><i class="fa fa-plus-square" title="Add Score"></i></a>
+										<a href="statistic.jsp" class="mylink"><i class="fa fa-bar-chart" title="Statistic Score"></i></a>
 										</td>
 									</tr>
 									</tbody>
@@ -232,5 +232,42 @@
 			<!--close row-->
 		</div>
 	</div>
+	
+	<script>
+    $(document).ready( function () {
+    	$('#myTable').DataTable();
+	} );    
+    
+    </script>
+	
+	<script>
+	function changeGeneration(){
+		var a = document.getElementById("gen");
+		if(a.value=="1st"){
+			alert("You choose 1");
+		}
+		else if(a.value=="2nd"){
+			alert("You choose 2");
+		}
+		else if(a.value=="3rd"){
+			alert("You choose 3");
+		}
+	}
+	function changeClass(){
+		var c = document.getElementById("cls");
+		var sr= document.getElementById("showSr");
+		var pp= document.getElementById("showPp");
+
+		if(c.value=="all"){
+			
+		}else if(c.value=="Siem Reap"){
+			pp.style.display = "none";
+			sr.style.display = "block";
+		}else if(c.value=="Phnom Penh"){
+			sr.style.display = "none";
+			pp.style.display = "block";
+		}
+	}
+</script>
 </body>
 </html>

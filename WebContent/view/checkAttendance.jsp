@@ -45,7 +45,7 @@
 							<div class="col-sm-12">
 								
 								<div class="col-sm-12">
-									<a href="studentAttendance.html" class=" navbar-left btn btn-primary  btnownstyle"><i class="fa fa-undo" ></i>Back</a>
+									<a href="studentAttendance.jsp" class=" navbar-left btn btn-primary  btnownstyle"><i class="fa fa-undo" ></i>Back</a>
 								</div>
 								
 								<h3 class="col-sm-6"><i class="fa fa-list"></i>List of Students</h3>

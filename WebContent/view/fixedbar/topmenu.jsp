@@ -9,7 +9,7 @@
                 <span class="icon-bar"></span>
             </button>
 			<a class="navbar-brand" style="margin-top:-5px;" ><img src="images/hrdlogo.png"/></a>
-		  <a class="navbar-brand text-menu" style="color:white" href="Home.html">Student Management</a>
+		  <a class="navbar-brand text-menu" style="color:white" href="../dashboard.jsp">Student Management</a>
 		  <a href="#menu-toggle" class="navbar-brand box-menu"   id="menu-toggle">
 			<i class="fa fa-align-justify menu-icon"></i>
 		  </a>

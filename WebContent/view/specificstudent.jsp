@@ -57,28 +57,28 @@
 
 									
 									<tr class="myrow">
-										<td>001</td><td><a href="#"  class="linkname">Somani</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.html" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>001</td><td><a href="#"  class="linkname">Somani</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
 									</tr>
 									<tr class="myrow">
-										<td>002</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.html" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>002</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
 									</tr>
 									<tr class="myrow">
-										<td>003</td><td><a href="#" class="linkname">Sok</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.html" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									
-									<tr class="myrow">
-										<td>005</td><td><a href="#"  class="linkname">Sitha</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.html" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>003</td><td><a href="#" class="linkname">Sok</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
 									</tr>
 									
+									<tr class="myrow">
+										<td>005</td><td><a href="#"  class="linkname">Sitha</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+									</tr>
+									
 									
 									<tr class="myrow">
-										<td>012</td><td><a href="#"  class="linkname">David</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.html" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>012</td><td><a href="#"  class="linkname">David</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
 									</tr>
 									<tr class="myrow">
-										<td>013</td><td><a href="#"  class="linkname">Panha</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.html" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>013</td><td><a href="#"  class="linkname">Panha</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
 									</tr>
 									<tr class="myrow">
-										<td>014</td><td><a href="#"  class="linkname">Somani</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.html" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>014</td><td><a href="#"  class="linkname">Somani</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
 									</tr>
 								</table>
 								</div>
