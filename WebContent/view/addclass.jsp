@@ -18,13 +18,13 @@
   </style>
 </head>
 <body>
-	<%@include file="topmenu.jsp" %>
+	<%@include file="fixedbar/topmenu.jsp" %>
   
   	<!-- wrapper div -->
   	<div id="wrapper" style="margin-top:54px;">
   
 	  	<!-- left menu -->
-	  	<%@include file="leftmenu.jsp" %>
+	  	<%@include file="fixedbar/leftmenu.jsp" %>
 	    <!-- end of left menu -->
     
    		 <!--content right-->
