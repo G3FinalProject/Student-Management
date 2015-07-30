@@ -48,7 +48,13 @@
 								<div class="col-sm-12">
 									<a href="studentenrolment.jsp" class=" navbar-left btn btn-primary  btnownstyle"><i class="fa fa-user-plus" ></i>Add Student</a>
 								</div>
-								<h3 class="col-sm-6"><i class="fa fa-list"></i>List of Students</h3>
+								<div class="col-sm-12" >
+								<legend>
+									<h3 >
+										<i class="fa fa-pencil"></i>List of Students
+									</h3>
+								</legend>
+							</div>
 							<!--	<div class="col-sm-6">
 									
 										<div class="col-sm-6 navbar-right"><input type="search" name="txtsearch" placeholder="Search Name..." class="mysearch  form-control "/></div>
@@ -66,74 +72,29 @@
 								<table class="display" id="myTable" cellspacing="0" width="100%"  >
 								<thead>
 								    <tr>
-										<th class="col-sm-1">ID</th><th class="col-sm-4">Name</th><th class="col-sm-2">Gender</th><th class="col-sm-3">Class</th><th class="col-sm-2">Manipulation</th>
+										<th >ID</th><th >Name</th><th >Gender</th><th >Generation</th><th >Course</th><th >Class</th><th >University</th><th >Email</th><th >Phone</th><th >Manipulation</th>
 									</tr>
 								    
 								    
 								</thead>
 								<tbody>
+									
 									<tr class="myrow">
-										<td>001</td>
-										<td><a href="#"  class="linkname">Somani</a></td>                                                <td>female</td>
-										<td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>002</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>001</td><td><a href="#" class="linkname">KIM</a></td><td>male</td><td>1st Generation</td><td>BASIC</td><td>SiemReap	</td><td>NU</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>003</td><td><a href="#" class="linkname">Sok</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>002</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>004</td><td><a href="#"  class="linkname">Cheata</a></td><td>female</td><td>Phnom Penh</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>003</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>005</td><td><a href="#"  class="linkname">Sitha</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>004</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>006</td><td><a href="#"  class="linkname">Vatey</a></td><td>female</td><td>Phnom Penh</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
+										<td>001</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
-									<tr class="myrow">
-										<td>007</td><td><a href="#"  class="linkname">Vita</a></td><td>female</td><td>Battombong</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>008</td><td><a href="#"  class="linkname">Mengky</a></td><td>male</td><td>Phnom Penh</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>009</td><td><a href="#"  class="linkname">Ratha</a></td><td>male</td><td>Battombong</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>010</td><td><a href="#"  class="linkname">Chomreun</a></td><td>male</td><td>Phnom Penh</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>011</td><td><a href="#"  class="linkname">Phanith</a></td><td>male</td><td>Battombong</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>012</td><td><a href="#"  class="linkname">David</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>013</td><td><a href="#"  class="linkname">Panha</a></td><td>male</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-									<tr class="myrow">
-										<td>014</td><td><a href="#"  class="linkname">Sopheak</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-                                <tr class="myrow">
-										<td>015</td><td><a href="#"  class="linkname">Veasna</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-                                <tr class="myrow">
-										<td>016</td><td><a href="#"  class="linkname">Krusna</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-                                <tr class="myrow">
-										<td>017</td><td><a href="#"  class="linkname">Monika</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-                                <tr class="myrow">
-										<td>018</td><td><a href="#"  class="linkname">Chakriya</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-                                <tr class="myrow">
-										<td>019</td><td><a href="#"  class="linkname">Sombath</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
-                                <tr class="myrow">
-										<td>020</td><td><a href="#"  class="linkname">Sokkim</a></td><td>female</td><td>Siem Reap</td><td><a href="studentenrolment.jsp" class="mylink"><i class="fa fa-pencil" title="Edit student"></i></a><a href="#" class="mylink"><i class="fa fa-trash-o" title="Delete student"></i></a></td>
-									</tr>
+									
 								    </tbody>
 								   
 								</table>

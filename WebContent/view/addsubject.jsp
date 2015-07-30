@@ -82,7 +82,7 @@ div.mybox{
 							<div class="col-sm-12" >
 								<legend>
 									<h3 >
-										<i class="fa fa-pencil"></i>Fill Course's Information
+										<i class="fa fa-pencil"></i>Fill Subject's Information
 									</h3>
 								</legend>
 							</div>
@@ -91,29 +91,31 @@ div.mybox{
 								<div class="col-sm-12"
 									style="margin-top: 20px; padding-bottom: 50px;">
 									<div class="col-sm-12">
-										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Course's
+										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Subject's
 											Name :
 										<p>
 										<div class="col-sm-3">
 											<input class="form-control txttext" type="text" id="clid"
 												onkeypress="focusMe(this)" name="cid"
-												placeholder="Enter Course's Name" />
+												placeholder="Enter Subject's Name" />
 										</div>
-										
-										<p class="col-sm-1 mylabel" style="margin-top: 4px;">
-											Generation :
+										<p class="col-sm-1 mylabel" style="margin-top: 4px;">CreatedDate:
 										<p>
 										<div class="col-sm-2">
-											<select  class="form-control"><option>--SELECT Generation--</option>
-											<option>BASIC</option>
-											<option>ADVANCED</option></select>
+											<input class="form-control txttext datepicker" type="text" id="clid"
+												onkeypress="focusMe(this)" name="cid"
+												placeholder="Enter Subject's Name" />
 										</div>
 										
-										<div class="col-sm-1"></div>
+										<p class="col-sm-1 mylabel" style="margin-top: 4px;">Course :
+										</p>
+										<div class="col-sm-1" style="margin-top: 4px;">
+											<select class="form-conrol" ><option>BASIC</option><option>ADVANCED</option></select>
+										</div>
 									</div>
 									
 									<div class="col-sm-12">
-										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Generation
+										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Subeject's
 											Description :
 										<p>
 										<div class="col-sm-9">
@@ -151,7 +153,7 @@ div.mybox{
 							<div class="col-sm-12">
 								<legend>
 									<h3>
-										<i class="fa fa-list"></i>List of Courses
+										<i class="fa fa-list"></i>List of Subjects
 									</h3>
 								</legend>
 							</div>
@@ -160,7 +162,8 @@ div.mybox{
 								<thead style="text-align:center">
 									<tr>
 										<th class="col-sm-1">ID</th>
-										<th class="col-sm-1">Course Type</th>
+										<th class="col-sm-1">Subject</th>
+										<th class="col-sm-1">Course</th>
 										<th class="col-sm-1">Description</th>
 										<th class="col-sm-1">Created Date</th>
 										<th class="col-sm-1">Action</th>
@@ -171,16 +174,27 @@ div.mybox{
 								<tbody>
 									<tr class="" id="">
 										<td>001</td>
-										<td>BASIC</a></td>
-										<td>BASIC COURSE</td>
+										<td>JAVA</td>
+										<td>BASIC</td>
+										<td>JAVA PROGRAMMING</td>
 										<td>2013-01-04</td>
 										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
 										
 									</tr>
 									<tr class="" id="">
 										<td>002</td>
-										<td>BASIC</a></td>
-										<td>ADVANCED COURSE</td>
+										<td>WEB</td>
+										<td>BASIC</td>
+										<td>WEB PROGRAMMING</td>
+										<td>2013-01-04</td>
+										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										
+									</tr>
+									<tr class="" id="">
+										<td>003</td>
+										<td>KOREAN</td>
+										<td>BASIC</td>
+										<td>KOREAN LANGUAGE</td>
 										<td>2013-01-04</td>
 										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
 										
