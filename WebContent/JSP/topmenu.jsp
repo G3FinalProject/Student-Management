@@ -13,6 +13,8 @@
   	
   	<link href="../css/simple-sidebar.css" rel="stylesheet">
 	<script src="../js/jquery.js"></script>
+	
+	
  <style>
 	div.mybox{
 		border-radius:0;
@@ -35,7 +37,8 @@
 		font-weight: bold;
 	}
   </style>
-
+  
+	
 </head>
 <body>
 	<!--head fix -->
@@ -77,6 +80,10 @@
         e.preventDefault();
         $("#wrapper").toggleClass("toggled");
     });
+    
+   
     </script>
+    
+    
 </body>
 </html>
