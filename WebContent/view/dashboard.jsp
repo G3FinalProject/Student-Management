@@ -37,6 +37,9 @@
 		header.box-text-style{
 			font-family: 'handWritiing';
 		}
+		div.mycard{
+			background:white;
+		}
 	</style>
 
 </head>
@@ -199,28 +202,7 @@
 													<i class="fa fa-eye eye-icon" ></i>
 												</a>
 											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
+											
 										
 											
 										</ul>
@@ -230,114 +212,6 @@
 						</div><!-- END NEW REGISTRATIONS -->
 						
 						
-						<!-- BEGIN NEW REGISTRATIONS -->
-							<div class="col-md-4">
-								<div class="col-md-12">
-								<div class="card-box">
-									<div class="card-head" style="background:#42A5F5;color:white">
-										<header class="box-text-style">TOP ATTENDENCE</header>
-										<div class="tools hidden-md">
-											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
-										</div>
-									</div><!--end .card-head -->
-									<div class="">
-										<ul class="list divider-full-bleed ul-style">
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-										
-											
-										</ul>
-									</div><!--end .card-body -->
-								</div><!--end .card -->
-							</div><!--end .col -->
-						</div><!-- END NEW REGISTRATIONS -->
-									
 						<!-- BEGIN NEW REGISTRATIONS -->
 							<div class="col-md-4">
 								<div class="col-md-12">
@@ -416,35 +290,55 @@
 													<i class="fa fa-eye eye-icon" ></i>
 												</a>
 											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-										
+											
 											
 										</ul>
 									</div><!--end .card-body -->
 								</div><!--end .card -->
 							</div><!--end .col -->
 						</div><!-- END NEW REGISTRATIONS -->
+									
+						<!-- BEGIN SITE ACTIVITY -->
+							<div class="col-md-4">
+								<div class="mycard">
+									<div class="row">
+								
+										<div class="col-md-12">
+											<div class="card-head" style="background:#42A5F5;color:white">
+												<header class="box-text-style">TOTAL's STATS</header>
+											</div>
+											<div class="card-body height-8">
+												<strong>100</strong> students
+											
+												<div class="progress progress-hairline">
+													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
+												</div>
+												8 teachers
+												
+												<div class="progress progress-hairline">
+													<div class="progress-bar progress-bar-primary-dark" style="width:50%"></div>
+												</div>
+												3 admins
+												
+												<div class="progress progress-hairline">
+													<div class="progress-bar progress-bar-primary-dark" style="width:80%"></div>
+												</div>
+												111 users
+												
+												<div class="progress progress-hairline">
+													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
+												</div>
+												6 classes
+												
+												<div class="progress progress-hairline">
+													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
+												</div>
+											</div><!--end .card-body -->
+										</div><!--end .col -->
+									</div><!--end .row -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+							<!-- END SITE ACTIVITY -->
 					</div> <!-- end of 4 boxes -->
 				</div> <!-- end of row -->
 			</div> <!-- end of container-fluid -->
