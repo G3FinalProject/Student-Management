@@ -5,17 +5,41 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="keywords" content="your,keywords">
+<meta name="description" content="Short explanation about this website">
+
     <link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
   	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
  	<link rel="stylesheet" href="css/home.css">
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link rel="stylesheet" href="css/simple-sidebar.css">
   	<link rel="stylesheet" href="css/fixedbar.css">
-	
+  	
+	<link type="text/css" rel="stylesheet" href="plugin/theme-default/materialadmin.css?1425466319" />
+
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
      <title>Insert title here</title>
-
+	<style>
+		div.card-box{
+			background:white;
+			max-height: 100px;
+		}
+		ul.ul-style{
+			background:white;
+		}
+		i.eye-icon{
+			margin-left: 10px;
+			color: #BDBDBD;
+		}
+		a.eye-wrapper{
+			transition: all 0.2s linear;
+		}
+		header.box-text-style{
+			font-family: 'handWritiing';
+		}
+	</style>
 
 </head>
 <body>
@@ -99,389 +123,231 @@
 								
 								
 							</div>	
-							
-							
-							<div class="col-sm-12" style="margin-top:20px;padding-bottom:50px;">
-								<!--left column -->
-								<div class="col-sm-6">
-									<div class="row">
-										<div class="col-sm-12" >
-											<div class="row">
-												<h4><i class="fa fa-sort"></i>Top Students</h4>
-											</div>
+							<!-- BEGIN NEW REGISTRATIONS -->
+							<div class="col-md-4">
+								<div class="col-md-12">
+								<div class="card-box">
+									<div class="card-head">
+										<header class="box-text-style">TOP STUDENTS</header>
+										<div class="tools hidden-md">
+											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
-										<!--row-->
-										<a href="statistic.html" class="top-student">
-											<div class="col-sm-12">
-												<div class="col-sm-12 topstustyle">
-													<div style="width:20%;float:left;">
-														<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+									</div><!--end .card-head -->
+									<div class="card-body no-padding height-9 scroll">
+										<ul class="list divider-full-bleed ul-style">
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
 													</div>
-													<div style="width:80%;float:left;">
-														<div style="width:70%;float:left;">
-							
-															<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-															<p class="stutext">Class : Seim reap</p>
-													
-														</div>
-														<div style="width:30%;float:left;margin-top:-5px;">
-															<div style="width:100%;height:30px;text-align:center;color:white">
-																<h4>Score</h4>
-															</div>
-															<div style="width:100%;height:30px;text-align:center;color:white;">
-																<h4>100</h4>
-															</div>
-														</div>
-													</div>
+													<div class="tile-text">Ann Laurens</div>
 												</div>
-											</div>
-										</a>
-										<!--close a row-->
-										<!--row-->
-										<a href="statistic.html" class="top-student">
-											<div class="col-sm-12">
-												<div class="col-sm-12 topstustyle">
-													<div style="width:20%;float:left;">
-														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
 													</div>
-													<div style="width:80%;float:left;">
-														<div style="width:70%;float:left;">
-							
-															<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-															<p class="stutext">Class : Seim reap</p>
-													
-														</div>
-														<div style="width:30%;float:left;margin-top:-5px;">
-															<div style="width:100%;height:30px;text-align:center;color:white">
-																<h4>Score</h4>
-															</div>
-															<div style="width:100%;height:30px;text-align:center;color:white;">
-																<h4>100</h4>
-															</div>
-														</div>
-													</div>
+													<div class="tile-text">Ann Laurens</div>
 												</div>
-											</div>
-										</a>
-										<!--close a row-->
-										<!--row-->
-										<a href="statistic.html" class="top-student">
-											<div class="col-sm-12">
-												<div class="col-sm-12 topstustyle">
-													<div style="width:20%;float:left;">
-														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
 													</div>
-													<div style="width:80%;float:left;">
-														<div style="width:70%;float:left;">
-							
-															<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-															<p class="stutext">Class : Seim reap</p>
-													
-														</div>
-														<div style="width:30%;float:left;margin-top:-5px;">
-															<div style="width:100%;height:30px;text-align:center;color:white">
-																<h4>Score</h4>
-															</div>
-															<div style="width:100%;height:30px;text-align:center;color:white;">
-																<h4>100</h4>
-															</div>
-														</div>
-													</div>
+													<div class="tile-text">Ann Laurens</div>
 												</div>
-											</div>
-										</a>
-										<!--close a row-->
-										<!--row-->
-										<a href="statistic.html" class="top-student">
-											<div class="col-sm-12">
-												<div class="col-sm-12 topstustyle">
-													<div style="width:20%;float:left;">
-														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
 													</div>
-													<div style="width:80%;float:left;">
-														<div style="width:70%;float:left;">
-							
-															<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-															<p class="stutext">Class : Seim reap</p>
-													
-														</div>
-														<div style="width:30%;float:left;margin-top:-5px;">
-															<div style="width:100%;height:30px;text-align:center;color:white">
-																<h4>Score</h4>
-															</div>
-															<div style="width:100%;height:30px;text-align:center;color:white;">
-																<h4>100</h4>
-															</div>
-														</div>
-													</div>
+													<div class="tile-text">Ann Laurens</div>
 												</div>
-											</div>
-										</a>
-										<!--close a row-->
-										<!--row-->
-										<a href="statistic.html" class="top-student">
-											<div class="col-sm-12">
-												<div class="col-sm-12 topstustyle">
-													<div style="width:20%;float:left;">
-														<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
 													</div>
-													<div style="width:80%;float:left;">
-														<div style="width:70%;float:left;">
-							
-															<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-															<p class="stutext">Class : Seim reap</p>
-													
-														</div>
-														<div style="width:30%;float:left;margin-top:-5px;">
-															<div style="width:100%;height:30px;text-align:center;color:white">
-																<h4>Score</h4>
-															</div>
-															<div style="width:100%;height:30px;text-align:center;color:white;">
-																<h4>100</h4>
-															</div>
-														</div>
-													</div>
+													<div class="tile-text">Ann Laurens</div>
 												</div>
-											</div>
-										</a>
-										<!--close a row-->
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
 										
-									
-									
-										
-										
-									</div>
-								</div>
-								<!-- close left column -->
-								<!--right column -->
-								<div class="col-sm-6">
-									<div class="row">
-										<div class="col-sm-12" >
-											<div class="row">
-												<h4><i class="fa fa-area-chart"></i>Top Absent Student</h4>
-												<!--row-->
-												<a href="stdprofile.html" class="top-absence">
-													<div class="col-sm-12">
-														<div class="col-sm-12 topabsentstyle">
-															<div style="width:15%;float:left;">
-																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
-															</div>
-															<div style="width:80%;float:left;">
-																<div style="width:40%;float:left;">
-									
-																	<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-																	<p class="stutext">Class : Seim reap</p>
-															
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;">
-																	<div style="width:100%;height:30px;text-align:center;color:white" title="Absence">
-																		<h5 class="txt-in-absence">A</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Permission">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">P</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Late">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">L</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</a>
-												<!--close a row-->
-												<!--row-->
-												<a href="stdprofile.html" class="top-absence">
-													<div class="col-sm-12">
-														<div class="col-sm-12 topabsentstyle">
-															<div style="width:15%;float:left;">
-																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
-															</div>
-															<div style="width:80%;float:left;">
-																<div style="width:40%;float:left;">
-									
-																	<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-																	<p class="stutext">Class : Seim reap</p>
-															
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;">
-																	<div style="width:100%;height:30px;text-align:center;color:white" title="Absence">
-																		<h5 class="txt-in-absence">A</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Permission">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">P</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Late">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">L</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</a>
-												<!--close a row-->
-												<!--row-->
-												<a href="stdprofile.html" class="top-absence">
-													<div class="col-sm-12">
-														<div class="col-sm-12 topabsentstyle">
-															<div style="width:15%;float:left;">
-																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
-															</div>
-															<div style="width:80%;float:left;">
-																<div style="width:40%;float:left;">
-									
-																	<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-																	<p class="stutext">Class : Seim reap</p>
-															
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;">
-																	<div style="width:100%;height:30px;text-align:center;color:white" title="Absence">
-																		<h5 class="txt-in-absence">A</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Permission">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">P</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Late">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">L</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</a>
-												<!--close a row-->
-												<!--row-->
-												<a href="stdprofile.html" class="top-absence">
-													<div class="col-sm-12">
-														<div class="col-sm-12 topabsentstyle">
-															<div style="width:15%;float:left;">
-																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
-															</div>
-															<div style="width:80%;float:left;">
-																<div style="width:40%;float:left;">
-									
-																	<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-																	<p class="stutext">Class : Seim reap</p>
-															
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;">
-																	<div style="width:100%;height:30px;text-align:center;color:white" title="Absence">
-																		<h5 class="txt-in-absence">A</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Permission">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">P</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Late">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">L</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</a>
-												<!--close a row-->
-												<!--row-->
-												<a href="stdprofile.html" class="top-absence">
-													<div class="col-sm-12">
-														<div class="col-sm-12 topabsentstyle">
-															<div style="width:15%;float:left;">
-																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
-															</div>
-															<div style="width:80%;float:left;">
-																<div style="width:40%;float:left;">
-									
-																	<p class="stutext" style="margin-top:9px;">Name : Somina</p>
-																	<p class="stutext">Class : Seim reap</p>
-															
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;">
-																	<div style="width:100%;height:30px;text-align:center;color:white" title="Absence">
-																		<h5 class="txt-in-absence">A</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Permission">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">P</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-																<div style="width:20%;float:left;margin-top:-5px;" title="Late">
-																	<div style="width:100%;height:30px;text-align:center;color:white">
-																		<h5 class="txt-in-absence">L</h5>
-																	</div>
-																	<div style="width:100%;height:30px;text-align:center;color:white;">
-																		<h5 class="txt-in-absence">100</h5>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-												</a>
-												<!--close a row-->
-												
-											</div>
+											
+										</ul>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+						</div><!-- END NEW REGISTRATIONS -->
+						
+						
+						<!-- BEGIN NEW REGISTRATIONS -->
+							<div class="col-md-4">
+								<div class="col-md-12">
+								<div class="card-box">
+									<div class="card-head">
+										<header class="box-text-style">TOP ATTENDENCE</header>
+										<div class="tools hidden-md">
+											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
+									</div><!--end .card-head -->
+									<div class="card-body no-padding height-9 scroll">
+										<ul class="list divider-full-bleed ul-style">
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+										
+											
+										</ul>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+						</div><!-- END NEW REGISTRATIONS -->
 									
-								</div>
-								<!--close right column -->
-							</div>
-						</div>	<!-- end of col-md-12 -->
+						<!-- BEGIN NEW REGISTRATIONS -->
+							<div class="col-md-4">
+								<div class="col-md-12">
+								<div class="card-box">
+									<div class="card-head">
+										<header class="box-text-style">NEW USERS</header>
+										<div class="tools hidden-md">
+											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
+										</div>
+									</div><!--end .card-head -->
+									<div class="card-body no-padding height-9 scroll">
+										<ul class="list divider-full-bleed ul-style">
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+											<li class="tile">
+												<div class="tile-content">
+													<div class="tile-icon">
+														<img src="images/user.jpg" alt="" />
+													</div>
+													<div class="tile-text">Ann Laurens</div>
+												</div>
+												<a class="btn btn-flat ink-reaction eye-wrapper">
+													<i class="fa fa-eye eye-icon" ></i>
+												</a>
+											</li>
+										
+											
+										</ul>
+									</div><!--end .card-body -->
+								</div><!--end .card -->
+							</div><!--end .col -->
+						</div><!-- END NEW REGISTRATIONS -->
 					</div> <!-- end of 4 boxes -->
 				</div> <!-- end of row -->
 			</div> <!-- end of container-fluid -->
