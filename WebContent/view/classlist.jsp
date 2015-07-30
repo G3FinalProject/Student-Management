@@ -5,6 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">	
 <title>Insert title here</title>
+<<<<<<< .mine
+  <link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/formstyle.css">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  
+  <script src="js/jquery.js"></script>
+  <script src="bootstrape/js/bootstrap.min.js"></script>
+=======
 <link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
   	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
  	<link rel="stylesheet" href="css/home.css">
@@ -14,6 +24,7 @@
 	
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
+>>>>>>> .r23
 <style>
 	a.mylink{
 		display:inline;

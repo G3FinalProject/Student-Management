@@ -14,6 +14,17 @@
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
 <title>Insert title here</title>
+<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+  <link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/formstyle.css">
+  <link href="css/simple-sidebar.css" rel="stylesheet">
+  
+  <script src="js/jquery.js"></script>
+  <script src="bootstrape/js/bootstrap.min.js"></script>
+  <!--color picker-->
+  <script src="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.js"></script>
+  <link rel="stylesheet" href="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.css">
 <style>
 	div.mybox{
 		border-radius:0;

@@ -15,6 +15,15 @@
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
 <title>Insert title here</title>
+	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+ 	<link rel="stylesheet" href="css/home.css">
+ 	<link rel="stylesheet" href="css/studentlist.css">
+  	<link rel="stylesheet" href="css/formstyle.css">
+  	<link href="css/simple-sidebar.css" rel="stylesheet">
+   
+	<script src="js/jquery.js"></script>
+	<script src="bootstrape/js/bootstrap.min.js"></script>
 	<style>
 		div.mybox{
 			border-radius:0;
