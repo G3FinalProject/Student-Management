@@ -12,7 +12,7 @@
   	<link rel="stylesheet" href="../css/home.css">
   	
   	<link href="../css/simple-sidebar.css" rel="stylesheet">
-
+	<script src="../js/jquery.js"></script>
  <style>
 	div.mybox{
 		border-radius:0;
@@ -71,5 +71,12 @@
 	  </div>
 	</nav>
 	<!--close head fix -->
+	
+	<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
 </body>
 </html>

@@ -5,6 +5,7 @@
 <head>
 <meta charset="utf-8"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
 <title>Insert title here</title>
 	<style>
 		div.mybox{
@@ -52,7 +53,7 @@
 							<img src="../images/student.png"  class="img-responsive col-sm-12 imgstyle"/>
 						</div>
 						<div class="col-sm-12">
-							<p class="describe" class="col-sm-12" style="">សូមស្វាគមន៏មកកាន់ទំព័រគ្រប់គ្រងសិស្ស</p>
+							<p class="describe" class="col-sm-12" style="">សូមស្វាគមន៍មកកាន់ទំព័រគ្រប់គ្រងសិស្ស</p>
 						</div>	
 						
 						<!-- 4 boxes -->
@@ -276,7 +277,7 @@
 													<div class="col-sm-12">
 														<div class="col-sm-12 topabsentstyle">
 															<div style="width:15%;float:left;">
-																<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 															</div>
 															<div style="width:80%;float:left;">
 																<div style="width:40%;float:left;">
@@ -319,7 +320,7 @@
 													<div class="col-sm-12">
 														<div class="col-sm-12 topabsentstyle">
 															<div style="width:15%;float:left;">
-																<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 															</div>
 															<div style="width:80%;float:left;">
 																<div style="width:40%;float:left;">
@@ -362,7 +363,7 @@
 													<div class="col-sm-12">
 														<div class="col-sm-12 topabsentstyle">
 															<div style="width:15%;float:left;">
-																<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 															</div>
 															<div style="width:80%;float:left;">
 																<div style="width:40%;float:left;">
@@ -405,7 +406,7 @@
 													<div class="col-sm-12">
 														<div class="col-sm-12 topabsentstyle">
 															<div style="width:15%;float:left;">
-																<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 															</div>
 															<div style="width:80%;float:left;">
 																<div style="width:40%;float:left;">
@@ -448,7 +449,7 @@
 													<div class="col-sm-12">
 														<div class="col-sm-12 topabsentstyle">
 															<div style="width:15%;float:left;">
-																<img src="images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
+																<img src="../images/pic.jpg" class="img-circle" style="width:50;height:50px;margin-top:13px;"/>
 															</div>
 															<div style="width:80%;float:left;">
 																<div style="width:40%;float:left;">
@@ -500,6 +501,7 @@
 		</div>	<!-- end of row -->
 	</div> <!-- end of content right -->
   </div> <!-- end of wrapper -->
+  
 </body>
 </html>
 
