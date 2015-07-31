@@ -9,28 +9,32 @@ public class Generation {
 	private Date finish_date;
 	private int status;
 	private Date c_date;
+	private String description;
 
 	public Generation() {
 
 	}
+
 	public Generation(int id, String name, Date orient_date, Date finish_date,
-			int status, Date c_date) {
+			int status, Date c_date, String description) {
+		super();
 		this.id = id;
 		this.name = name;
 		this.orient_date = orient_date;
 		this.finish_date = finish_date;
 		this.status = status;
 		this.c_date = c_date;
+		this.description = description;
 	}
 
-	public Generation(String name, Date orient_date, Date finish_date,
-			Date c_date) {
+	public Generation(String name, Date orient_date, Date finish_date,String description) {
 		super();
 		this.name = name;
 		this.orient_date = orient_date;
 		this.finish_date = finish_date;
-		this.c_date = c_date;
+		this.description = description;
 	}
+
 	public int getId() {
 		return id;
 	}
@@ -79,4 +83,14 @@ public class Generation {
 		this.c_date = c_date;
 	}
 
+	public String getDescription() {
+		return description;
+	}
+
+	public void setDescription(String description) {
+		this.description = description;
+	}
+	
+	
+	
 }
