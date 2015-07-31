@@ -7,27 +7,38 @@ public class Staff {
 	private String name;
 	private Date dob;
 	private char gender;
+	private String username;
+	private String pwd;
 	private String address;
 	private String email;
 	private String phone;
 	private Date register_date;
 	private String imagesrc;
+	private String profile;
+	private String bgimag;
 	private int status;
-	
 	public Staff(){
 		
 	}
-	public Staff(int id,String name,Date dob,char g,String addr,String email,String phone,Date re_date,String img,int status){
-		   this.id=id;
-		   this.name=name;
-		   this.dob=dob;
-		   this.gender=g;
-		   this.address=addr;
-		   this.email=email;
-		   this.phone=phone;
-		   this.register_date=re_date;
-		   this.imagesrc=img;
-		   this.status=status;   
+	public Staff(int id, String name, Date dob, char gender, String username,
+			String pwd, String address, String email, String phone,
+			Date register_date, String imagesrc, String profile, String bgimag,
+			int status) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.dob = dob;
+		this.gender = gender;
+		this.username = username;
+		this.pwd = pwd;
+		this.address = address;
+		this.email = email;
+		this.phone = phone;
+		this.register_date = register_date;
+		this.imagesrc = imagesrc;
+		this.profile = profile;
+		this.bgimag = bgimag;
+		this.status = status;
 	}
 	public int getId() {
 		return id;
@@ -52,6 +63,18 @@ public class Staff {
 	}
 	public void setGender(char gender) {
 		this.gender = gender;
+	}
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+	public String getPwd() {
+		return pwd;
+	}
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
 	public String getAddress() {
 		return address;
@@ -83,11 +106,24 @@ public class Staff {
 	public void setImagesrc(String imagesrc) {
 		this.imagesrc = imagesrc;
 	}
+	public String getProfile() {
+		return profile;
+	}
+	public void setProfile(String profile) {
+		this.profile = profile;
+	}
+	public String getBgimag() {
+		return bgimag;
+	}
+	public void setBgimag(String bgimag) {
+		this.bgimag = bgimag;
+	}
 	public int getStatus() {
 		return status;
 	}
 	public void setStatus(int status) {
 		this.status = status;
 	}
-
+	
+	
 }

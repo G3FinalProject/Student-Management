@@ -3,50 +3,53 @@ package model.dto;
 import java.util.Date;
 
 public class Student {
-      private int stu_id;
-      private String fname;
-      private String lname;
-      private char gender;
-      private Date dob;
-      private String pob;
-      private String paddr;
-      private int class_id;
-      private int g_id;
-      private int course_id;
-      private String phone;
-      private String email;
-      private String fa_name;
-      private String fa_phone;
-      private String mo_name;
-      private String mo_phone;
-      private String parents_addr;
-      private String emergency_contact;
-      private String universit;
-      private Date re_date;
-      private String img;
-      private int status;
-      private String class_name;
-      private String g_name;
-      
-      public Student(){
-    	  
-      }
-
-	public Student(int stu_id, String fname, String lname, char gender,
-			Date dob, String pob, String paddr, int class_id, int g_id,
+	private int stu_id;
+	private String fname;
+	private String lname;
+	private String username;
+	private String pwd;
+	private char gender;
+	private Date dob;
+	private String pob;
+	private String paddr;
+	private int course_id;
+	private String phone;
+	private String email;
+	private String fa_name;
+	private String fa_phone;
+	private String mo_name;
+	private String mo_phone;
+	private String parents_addr;
+	private String emergency_contact;
+	private String universit;
+	private Date re_date;
+	private String img;
+	private String profiles;
+	private String bg_img;
+	private int status;
+	private String class_name;
+	private String g_name;
+    
+	public Student(){
+  	  
+    }
+    
+	public Student(int stu_id, String fname, String lname, String username,
+			String pwd, char gender, Date dob, String pob, String paddr,
 			int course_id, String phone, String email, String fa_name,
 			String fa_phone, String mo_name, String mo_phone,
 			String parents_addr, String emergency_contact, String universit,
-			Date re_date, String img, int status) {
+			Date re_date, String img, String profiles, String bg_img, int status) {
+		super();
 		this.stu_id = stu_id;
 		this.fname = fname;
 		this.lname = lname;
+		this.username = username;
+		this.pwd = pwd;
 		this.gender = gender;
 		this.dob = dob;
 		this.pob = pob;
 		this.paddr = paddr;
-		this.class_id = class_id;
-		this.g_id = g_id;
 		this.course_id = course_id;
 		this.phone = phone;
 		this.email = email;
@@ -59,7 +62,45 @@ public class Student {
 		this.universit = universit;
 		this.re_date = re_date;
 		this.img = img;
+		this.profiles = profiles;
+		this.bg_img = bg_img;
 		this.status = status;
+	}
+
+	public Student(int stu_id, String fname, String lname, String username,
+			String pwd, char gender, Date dob, String pob, String paddr,
+			int course_id, String phone, String email, String fa_name,
+			String fa_phone, String mo_name, String mo_phone,
+			String parents_addr, String emergency_contact, String universit,
+			Date re_date, String img, String profiles, String bg_img,
+			int status, String class_name, String g_name) {
+		super();
+		this.stu_id = stu_id;
+		this.fname = fname;
+		this.lname = lname;
+		this.username = username;
+		this.pwd = pwd;
+		this.gender = gender;
+		this.dob = dob;
+		this.pob = pob;
+		this.paddr = paddr;
+		this.course_id = course_id;
+		this.phone = phone;
+		this.email = email;
+		this.fa_name = fa_name;
+		this.fa_phone = fa_phone;
+		this.mo_name = mo_name;
+		this.mo_phone = mo_phone;
+		this.parents_addr = parents_addr;
+		this.emergency_contact = emergency_contact;
+		this.universit = universit;
+		this.re_date = re_date;
+		this.img = img;
+		this.profiles = profiles;
+		this.bg_img = bg_img;
+		this.status = status;
+		this.class_name = class_name;
+		this.g_name = g_name;
 	}
 
 	public int getStu_id() {
@@ -84,6 +125,22 @@ public class Student {
 
 	public void setLname(String lname) {
 		this.lname = lname;
+	}
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
+	public String getPwd() {
+		return pwd;
+	}
+
+	public void setPwd(String pwd) {
+		this.pwd = pwd;
 	}
 
 	public char getGender() {
@@ -116,22 +173,6 @@ public class Student {
 
 	public void setPaddr(String paddr) {
 		this.paddr = paddr;
-	}
-
-	public int getClass_id() {
-		return class_id;
-	}
-
-	public void setClass_id(int class_id) {
-		this.class_id = class_id;
-	}
-
-	public int getG_id() {
-		return g_id;
-	}
-
-	public void setG_id(int g_id) {
-		this.g_id = g_id;
 	}
 
 	public int getCourse_id() {
@@ -230,6 +271,22 @@ public class Student {
 		this.img = img;
 	}
 
+	public String getProfiles() {
+		return profiles;
+	}
+
+	public void setProfiles(String profiles) {
+		this.profiles = profiles;
+	}
+
+	public String getBg_img() {
+		return bg_img;
+	}
+
+	public void setBg_img(String bg_img) {
+		this.bg_img = bg_img;
+	}
+
 	public int getStatus() {
 		return status;
 	}
@@ -253,6 +310,5 @@ public class Student {
 	public void setG_name(String g_name) {
 		this.g_name = g_name;
 	}
-	
-      
+
 }

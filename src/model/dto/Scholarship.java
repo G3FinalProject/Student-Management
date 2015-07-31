@@ -9,7 +9,6 @@ public class Scholarship {
 	private int stu_id;
 	private int approve_id;
 	private Date approve_date;
-	
 	public Scholarship(){
 		
 	}

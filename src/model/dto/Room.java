@@ -7,18 +7,39 @@ public class Room {
 	private String name;
 	private String color;
 	private Date c_date;
+	private int course_id;
 	private String description;
 	private int staus;
+	private String course_name;
 	
-	public Room(){	
+	
+	public Room(){
+		
 	}
-	public Room(int rid,String name,String color,Date d,String description,int status){
-		   this.id=rid;
-		   this.name=name;
-		   this.color=color;
-		   this.c_date=d;
-		   this.description=description;
-		   this.staus=status;
+	
+	public Room(int id, String name, String color, Date c_date, int course_id,
+			String description, int staus, String course_name) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.color = color;
+		this.c_date = c_date;
+		this.course_id = course_id;
+		this.description = description;
+		this.staus = staus;
+		this.course_name = course_name;
+	}
+
+	public Room(int id, String name, String color, Date c_date, int course_id,
+			String description, int staus) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.color = color;
+		this.c_date = c_date;
+		this.course_id = course_id;
+		this.description = description;
+		this.staus = staus;
 	}
 	public int getId() {
 		return id;
@@ -44,6 +65,12 @@ public class Room {
 	public void setC_date(Date c_date) {
 		this.c_date = c_date;
 	}
+	public int getCourse_id() {
+		return course_id;
+	}
+	public void setCourse_id(int course_id) {
+		this.course_id = course_id;
+	}
 	public String getDescription() {
 		return description;
 	}
@@ -56,4 +83,11 @@ public class Room {
 	public void setStaus(int staus) {
 		this.staus = staus;
 	}
+	public String getCourse_name() {
+		return course_name;
+	}
+	public void setCourse_name(String course_name) {
+		this.course_name = course_name;
+	}
+	
 }

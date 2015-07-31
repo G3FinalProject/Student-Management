@@ -7,18 +7,27 @@ public class Course {
 	   private String course_type;
 	   private String description;
 	   private Date c_date;
-	   private int status;
-	   
-	   public Course(){
-		   
-	   }
-	   public Course(int id,String course_type,String description,Date c_date,int status){
-		   this.id=id;
-		   this.course_type=course_type;
-		   this.description=description;
-		   this.c_date=c_date;
-		   this.status=status;
-	   }
+	   private int g_id;
+	   private String g_name;
+	public Course(int id, String course_type, String description, Date c_date,
+			int g_id, String d_name) {
+		super();
+		this.id = id;
+		this.course_type = course_type;
+		this.description = description;
+		this.c_date = c_date;
+		this.g_id = g_id;
+		this.g_name = d_name;
+	}
+	public Course(int id, String course_type, String description, Date c_date,
+			int g_id) {
+		super();
+		this.id = id;
+		this.course_type = course_type;
+		this.description = description;
+		this.c_date = c_date;
+		this.g_id = g_id;
+	}
 	public int getId() {
 		return id;
 	}
@@ -43,10 +52,17 @@ public class Course {
 	public void setC_date(Date c_date) {
 		this.c_date = c_date;
 	}
-	public int getStatus() {
-		return status;
+	public int getG_id() {
+		return g_id;
 	}
-	public void setStatus(int status) {
-		this.status = status;
+	public void setG_id(int g_id) {
+		this.g_id = g_id;
 	}
+	public String getD_name() {
+		return g_name;
+	}
+	public void setD_name(String d_name) {
+		this.g_name = d_name;
+	}
+	  
 }
