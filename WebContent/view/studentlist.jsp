@@ -11,6 +11,7 @@
   	<link rel="stylesheet" href="css/studentlist.css">
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link href="css/simple-sidebar.css" rel="stylesheet">
+  	<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
    
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
@@ -72,7 +73,7 @@
 								<table class="display" id="myTable" cellspacing="0" width="100%"  >
 								<thead>
 								    <tr>
-										<th >ID</th><th >Name</th><th >Gender</th><th >Generation</th><th >Course</th><th >Class</th><th >University</th><th >Email</th><th >Phone</th><th >Manipulation</th>
+										<th >ID</th><th >Name</th><th >Gender</th><th >Generation</th><th >Course</th><th >Class</th><th >University</th><th >Email</th><th >Phone</th><th >Action</th><th >Status</th>
 									</tr>
 								    
 								    
@@ -80,19 +81,19 @@
 								<tbody>
 									
 									<tr class="myrow">
-										<td>001</td><td><a href="#" class="linkname">KIM</a></td><td>male</td><td>1st Generation</td><td>BASIC</td><td>SiemReap	</td><td>NU</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td>001</td><td><a href="#" class="linkname">KIM</a></td><td>male</td><td>1st Generation</td><td>BASIC</td><td>SiemReap	</td><td>NU</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>002</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td>002</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>003</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td>003</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>004</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td>004</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow">
-										<td>001</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> <button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td>001</td><td><a href="#" class="linkname">Kakada</a></td><td>female</td><td>1st Generation</td><td>BASIC</td><td>BattamBong</td><td>RUPP</td><td>Kakada@gmail.com</td><td>010 888888</td><td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									
 								    </tbody>
@@ -109,12 +110,18 @@
 			</div>
 		</div>
 	</div>
-	
+	<script src="plugin/sweetalert/sweetalert.min.js"></script>
 	<script>
     $(document).ready( function () {
     $('#myTable').DataTable();
 } );    
     
     </script>
+    <script>
+		$(".btn-delete").click(function(){
+			
+			 swal("Status has been changened", "DONE!", "success"); 
+			
+		})</script>
 </body>
 </html>
