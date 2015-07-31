@@ -49,6 +49,7 @@
 					<!--content row-->
 					<div class="row">
 						<div class="col-sm-12" >
+						<form role="form">
 							<fieldset>
 								<div class="col-sm-12" >
 									<legend><h3><i class="fa fa-pencil"></i>Fill Staff's Information</h3></legend>
@@ -66,6 +67,7 @@
                                             </div>
 										</div>												
 									</div>
+									
 									<!--form input student's detail-->
 									<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
 										<div class="col-sm-12">
@@ -192,9 +194,11 @@
 										</div>
 										 
 									</div>
+									
 									<!--close input student's detail-->
 								</div>
 							</fieldset>
+							</form>
 						</div>
 					</div>
 					<!--close row-->
