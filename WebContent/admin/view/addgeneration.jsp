@@ -143,13 +143,6 @@
 									
 								</thead>
 								<tbody>
-									<tr class="myrow" id="stdrow">
-										<td>001</td>
-										<td>1st Generation</a></td>
-										<td>2014-04-01</td>
-										<td>2015-08-30</td>
-										<td>1st generation of KSHRD</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 										<tr class="myrow" id="stdrow">
 										<td>002</td>
@@ -157,15 +150,24 @@
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
 										<td>2nd generation of KSHRD</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button>  <button class="btn btn-primary btnview" type="button"><span class=" 	glyphicon glyphicon-eye-open"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
-									<tr class="myrow" id="stdrow">
-										<td>003</td>
-										<td>3rd Generation</a></td>
+										<tr class="myrow" id="stdrow">
+										<td>002</td>
+										<td>2nd Generation</a></td>
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
-										<td>3rd generation of KSHRD</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td>2nd generation of KSHRD</td>
+										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button>  <button class="btn btn-primary btnview" type="button"><span class=" 	glyphicon glyphicon-eye-open"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+									</tr>
+									</tr>
+										<tr class="myrow" id="stdrow">
+										<td>002</td>
+										<td>2nd Generation</a></td>
+										<td>2014-04-01</td>
+										<td>2015-08-30</td>
+										<td>2nd generation of KSHRD</td>
+										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button>  <button class="btn btn-primary btnview" type="button"><span class=" 	glyphicon glyphicon-eye-open"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									
 								</tbody>
@@ -204,9 +206,10 @@
 		</script>
 
 		<script>
+		
 		$(".btn-delete").click(function(){
 			
-			 swal("Status has been changened", "DONE!", "success"); 
+			 swal("Status has been changed", "DONE!", "success"); 
 			
 		})</script>
 
@@ -221,6 +224,7 @@
 				  }
 				})
 		</script>
+		<script>$("#clname").datepicker({dateFormat: "mm/dd/yyyy"})</script>
 
 </body>
 </html>
