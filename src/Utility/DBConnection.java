@@ -16,8 +16,8 @@ public class DBConnection {
 		     return con;
 	  }
 	  
-//	  public static void main(String[] args) {
-//		getConnect();
-//		System.out.println("Ok");
-//	}
+	  public static void main(String[] args) {
+		getConnect();
+		System.out.println("Ok");
+	}
 }
