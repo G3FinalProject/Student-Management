@@ -14,12 +14,12 @@
   
     <script src="plugin/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
-  
+
     <!--for calendar time picker-->
     <script type="text/javascript" src="plugin/TimePicki-master/TimePicki-master/js/jquery.min.js"></script>
-   
+  
     <link rel="stylesheet" href="plugin/Zebra_Datepicker-master/public/css/default.css" type="text/css"/>
- 
+	
   <style>
 	p.mylabel{
 		margin-top: 5px;
@@ -52,7 +52,7 @@
 						<form role="form">
 							<fieldset>
 								<div class="col-sm-12" >
-									<legend><h3><i class="fa fa-pencil"></i>Fill Staff's Information</h3></legend>
+									<legend><h3><i class="fa fa-pencil"></i>Fill Student's Information</h3></legend>
 								</div>
 								<div class="form-group" onsubmit="return saveInfo()">
 									<div class="col-sm-12">
@@ -68,29 +68,34 @@
 										</div>												
 									</div>
 									
+								
+									
 									<!--form input student's detail-->
+								
 									<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
-										
 										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Full Name :<p>
-											<div class="col-sm-5">
-												<input class="form-control txttext" type="text" name="txtfname" placeholder="Full Name" onkeypress="focusMe(this)" id="fn"/>
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Student's ID :<p>
+											<div class="col-sm-3">
+												<input class="form-control txttext" type="text" name="sid" placeholder="Enter Student ID" onkeypress="focusMe(this)" id="sid"/>
 											</div>
-											
+									
+											<div class="col-sm-1"></div>
+										</div>
+									
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Student's Name :<p>
+											<div class="col-sm-3">
+												<input class="form-control txttext" type="text" name="txtfname" placeholder="First Name" onkeypress="focusMe(this)" id="fn"/>
+											</div>
+											<div class="col-sm-3">
+												<input class="form-control txttext" type="text" name="txtlname" placeholder="Last Name" onkeypress="focusMe(this)"  id="ln"/>
+											</div>
 											<p class="col-sm-1 mylabel">Gender :<p>
-											<div class="col-sm-1">
+											<div class="col-sm-2">
 									
 												<select name="gender" class="form-control txttext">
 													<option value="male">Male</option>
 													<option value="female">Female</option>
-												</select>
-											</div>
-											<p class="col-sm-1 mylabel">Position :<p>
-											<div class="col-sm-1">
-									
-												<select name="gender" class="form-control txttext">
-													<option value="male">Admin</option>
-													<option value="female">Teacher</option>
 												</select>
 											</div>
 											<div class="col-sm-1" ></div>
@@ -102,7 +107,13 @@
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
-										
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Place of Birth :<p>
+											<div class="col-sm-9">
+												<textarea class="form-control txttext" name="listpob" onkeypress="focusMe(this)"  placeholder="( N , Serg Khat , Khan , city/province... )" id="plb"></textarea>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Permanent Address :<p>
 											<div class="col-sm-9">
@@ -110,29 +121,108 @@
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
-										
-										
 										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact Information:<p>
-											<p class="col-sm-1 mylabel">Phone:<p>
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Class's detail :<p>
+											<p class="col-sm-1 mylabel">Generation<p>
+											<div class="col-sm-2">
+												<select  class="form-control txttext"name="" id="">
+											    <option value="">1st</option>
+											    <option value="">2nd</option>
+											   
+											    
+											</select>
+											</div>
+											<p class="col-sm-1 mylabel">Course<p>
+											
+											<div class="col-sm-2">
+												<select  class="form-control txttext"name="" id="">
+											    <option value="">BASIC</option>
+											    <option value="">ADVANCED</option>
+											    
+											    
+											</select>
+											</div>
+											<p class="col-sm-1 mylabel">Room<p>
+											<div class="col-sm-2">
+												<select name="class" class="form-control txttext">
+													<option value="male">Siem Reap</option>
+													<option value="female">Phnom Penh</option>
+													<option value="female">Battombong</option>
+												</select>
+											</div>
+											
+											
+											<div class="col-sm-1"></div>
+											
+										</div>
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel" style="margin-top:15px;"><p>
+											<p class="col-sm-1 mylabel">Register Date<p>
+											<div class="col-sm-8">
+											
+												<input class="form-control txttext datepicker" type="text" name="txtstartdate" placeholder="DD/MM/YYYY" onblur="focusMe(this)" id="stdate"/>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact :<p>
+											<p class="col-sm-1 mylabel">Phone<p>
 											<div class="col-sm-3">
 												<input class="form-control txttext" type="text" name="txtstuphone" placeholder="Phone" onkeypress="focusMe(this)" id="mphone"/>
 											</div>
-											<p class="col-sm-1 mylabel">Email:<p>
+											<p class="col-sm-1 mylabel">Email<p>
 											<div class="col-sm-4">
 												<input class="form-control txttext" type="text" name="txtstuemail" placeholder="Email" onkeypress="focusMe(this)" id="memail"/>
 											</div>
 											<div class="col-sm-1" ></div>
 										</div>
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Father's Detail :<p>
+											<p class="col-sm-1 mylabel">Name<p>
+											<div class="col-sm-3">
+												<input class="form-control txttext" type="text" name="txtfathername" placeholder="Name" onkeypress="focusMe(this)" id="faname"/>
+											</div>
+											<p class="col-sm-1 mylabel">Phone<p>
+											<div class="col-sm-4">
+												<input class="form-control txttext" type="text" name="txtfatherphone" placeholder="phone" onkeypress="focusMe(this)" id="faphone"/>
+											</div>
+											
+										
+											<div class="col-sm-1" ></div>
+										</div>
+										
+										
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Mother's Detail :<p>
+											<p class="col-sm-1 mylabel">Name<p>
+											<div class="col-sm-3">
+												<input class="form-control txttext" type="text" name="txtmothername" placeholder="Name" onkeypress="focusMe(this)" id="mname"/>
+											</div>
+											<p class="col-sm-1 mylabel">Phone<p>
+											<div class="col-sm-4">
+												<input class="form-control txttext" type="text" name="txtmotherphone" placeholder="phone" onkeypress="focusMe(this)" id="maphone"/>
+											</div>
+											
+										
+											<div class="col-sm-1" ></div>
+										</div>
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Parents' Address :<p>
+											<div class="col-sm-9">
+												<textarea class="form-control txttext" name="listadd" placeholder="( N , Serg Khat , Khan , city/province... )" onkeypress="focusMe(this)"  id="padd"></textarea>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
 										
 										
 										
-										
-									
-										
-										
-										
-										
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Emergency Contact :<p>
+											<div class="col-sm-9">
+												<input class="form-control txttext" type="text" name="ecphone" placeholder="Enter Phone" onkeypress="focusMe(this)" id="ecphon"/>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
 										<div class="col-sm-12">
 										    <div class="col-sm-5"></div>
 											<div class="col-sm-4" id="errm" style="text-align:center; background-color:rgb(237,31,41); visibility:hidden;">
@@ -162,6 +252,9 @@
 			<!--close row-->
 		</div>
 	</div>
+		
+	
+	
 	 <script type="text/javascript" src="plugin/Zebra_Datepicker-master/public/javascript/zebra_datepicker.js"></script>
 	 <script>
 			$(document).ready(function() {
@@ -172,6 +265,7 @@
 
 			});
 		</script>
+		
  
 </body>
 </html>

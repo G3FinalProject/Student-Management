@@ -13,10 +13,32 @@
 <link rel="stylesheet" href="css/formstyle.css">
 <link href="css/simple-sidebar.css" rel="stylesheet">
  	<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
- 
+   	<link rel="stylesheet" href="plugin/jasny-bootstrap/css/jasny-bootstrap.min.css">
 
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
+
+
+
+
+
+  
+    <script src="plugin/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
+  	<script src="bootstrape/js/bootstrap.min.js"></script>
+  
+   
+    <link rel="stylesheet" href="plugin/Zebra_Datepicker-master/public/css/default.css" type="text/css"/>
+ 
+  <style>
+	p.mylabel{
+		margin-top: 5px;
+	
+	}
+	#sid,#fn,#ln,#ap,#dob,#plb,#padd,#stt,#endt,#stdate,#mphone,#memail,#faname,#faphone,#faadd,
+	#maphone,#mname,#madd,#ecphon{
+/*	   border-color:rgb(128,128,255);*/
+	}
+  </style>
 <style>
 a.mylink {
 	display: inline;
@@ -46,15 +68,117 @@ a.mylink {
 				<div id="test2" class="container-fluid">
 					<!--content row-->
 					<div class="row">
+					<!-- open col-12 -->
 						<div class="col-sm-12">
-							<div class="col-sm-12 myspace"></div>
+							
 							<div class="col-sm-12">
-
-								<div class="col-sm-12">
-									<a href="addstaff.jsp"
-										class=" navbar-left btn btn-primary  btnownstyle"><i
-										class="fa fa-user-plus"></i>Add New Staff</a>
+								<!-- open col-12 -->
+								<div class="col-sm-12" ><div class="row">
+						<form role="form">
+							<fieldset>
+								<div class="col-sm-12" >
+									<legend><h3><i class="fa fa-pencil"></i>Fill Staff's Information</h3></legend>
 								</div>
+								<div class="form-group" onsubmit="return saveInfo()">
+									<div class="col-sm-12">
+										<div class="col-sm-12">			
+										
+										<div class="fileinput fileinput-new" data-provides="fileinput">
+                                             <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="width: 200px; height: 150px;"></div>
+                                              <div>
+                                                   <span class="btn btn-default btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+                                                   <a href="#" class="btn btn-default fileinput-exists" data-dismiss="fileinput">Remove</a>
+                                              </div>
+                                            </div>
+										</div>												
+									</div>
+									
+									<!--form input student's detail-->
+									<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
+										
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Full Name :<p>
+											<div class="col-sm-5">
+												<input class="form-control txttext" type="text" name="txtfname" placeholder="Full Name" onkeypress="focusMe(this)" id="fn"/>
+											</div>
+											
+											<p class="col-sm-1 mylabel">Gender :<p>
+											<div class="col-sm-1">
+									
+												<select name="gender" class="form-control txttext">
+													<option value="male">Male</option>
+													<option value="female">Female</option>
+												</select>
+											</div>
+											<p class="col-sm-1 mylabel">Position :<p>
+											<div class="col-sm-1">
+									
+												<select name="gender" class="form-control txttext">
+													<option value="male">Admin</option>
+													<option value="female">Teacher</option>
+												</select>
+											</div>
+											<div class="col-sm-1" ></div>
+										</div>
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Date of Birth :<p>
+											<div class="col-sm-9">
+												<input class="form-control txttext datepicker" type="text" name="dob" onblur="focusMe(this)" placeholder="Your Birth's Date" id="dob"/>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
+										
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel" style="margin-top:15px;">Permanent Address :<p>
+											<div class="col-sm-9">
+												<textarea class="form-control txttext" name="listadd" placeholder="( N , Serg Khat , Khan , city/province... )" onkeypress="focusMe(this)"  id="padd"></textarea>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
+										
+										
+										<div class="col-sm-12">
+											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact Information:<p>
+											<p class="col-sm-1 mylabel">Phone:<p>
+											<div class="col-sm-3">
+												<input class="form-control txttext" type="text" name="txtstuphone" placeholder="Phone" onkeypress="focusMe(this)" id="mphone"/>
+											</div>
+											<p class="col-sm-1 mylabel">Email:<p>
+											<div class="col-sm-4">
+												<input class="form-control txttext" type="text" name="txtstuemail" placeholder="Email" onkeypress="focusMe(this)" id="memail"/>
+											</div>
+											<div class="col-sm-1" ></div>
+										</div>
+										
+										
+										
+										
+									
+										
+										
+										
+										
+										<div class="col-sm-12">
+										    <div class="col-sm-5"></div>
+											<div class="col-sm-4" id="errm" style="text-align:center; background-color:rgb(237,31,41); visibility:hidden;">
+												<span id="error"></span>
+											</div>
+											<div class="col-sm-2">
+												<div class="col-sm-12">
+													<input type="submit" class=" navbar-right btn btn-primary  btnownstyle " value="Insert" onclick="saveInfo()"/>
+											
+												</div>
+											</div>
+											<div class="col-sm-1"></div>
+										</div>
+										 
+									</div>
+									
+									<!--close input student's detail-->
+								</div>
+							</fieldset>
+							</form>
+						</div></div><!-- close col-12 -->
 								<div class="col-sm-12">
 									<legend>
 										<h3>
@@ -163,7 +287,7 @@ a.mylink {
 								</div>
 							</div>
 
-						</div>
+						</div><!-- close col-12 -->
 					</div>
 					<!--close row-->
 				</div>
@@ -171,6 +295,16 @@ a.mylink {
 			</div>
 		</div>
 	</div>
+	 <script type="text/javascript" src="plugin/Zebra_Datepicker-master/public/javascript/zebra_datepicker.js"></script>
+	 <script>
+			$(document).ready(function() {
+
+				// assuming the controls you want to attach the plugin to 
+				// have the "datepicker" class set
+				$('input.datepicker').Zebra_DatePicker();
+
+			});
+		</script>
 <script src="plugin/sweetalert/sweetalert.min.js"></script>
 	
 	<script>
