@@ -67,12 +67,12 @@ public class GenerationDAO {
 		return all;
 	}
 	public static void main(String[] args) {
-//		Generation g=new Generation("1st Generation",new java.util.Date("2013/04/01"),new java.util.Date("2013/04/01"),"60 Students");
-//		new GenerationDAO().insertGeneration(g);
-		ArrayList<Generation> arr=new GenerationDAO().getAllGeneration();
+		Generation g=new Generation("2nd Generation",new java.util.Date("2014/04/01"),new java.util.Date("2014/08/31"),"90 Students");
+		new GenerationDAO().insertGeneration(g);
+	/*	ArrayList<Generation> arr=new GenerationDAO().getAllGeneration();
 		for(Generation g:arr){
 			System.out.println(g.toString());
-		}
+		}*/
 	}
 	
 }
