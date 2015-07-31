@@ -70,26 +70,27 @@
 									
 									<!--form input student's detail-->
 									<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
-										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;">Staff's ID :<p>
-											<div class="col-sm-3">
-												<input disabled class="form-control txttext" type="text" name="sid" placeholder="Staff's ID" onkeypress="focusMe(this)" id="sid"/>
-											</div>
-											
-											<div class="col-sm-1"></div>
-										</div>
+										
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Full Name :<p>
-											<div class="col-sm-6">
+											<div class="col-sm-5">
 												<input class="form-control txttext" type="text" name="txtfname" placeholder="Full Name" onkeypress="focusMe(this)" id="fn"/>
 											</div>
 											
 											<p class="col-sm-1 mylabel">Gender :<p>
-											<div class="col-sm-2">
+											<div class="col-sm-1">
 									
 												<select name="gender" class="form-control txttext">
 													<option value="male">Male</option>
 													<option value="female">Female</option>
+												</select>
+											</div>
+											<p class="col-sm-1 mylabel">Position :<p>
+											<div class="col-sm-1">
+									
+												<select name="gender" class="form-control txttext">
+													<option value="male">Admin</option>
+													<option value="female">Teacher</option>
 												</select>
 											</div>
 											<div class="col-sm-1" ></div>
@@ -101,13 +102,7 @@
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
-										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;">Place of Birth :<p>
-											<div class="col-sm-9">
-												<textarea class="form-control txttext" name="listpob" onkeypress="focusMe(this)"  placeholder="( N , Serg Khat , Khan , city/province... )" id="plb"></textarea>
-											</div>
-											<div class="col-sm-1"></div>
-										</div>
+										
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Permanent Address :<p>
 											<div class="col-sm-9">
@@ -115,56 +110,15 @@
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
+										
+										
 										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;">Class's detail :<p>
-											<p class="col-sm-1 mylabel">Generation<p>
-											<div class="col-sm-2">
-												<select  class="form-control txttext"name="" id="">
-											    <option value="">1st</option>
-											    <option value="">2nd</option>
-											   
-											    
-											</select>
-											</div>
-											<p class="col-sm-1 mylabel">Course<p>
-											
-											<div class="col-sm-2">
-												<select  class="form-control txttext"name="" id="">
-											    <option value="">BASIC</option>
-											    <option value="">ADVANCED</option>
-											    
-											    
-											</select>
-											</div>
-											<p class="col-sm-1 mylabel">Room<p>
-											<div class="col-sm-2">
-												<select name="class" class="form-control txttext">
-													<option value="male">Siem Reap</option>
-													<option value="female">Phnom Penh</option>
-													<option value="female">Battombong</option>
-												</select>
-											</div>
-											
-											
-											<div class="col-sm-1"></div>
-											
-										</div>
-										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;"><p>
-											<p class="col-sm-2 mylabel">Register Date<p>
-											<div class="col-sm-7">
-											
-												<input class="form-control txttext datepicker" type="text" name="txtstartdate" placeholder="DD/MM/YYYY" onblur="focusMe(this)" id="stdate"/>
-											</div>
-											<div class="col-sm-1"></div>
-										</div>
-										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact :<p>
-											<p class="col-sm-1 mylabel">Phone<p>
+											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact Information:<p>
+											<p class="col-sm-1 mylabel">Phone:<p>
 											<div class="col-sm-3">
 												<input class="form-control txttext" type="text" name="txtstuphone" placeholder="Phone" onkeypress="focusMe(this)" id="mphone"/>
 											</div>
-											<p class="col-sm-1 mylabel">Email<p>
+											<p class="col-sm-1 mylabel">Email:<p>
 											<div class="col-sm-4">
 												<input class="form-control txttext" type="text" name="txtstuemail" placeholder="Email" onkeypress="focusMe(this)" id="memail"/>
 											</div>
