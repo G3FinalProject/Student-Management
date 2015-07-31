@@ -236,7 +236,7 @@
 							<div class="col-sm-12">
 								<h4 class="col-sm-12 mylabel"
 									style="margin-top: 15px; text-align: center">
-									ADVANCED Course 1st Generation
+									 1st Generation
 									<h4>
 							</div>
 							<div class="col-sm-12">
