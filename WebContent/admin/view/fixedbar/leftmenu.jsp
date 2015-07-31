@@ -11,7 +11,8 @@
 			<li><a href="scoremanage.jsp" class="mynav-left"><i class="fa fa-bar-chart"></i>Score Management</a></li>
 			<li><a href="studentAttendance.jsp" class="mynav-left"><i class="fa fa-pencil"></i>Attendance Management</a></li>
 			<li><a href="studentresult.jsp" class="mynav-left"><i class="fa fa-graduation-cap"></i>Student Result</a></li>
-		   	
+			<li><a href="studentresult.jsp" class="mynav-left"><i class="fa fa-graduation-cap"></i>User Management</a></li>
+			
          </ul>
          
         </div> 

@@ -30,7 +30,7 @@
 					class="img-circle myprofile" />
 				</li>
 				<ul class="dropdown-menu" role="menu">
-					<li><a href="Setting.html"><i class="fa fa-cog"></i>Setting</a></li>
+					<li><a href="setting.jsp"><i class="fa fa-cog"></i>Setting</a></li>
 					<li class="divider"></li>
 					<li><a href="login.html"><i class="fa fa-sign-out"></i>Log
 							out</a></li>
