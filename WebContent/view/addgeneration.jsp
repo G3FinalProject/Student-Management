@@ -56,6 +56,20 @@ div.mybox{
 <body>
 	<%@include file="fixedbar/topmenu.jsp"%>
 
+<<<<<<< .mine
+	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+ 	<link rel="stylesheet" href="css/home.css">
+ 	<link rel="stylesheet" href="css/studentlist.css">
+  	<link rel="stylesheet" href="css/formstyle.css">
+  	<link href="css/simple-sidebar.css" rel="stylesheet">
+  	<!--alert  -->
+	<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
+   
+	<script src="js/jquery.js"></script>
+	<script src="bootstrape/js/bootstrap.min.js"></script>
+=======
+>>>>>>> .r42
 	
 	
 	<!-- wrapper div -->
@@ -99,14 +113,7 @@ div.mybox{
 										<div class="col-sm-2">
 											<select  class="form-control"><option>Active</option><option>Inactive</option></select>
 										</div>
-										<p class="col-sm-1 mylabel" style="margin-top: 4px;">
-											Course :
-										<p>
-										<div class="col-sm-2">
-											<select  class="form-control"><option>--SELECT COURSE--</option>
-											<option>BASIC</option>
-											<option>ADVANCED</option></select>
-										</div>
+										
 										
 										<div class="col-sm-1"></div>
 									</div>
@@ -145,9 +152,9 @@ div.mybox{
 										<div class="col-sm-8"></div>
 										<div class="col-sm-3">
 											<div class="col-sm-12">
-												<input type="button"
+												<input type="submit"
 													class=" navbar-right btn btn-primary  btnownstyle "
-													onclick="saveInfo()" value="Save" />
+													 value="Save" />
 											</div>
 										</div>
 										<div class="col-sm-1"></div>
@@ -192,7 +199,7 @@ div.mybox{
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
 										<td>1st generation of KSHRD</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger" id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow" id="stdrow">
 										<td>002</td>
@@ -200,7 +207,7 @@ div.mybox{
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
 										<td>2nd generation of KSHRD</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow" id="stdrow">
 										<td>002</td>
@@ -208,7 +215,7 @@ div.mybox{
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
 										<td>3rd generation of KSHRD</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									
 								</tbody>
@@ -222,6 +229,7 @@ div.mybox{
 			</div>
 			<!--end table  -->
 		</div>
+		<script src="plugin/sweetalert/sweetalert.min.js"></script>
 		<script
 			src="plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
 		<script>
@@ -240,6 +248,19 @@ div.mybox{
 
 			});
 		</script>
+<<<<<<< .mine
+		<script>
+		 $("#btn-delete").click(function(){
+			
+			 swal("Status has been changened", "DONE!", "success"); 
+			 
+		 })
+			 
+			 
+		 
+		
+		</script>
+=======
 		
 		<script>
 			$('#myform').validator();
@@ -251,5 +272,6 @@ div.mybox{
 				  }
 				})
 		</script>
+>>>>>>> .r42
 </body>
 </html>
