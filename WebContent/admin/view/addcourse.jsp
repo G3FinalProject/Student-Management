@@ -76,7 +76,28 @@
 
 										<div class="col-sm-1"></div>
 									</div>
-
+									<div class="col-sm-12">
+									<p class="col-sm-2 mylabel" style="margin-top: 15px;">Start
+											Date :
+										<p>
+										<div class="col-sm-3">
+											<input class="form-control txttext datepicker" type="text" id="clid"
+												onkeypress="focusMe(this)" name="cid"
+												 />
+										</div>
+										<p class="col-sm-1 mylabel" style="margin-top: 4px;">Finish
+											Date :
+										<p>
+										<div class="col-sm-3">
+											<input class="form-control txttext datepicker" type="text" id="clid"
+												onkeypress="focusMe(this)" name="cid"
+												 />
+										</div>
+									
+									
+									
+									
+									</div>
 									<div class="col-sm-12">
 										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Generation
 											Description :
@@ -126,8 +147,9 @@
 										<tr>
 											<th class="col-sm-1">ID</th>
 											<th class="col-sm-1">Course Type</th>
-											<th class="col-sm-1">Description</th>
-											<th class="col-sm-1">Created Date</th>
+											<th class="col-sm-1">Generation</th>
+											<th class="col-sm-1">Start Date</th>
+											<th class="col-sm-1">Finish Date</th>
 											<th class="col-sm-1">Action</th>
 											<th class="col-sm-1">Status</th>
 
@@ -137,13 +159,19 @@
 									<tbody>
 										<tr class="" id="">
 											<td>001</td>
-											<td>BASIC</a></td>
-											<td>BASIC COURSE</td>
+											<td>ADVANCED COURSE</td>
+											<td>1st Generation</td>
+											<td>2013-01-04</td>
 											<td>2013-01-04</td>
 											<td><button class="btn btn-success btnedit"
 													type="button">
 													<span class="glyphicon glyphicon-pencil"></span>
-												</button></td>
+												</button>
+												<button class="btn btn-primary btnview"
+													type="button">
+													<span class="glyphicon glyphicon-eye-open"></span>
+												</button>
+												</td>
 											<td><button type="button"
 													class="btn btn-danger btn-delete" id="btn-delete">
 													<span class="glyphicon glyphicon-trash"></span>
@@ -151,13 +179,19 @@
 										</tr>
 										<tr class="" id="">
 											<td>002</td>
-											<td>ADVANCED COURSE</a></td>
 											<td>ADVANCED COURSE</td>
+											<td>1st Generation</td>
+											<td>2013-01-04</td>
 											<td>2013-01-04</td>
 											<td><button class="btn btn-success btnedit"
 													type="button">
 													<span class="glyphicon glyphicon-pencil"></span>
-												</button></td>
+												</button>
+												<button class="btn btn-primary btnview"
+													type="button">
+													<span class="glyphicon glyphicon-eye-open"></span>
+												</button>
+												</td>
 											<td><button type="button"
 													class="btn btn-danger btn-delete" id="btn-delete">
 													<span class="glyphicon glyphicon-trash"></span>
