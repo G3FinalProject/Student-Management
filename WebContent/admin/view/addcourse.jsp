@@ -16,19 +16,26 @@
 	href="plugin/Zebra_Datepicker-master/public/css/default.css" />
 <link rel="stylesheet"
 	href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
-	
+
 <link rel="stylesheet" type="text/css"
-		href="plugin/sweetalert/sweetalert.css">
+	href="plugin/sweetalert/sweetalert.css">
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
-
+<style>
+.modal-header
+         {
+             padding:9px 15px;
+             border-bottom:1px solid #eee;
+             background-color: #0480be;
+             color:white;
+         }</style>
 <title>Course</title>
 </head>
 <body>
 	<%@include file="fixedbar/topmenu.jsp"%>
 
 
-	
+
 
 	<!-- wrapper div -->
 	<div id="wrapper" style="margin-top: 54px;">
@@ -77,29 +84,27 @@
 										<div class="col-sm-1"></div>
 									</div>
 									<div class="col-sm-12">
-									<p class="col-sm-2 mylabel" style="margin-top: 15px;">Start
+										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Start
 											Date :
 										<p>
 										<div class="col-sm-4">
-											<input class="form-control txttext datepicker" type="text" id="clid"
-												onkeypress="focusMe(this)" name="cid"
-												 />
+											<input class="form-control txttext datepicker" type="text"
+												id="clid" onkeypress="focusMe(this)" name="cid" />
 										</div>
 										<p class="col-sm-1 mylabel" style="margin-top: 4px;">Finish
 											Date :
 										<p>
 										<div class="col-sm-4">
-											<input class="form-control txttext datepicker" type="text" id="clid"
-												onkeypress="focusMe(this)" name="cid"
-												 />
+											<input class="form-control txttext datepicker" type="text"
+												id="clid" onkeypress="focusMe(this)" name="cid" />
 										</div>
-									
-									
-									
-									
+
+
+
+
 									</div>
 									<div class="col-sm-12">
-										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Generation
+										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Course
 											Description :
 										<p>
 										<div class="col-sm-9">
@@ -167,11 +172,10 @@
 													type="button">
 													<span class="glyphicon glyphicon-pencil"></span>
 												</button>
-												<button class="btn btn-primary btnview"
-													type="button">
+												<button class="btn btn-primary btnview" type="button"
+													data-toggle="modal" data-target="#myModal">
 													<span class="glyphicon glyphicon-eye-open"></span>
-												</button>
-												</td>
+												</button></td>
 											<td><button type="button"
 													class="btn btn-danger btn-delete" id="btn-delete">
 													<span class="glyphicon glyphicon-trash"></span>
@@ -187,11 +191,10 @@
 													type="button">
 													<span class="glyphicon glyphicon-pencil"></span>
 												</button>
-												<button class="btn btn-primary btnview"
-													type="button">
+												<button class="btn btn-primary btnview" type="button"
+													data-toggle="modal" data-target="#myModal">
 													<span class="glyphicon glyphicon-eye-open"></span>
-												</button>
-												</td>
+												</button></td>
 											<td><button type="button"
 													class="btn btn-danger btn-delete" id="btn-delete">
 													<span class="glyphicon glyphicon-trash"></span>
@@ -213,33 +216,106 @@
 			<!--end table  -->
 		</div>
 	</div>
-		
-		
-		<script src="plugin/sweetalert/sweetalert.min.js"></script>
-		<script
-			src="plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
-		<script>
-			$(document).ready(function() {
-				$('#myTable').DataTable();
-			});
-		</script>
-		<script
-			src="plugin/Zebra_Datepicker-master/public/javascript/zebra_datepicker.js"></script>
-		<script>
-			$(document).ready(function() {
+	<!-- Modal -->
+	<div class="modal fade" id="myModal" role="dialog">
+		<div class="modal-dialog modal-lg">
 
-				// assuming the controls you want to attach the plugin to 
-				// have the "datepicker" class set
-				$('input.datepicker').Zebra_DatePicker();
+			<!-- Modal content-->
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal">&times;</button>
+					<h2 class="modal-title">
+						Course Information
+						</h4>
+				</div>
+				<div class="">
+					
+						<!--form input student's detail-->
+						<div class="col-sm-12"
+							style="margin-top: 20px; padding-bottom: 50px;">
+							<div class="col-sm-12">
+								<h4 class="col-sm-12 mylabel"
+									style="margin-top: 15px; text-align: center">
+									ADVANCED Course 1st Generation
+									<h4>
+							</div>
+							<div class="col-sm-12">
+								<p class="col-sm-2 mylabel" style="margin-top: 15px;">From :
+								
+								<p>
+								<div class="col-sm-4">
+									<input class="form-control txttext " type="text" id="clid"
+										onkeypress="focusMe(this)" name="cid" />
+								</div>
+								<p class="col-sm-1 mylabel" style="margin-top: 4px;">To:
+								<p>
+								<div class="col-sm-4">
+									<input class="form-control txttext " type="text" id="clid"
+										onkeypress="focusMe(this)" name="cid" />
+								</div>
 
-			});
-		</script>
-		<script>
-			$(".btn-delete").click(function() {
 
-				swal("Status has been changened", "DONE!", "success");
 
-			})
-		</script>
+
+							</div>
+							<div class="col-sm-12">
+								<p class="col-sm-2 mylabel" style="margin-top: 15px;">Course
+									Description :
+								<p>
+								<div class="col-sm-9">
+									<textarea class="form-control txttext" id="cldesc"
+										name="listadd" onkeypress="focusMe(this)"
+										placeholder="( some info)"></textarea>
+								</div>
+								<div class="col-sm-1"></div>
+							</div>
+
+
+						</div>
+						<!--close input student's detail-->
+					
+
+				</div>
+				<div class="modal-footer">
+
+					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+	</div>
+
+	<!--END MODAL-->
+
+
+
+	<script src="plugin/sweetalert/sweetalert.min.js"></script>
+	<script
+		src="plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#myTable').DataTable();
+		});
+	</script>
+	<script
+		src="plugin/Zebra_Datepicker-master/public/javascript/zebra_datepicker.js"></script>
+	<script>
+		$(document).ready(function() {
+
+			// assuming the controls you want to attach the plugin to 
+			// have the "datepicker" class set
+			$('input.datepicker').Zebra_DatePicker();
+
+		});
+	</script>
+	<script>
+		$(".btn-delete").click(function() {
+
+			swal("Status has been changened", "DONE!", "success");
+
+		})
+	</script>
 </body>
 </html>
