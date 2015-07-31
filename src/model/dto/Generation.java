@@ -90,6 +90,14 @@ public class Generation {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+
+	@Override
+	public String toString() {
+		return "Generation [id=" + id + ", name=" + name + ", orient_date="
+				+ orient_date + ", finish_date=" + finish_date + ", status="
+				+ status + ", c_date=" + c_date + ", description="
+				+ description + "]";
+	}
 	
 	
 	
