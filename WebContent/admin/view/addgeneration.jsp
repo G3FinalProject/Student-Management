@@ -25,6 +25,13 @@
 
 
 <style>
+.modal-header
+         {
+             padding:9px 15px;
+             border-bottom:1px solid #eee;
+             background-color: #0480be;
+             color:white;
+         }
 </style>
 </head>
 <body>
@@ -157,7 +164,7 @@
 													type="button">
 													<span class="glyphicon glyphicon-pencil"></span>
 												</button>
-												<button class="btn btn-primary btnview" type="button">
+												<button class="btn btn-primary btnview" type="button" data-toggle="modal" data-target="#myModal">
 													<span class=" 	glyphicon glyphicon-eye-open"></span>
 												</button></td>
 											<td><button type="button"
@@ -175,7 +182,7 @@
 													type="button">
 													<span class="glyphicon glyphicon-pencil"></span>
 												</button>
-												<button class="btn btn-primary btnview" type="button">
+												<button class="btn btn-primary btnview" type="button" data-toggle="modal" data-target="#myModal">
 													<span class=" 	glyphicon glyphicon-eye-open"></span>
 												</button></td>
 											<td><button type="button"
@@ -194,7 +201,7 @@
 													type="button">
 													<span class="glyphicon glyphicon-pencil"></span>
 												</button>
-												<button class="btn btn-primary btnview" type="button">
+												<button class="btn btn-primary btnview" type="button" data-toggle="modal" data-target="#myModal">
 													<span class=" 	glyphicon glyphicon-eye-open"></span>
 												</button></td>
 											<td><button type="button"
@@ -215,7 +222,79 @@
 			<!--end table  -->
 		</div>
 	</div>
+	
+	<!-- Modal -->
+				<div class="modal fade" id="myModal" role="dialog">
+					<div class="modal-dialog modal-lg">
 
+						<!-- Modal content-->
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal">&times;</button>
+								<h2 class="modal-title">Generation's Information</h2>
+							</div>
+							<div class="" style="text-align:center">
+								<!--form input student's detail-->
+						<div class="col-sm-12"
+							style="margin-top: 20px; padding-bottom: 50px;">
+							<div class="col-sm-12">
+								<h4 class="col-sm-12 mylabel"
+									style="margin-top: 15px; text-align: center">
+									ADVANCED Course 1st Generation
+									<h4>
+							</div>
+							<div class="col-sm-12">
+								<p class="col-sm-2 mylabel" style="margin-top: 15px;">From :
+								
+								<p>
+								<div class="col-sm-4">
+									<input class="form-control txttext " type="text" id="clid"
+										onkeypress="focusMe(this)" name="cid" />
+								</div>
+								<p class="col-sm-1 mylabel" style="margin-top: 4px;">To:
+								<p>
+								<div class="col-sm-4">
+									<input class="form-control txttext " type="text" id="clid"
+										onkeypress="focusMe(this)" name="cid" />
+								</div>
+
+
+
+
+							</div>
+							<div class="col-sm-12">
+								<p class="col-sm-2 mylabel" style="margin-top: 15px;">Course
+									Description :
+								<p>
+								<div class="col-sm-9">
+									<textarea class="form-control txttext" id="cldesc"
+										name="listadd" onkeypress="focusMe(this)"
+										placeholder="( some info)"></textarea>
+								</div>
+								<div class="col-sm-1"></div>
+							</div>
+
+
+						</div>
+						<!--close input student's detail-->
+								 
+								
+							</div>
+							<div class="modal-footer">
+								
+								<button type="button" class="btn btn-default"
+									data-dismiss="modal">Close</button>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+			</div>
+
+			<!--END MODAL-->
+
+	
 
 	<script src="js/validator.js"></script>
 	<script src="plugin/sweetalert/sweetalert.min.js"></script>
