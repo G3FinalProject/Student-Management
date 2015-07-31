@@ -56,7 +56,6 @@ div.mybox{
 <body>
 	<%@include file="fixedbar/topmenu.jsp"%>
 
-<<<<<<< .mine
 	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
  	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
  	<link rel="stylesheet" href="css/home.css">
@@ -68,8 +67,7 @@ div.mybox{
    
 	<script src="js/jquery.js"></script>
 	<script src="bootstrape/js/bootstrap.min.js"></script>
-=======
->>>>>>> .r42
+
 	
 	
 	<!-- wrapper div -->
@@ -189,33 +187,35 @@ div.mybox{
 										<th class="col-sm-1">Finish Date</th>
 										<th class="col-sm-1">Description</th>
 										<th class="col-sm-1">Action</th>
+										<th class="col-sm-1">Status</th>
+										
 									</tr>
 									
 								</thead>
 								<tbody>
-									<tr class="" id="">
+									<tr class="myrow" id="stdrow">
 										<td>001</td>
 										<td>1st Generation</a></td>
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
 										<td>1st generation of KSHRD</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger" id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
-									<tr class="myrow" id="stdrow">
+										<tr class="myrow" id="stdrow">
 										<td>002</td>
 										<td>2nd Generation</a></td>
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
 										<td>2nd generation of KSHRD</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									<tr class="myrow" id="stdrow">
-										<td>002</td>
+										<td>003</td>
 										<td>3rd Generation</a></td>
 										<td>2014-04-01</td>
 										<td>2015-08-30</td>
 										<td>3rd generation of KSHRD</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
 									</tr>
 									
 								</tbody>
@@ -248,19 +248,14 @@ div.mybox{
 
 			});
 		</script>
-<<<<<<< .mine
+
 		<script>
-		 $("#btn-delete").click(function(){
+		$(".btn-delete").click(function(){
 			
 			 swal("Status has been changened", "DONE!", "success"); 
-			 
-		 })
-			 
-			 
-		 
-		
-		</script>
-=======
+			
+		})</script>
+
 		
 		<script>
 			$('#myform').validator();
@@ -272,6 +267,6 @@ div.mybox{
 				  }
 				})
 		</script>
->>>>>>> .r42
+
 </body>
 </html>
