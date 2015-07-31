@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
     font-family: handWriting;
     src: url(../fonts/handwrite.ttf);
 }
@@ -29,6 +29,9 @@ a.box-menu:hover{
 @media (max-width: 600px) {
   a.text-menu {
     display: none !important; /* IE8 fix */
+  }
+  li#resizer-icon"{
+  	 display: none !important; /* IE8 fix */
   }
 }
 #test2{
