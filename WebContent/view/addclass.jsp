@@ -13,28 +13,32 @@
 	
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
-<title>Insert title here</title>
-<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
-  <link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/formstyle.css">
-  <link href="css/simple-sidebar.css" rel="stylesheet">
+	<title>Insert title here</title>
+	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+ 	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
+  	<link rel="stylesheet" href="css/home.css">
+  	<link rel="stylesheet" href="css/formstyle.css">
+  	<link href="css/simple-sidebar.css" rel="stylesheet">
   
-  <script src="js/jquery.js"></script>
-  <script src="bootstrape/js/bootstrap.min.js"></script>
-  <!--color picker-->
-  <script src="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.js"></script>
-  <link rel="stylesheet" href="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.css">
-<style>
-	div.mybox{
-		border-radius:0;
-	}
-	.bcolor{
+  	<script src="js/jquery.js"></script>
+  	<script src="bootstrape/js/bootstrap.min.js"></script>
+ 	 <!--color picker-->
+ 	 <script src="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.js"></script>
+ 	 <link rel="stylesheet" href="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.css">
+ 	 
+  	 <link type="text/css" rel="stylesheet" href="plugin/theme-default/materialadmin.css?1425466319" /> 
+   
+ 	 
+	<style>
+		div.mybox{
+			border-radius:0;
+		}
+		.bcolor{
 		width: 70px;
 		height: 70px;
 		margin-top:5px;
 		border:2px solid black;
-	}
+		}
   </style>
 </head>
 <body>
@@ -50,14 +54,14 @@
    		 <!--content right-->
 		<div id="page-content-wrapper" >
 			<div class="row">
-						<form role="form">
+						<!-- <form role="form">
 							<div class="col-sm-12" >
 								<fieldset>
 									<div class="col-sm-12" >
 										<legend><h3><i class="fa fa-pencil"></i>Fill Class's Information</h3></legend>
 									</div>
 									<div class="form-group">
-									<!--form input student's detail-->
+									form input student's detail
 										<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
 											<div class="col-sm-12">
 												<p class="col-sm-2 mylabel" style="margin-top:15px;">Class's ID :<p>
@@ -125,12 +129,62 @@
 												<div class="col-sm-1"></div>
 											</div>
 										</div>
-										<!--close input student's detail-->			
+										close input student's detail			
 									</div>
 								</fieldset>
 							</div>
-						</form>
-					</div>
+						</form> -->
+						
+						<div class="col-lg-offset-1 col-md-8">
+								<form class="form form-validate floating-label" novalidate="novalidate">
+									<div class="card">
+										<div class="card-body">
+											<div class="form-group">
+												<input type="text" class="form-control" id="Name1" name="Name1" required data-rule-minlength="2">
+												<label for="Name1">Name</label>
+											</div>
+											<div class="form-group">
+												<input type="email" class="form-control" id="Email1" name="Email1" required>
+												<label for="Email1">Email</label>
+											</div>
+											<div class="form-group">
+												<input type="password" class="form-control" id="Password1" name="Password1" required data-rule-minlength="5">
+												<label for="Password1">Password</label>
+											</div>
+											<div class="form-group">
+												<select id="select1" name="select1" class="form-control" required>
+													<option value="">&nbsp;</option>
+													<option value="30">30</option>
+													<option value="40">40</option>
+													<option value="50">50</option>
+													<option value="60">60</option>
+													<option value="70">70</option>
+												</select>
+												<label for="select1">Select</label>
+											</div>
+											<div class="form-group">
+												<textarea name="textarea1" id="textarea1" class="form-control" rows="3" required></textarea>
+												<label for="textarea1">Textarea</label>
+											</div>
+											<div class="form-group">
+												<div class="checkbox checkbox-styled">
+													<label>
+														<input type="checkbox" name="terms1" required>
+														<span>I have read and accept the term.</span>
+													</label>
+												</div>
+											</div>
+										</div><!--end .card-body -->
+										<div class="card-actionbar">
+											<div class="card-actionbar-row">
+												<button type="submit" class="btn btn-flat btn-primary ink-reaction">Validate</button>
+											</div>
+										</div><!--end .card-actionbar -->
+									</div><!--end .card -->
+									<em class="text-caption">Basic validation</em>
+								</form>
+							</div><!--end .col -->
+						
 	
 	<script>				
 	var ID=function(id){
@@ -220,5 +274,25 @@
   $("#colo").css('background-color', $('select[name="colorpicker"]').val());
   });
    </script>
+   
+   <!-- BEGIN JAVASCRIPT -->
+		<script src="plugin/theme-default/assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
+		<script src="plugin/theme-default/assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
+		<script src="plugin/theme-default/assets/js/libs/bootstrap/bootstrap.min.js"></script>
+		<script src="plugin/theme-default/assets/js/libs/spin.js/spin.min.js"></script>
+		<script src="plugin/theme-default/assets/js/libs/autosize/jquery.autosize.min.js"></script>
+		<script src="plugin/theme-default/assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
+		<script src="plugin/theme-default/assets/js/libs/jquery-validation/dist/jquery.validate.min.js"></script>
+		<script src="plugin/theme-default/assets/js/libs/jquery-validation/dist/additional-methods.min.js"></script>
+		<script src="plugin/theme-default/assets/js/core/source/App.js"></script>
+		<script src="plugin/theme-default/assets/js/core/source/AppNavigation.js"></script>
+		<script src="plugin/theme-default/assets/js/core/source/AppOffcanvas.js"></script>
+		<script src="plugin/theme-default/assets/js/core/source/AppCard.js"></script>
+		<script src="plugin/theme-default/assets/js/core/source/AppForm.js"></script>
+		<script src="plugin/theme-default/assets/js/core/source/AppNavSearch.js"></script>
+		<script src="plugin/theme-default/assets/js/core/source/AppVendor.js"></script>
+		<script src="plugin/theme-default/assets/js/core/demo/Demo.js"></script>
+		<!-- END JAVASCRIPT -->
+  
 </body>
 </html>
