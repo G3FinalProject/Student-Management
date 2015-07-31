@@ -15,6 +15,8 @@
 <link rel="stylesheet"
 	href="plugin/Zebra_Datepicker-master/public/css/default.css" />
 <link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
+	<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
+   
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
 <title>Addcourse</title>
@@ -167,6 +169,8 @@ div.mybox{
 										<th class="col-sm-1">Description</th>
 										<th class="col-sm-1">Created Date</th>
 										<th class="col-sm-1">Action</th>
+										<th class="col-sm-1">Status</th>
+										
 										
 									</tr>
 									
@@ -178,8 +182,7 @@ div.mybox{
 										<td>BASIC</td>
 										<td>JAVA PROGRAMMING</td>
 										<td>2013-01-04</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-										
+										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>		
 									</tr>
 									<tr class="" id="">
 										<td>002</td>
@@ -187,8 +190,7 @@ div.mybox{
 										<td>BASIC</td>
 										<td>WEB PROGRAMMING</td>
 										<td>2013-01-04</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-										
+								<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>	
 									</tr>
 									<tr class="" id="">
 										<td>003</td>
@@ -196,8 +198,7 @@ div.mybox{
 										<td>BASIC</td>
 										<td>KOREAN LANGUAGE</td>
 										<td>2013-01-04</td>
-										<td ><button class="btn btn-success"><span class="glyphicon glyphicon-pencil"></span></button> 	<button class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span></button></td>
-										
+									<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td><td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>	
 									</tr>
 									
 									
@@ -214,6 +215,7 @@ div.mybox{
 			</div>
 			<!--end table  -->
 		</div>
+		<script src="plugin/sweetalert/sweetalert.min.js"></script>
 		<script
 			src="plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
 		<script>
@@ -232,5 +234,11 @@ div.mybox{
 
 			});
 		</script>
+		<script>
+		$(".btn-delete").click(function(){
+			
+			 swal("Status has been changened", "DONE!", "success"); 
+			
+		})</script>
 </body>
 </html>
