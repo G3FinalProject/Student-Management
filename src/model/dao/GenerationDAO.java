@@ -2,7 +2,9 @@ package model.dao;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
-import java.util.Date;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.ArrayList;
 
 import model.dto.Generation;
 import Utility.DBConnection;
@@ -31,10 +33,46 @@ public class GenerationDAO {
 		}catch(Exception e){
 			e.printStackTrace();
 		}
+		finally{
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
 		return false;
 	}
-	public static void main(String[] args) {
-//		Generation g=new Generation("1st Generation",new Date("2014/04/01"),new Date("2014/08/30"),"60 Students");
-//		new GenerationDAO().insertGeneration(g);
+	public ArrayList<Generation> getAllGeneration(){
+		ArrayList<Generation> all=new ArrayList<Generation>();
+		try{
+			CallableStatement getAll=con.prepareCall("{ call get_all_generation()}");
+			getAll.execute();
+			ResultSet rs=getAll.getResultSet();
+			Generation g=null;
+			while(rs.next()){
+				g=new Generation(rs.getInt("g_id"),rs.getString("generation"),rs.getDate("orientation_date"),
+						rs.getDate("finish_date"),rs.getInt("status"),rs.getDate("create_date"),rs.getString("discription"));
+				all.add(g);
+			}
+		}catch(Exception e){
+			System.out.println(e.getMessage());
+		}
+		finally{
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		return all;
 	}
+	public static void main(String[] args) {
+//		Generation g=new Generation("1st Generation",new java.util.Date("2013/04/01"),new java.util.Date("2013/04/01"),"60 Students");
+//		new GenerationDAO().insertGeneration(g);
+		ArrayList<Generation> arr=new GenerationDAO().getAllGeneration();
+		for(Generation g:arr){
+			System.out.println(g.toString());
+		}
+	}
+	
 }
