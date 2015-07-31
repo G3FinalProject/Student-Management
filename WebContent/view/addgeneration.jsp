@@ -4,20 +4,20 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="plugin/fontawesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="css/home.css">
-<link rel="stylesheet" href="css/formstyle.css">
- <link rel="stylesheet" href="css/studentlist.css">
-<link rel="stylesheet" href="css/simple-sidebar.css">
-<link rel="stylesheet" href="css/fixedbar.css">
-<link rel="stylesheet"
-	href="plugin/Zebra_Datepicker-master/public/css/default.css" />
-<link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
-<script src="js/jquery.js"></script>
-<script src="bootstrape/js/bootstrap.min.js"></script>
-<title>Insert title here</title>
+	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
+	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/formstyle.css">
+ 	<link rel="stylesheet" href="css/studentlist.css">
+	<link rel="stylesheet" href="css/simple-sidebar.css">
+	<link rel="stylesheet" href="css/fixedbar.css">
+	<link rel="stylesheet" href="plugin/Zebra_Datepicker-master/public/css/default.css" />
+	<link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
+	<script src="js/jquery.js"></script>
+	<script src="bootstrape/js/bootstrap.min.js"></script>
+	<title>Insert title here</title>
+
+	<script src="js/validator.js"></script>
 
 <style>
 div.mybox {
@@ -56,15 +56,7 @@ div.mybox{
 <body>
 	<%@include file="fixedbar/topmenu.jsp"%>
 
-	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
- 	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
- 	<link rel="stylesheet" href="css/home.css">
- 	<link rel="stylesheet" href="css/studentlist.css">
-  	<link rel="stylesheet" href="css/formstyle.css">
-  	<link href="css/simple-sidebar.css" rel="stylesheet">
-   
-	<script src="js/jquery.js"></script>
-	<script src="bootstrape/js/bootstrap.min.js"></script>
+	
 	
 	<!-- wrapper div -->
 	<div id="wrapper" style="margin-top: 54px;">
@@ -76,7 +68,7 @@ div.mybox{
 		<!--content right-->
 		<div id="page-content-wrapper">
 			<div class="row">
-				<form role="form">
+				<form role="form" data-toggle="validator" role="form" id='myform'>
 					<div class="col-sm-12">
 						<fieldset>
 							<div class="col-sm-12">
@@ -91,14 +83,16 @@ div.mybox{
 								<div class="col-sm-12"
 									style="margin-top: 20px; padding-bottom: 50px;">
 									<div class="col-sm-12">
+									
 										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Generation's
 											Name :
 										<p>
 										<div class="col-sm-3">
-											<input class="form-control txttext" type="text" id="clid"
+											<input class="form-control txttext" type="text" id="inputName"
 												onkeypress="focusMe(this)" name="cid"
 												placeholder="Enter Generation's Name" />
 										</div>
+									
 										<p class="col-sm-1 mylabel" style="margin-top: 4px;">
 											Status :
 										<p>
@@ -245,6 +239,17 @@ div.mybox{
 				$('input.datepicker').Zebra_DatePicker();
 
 			});
+		</script>
+		
+		<script>
+			$('#myform').validator();
+			$('#myform').validator().on('submit', function (e) {
+				  if (e.isDefaultPrevented()) {
+				    // handle the invalid form...
+				  } else {
+				    // everything looks good!
+				  }
+				})
 		</script>
 </body>
 </html>
