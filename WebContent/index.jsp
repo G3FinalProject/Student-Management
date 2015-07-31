@@ -75,7 +75,7 @@
 				</section>
 				<!-- END LOGIN SECTION -->
 
-				
-
+		 <script src="view/js/jquery.js"></script>	
+         <script src="view/plugin/theme-default/js/AppForm.js"></script>
 			</body>
 		</html>
