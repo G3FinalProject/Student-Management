@@ -11,64 +11,13 @@
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link href="css/simple-sidebar.css" rel="stylesheet">
   	<link rel="stylesheet" href="css/score.css">
+  	<link rel="stylesheet" href="css/fixedbar.css">
+  	<link rel="stylesheet" href="css/studentresult.css">
    
  	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
 	  <style>
-		a.mylink{
-			display:inline;
-			font-size: 20px;
-			color: black;
-			line-height: 50px;
-		}
-		a.mylink:hover{
-			color:#1d9c73;
-		}
-		div.myspace{
-			height: 20px;
-		}
-		div.mybox{
-			height: 50px;
-			background:#009688;
-		}
-		div.myclass{
-			border-radius: 0;
-		}
-		div.totalbox{
-			margin-top: 3px;
-			
-			height: 50px;
-		}
-		div.totalbox:hover{
-			opacity: 0.8;
-		}
-		i.iconstyle{
-			color: white;
-			font-size: 20px;
-			margin-top: 15px;
-			
-		}
-		h4.clnametext{
-			color: white;
-			margin-top: 15px;
-			margin-right: 3px;
-		}
-		div.boxaction{
-			margin-top: 3px;
-			height: 50px;
-		}
-		p.textpple{
-			color: white;
-			font-weight: bold;
-			font-size: 15px;
-		}
-	    thead
-	      {
-	    background: #1d9c73;
-	    text-align: center;
-	    color: white;
-	    }
-	      #myTable{text-align: center;}
+	
 	  </style>
 	<!--dataTable-->
   	<link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">

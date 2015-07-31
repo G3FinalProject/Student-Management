@@ -12,6 +12,7 @@
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link href="css/simple-sidebar.css" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
+  	<link rel="stylesheet" href="css/fixedbar.css">
    
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>

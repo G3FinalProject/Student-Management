@@ -11,6 +11,7 @@
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link href="css/simple-sidebar.css" rel="stylesheet">
     <link rel="stylesheet" href="css/setting.css">
+    <link rel="stylesheet" href="css/fixedbar.css">
    
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
@@ -50,7 +51,7 @@
 					<div class="row">
 						<div class="col-sm-12 wrapper-cover" >
 							<div class="row">
-								<div class="col-sm-12 background-cover"  id="background-cover" style="margin-top:-20px;"> 
+								<div class="col-sm-12 background-cover"  id="background-cover" style="margin-top:0px;"> 
 									
 									<div class="col-sm-2 box-background" >
 										<div class="col-sm-12 box-space"  >

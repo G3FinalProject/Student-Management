@@ -4,6 +4,11 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+
+
+
+
 <title>Insert title here</title>
 	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
   	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
@@ -11,12 +16,13 @@
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link rel="stylesheet" href="plugin/jasny-bootstrap/css/jasny-bootstrap.min.css">
   	<link href="css/simple-sidebar.css" rel="stylesheet">
+  	<link rel="stylesheet" href="css/fixedbar.css">
   
+  	<script src="js/jquery.js"></script>
     <script src="plugin/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
-
+	
     <!--for calendar time picker-->
-    <script type="text/javascript" src="plugin/TimePicki-master/TimePicki-master/js/jquery.min.js"></script>
   
     <link rel="stylesheet" href="plugin/Zebra_Datepicker-master/public/css/default.css" type="text/css"/>
 	

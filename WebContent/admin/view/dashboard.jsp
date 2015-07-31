@@ -8,16 +8,17 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="keywords" content="your,keywords">
 <meta name="description" content="Short explanation about this website">
-
+ 
     <link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
   	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
  	<link rel="stylesheet" href="css/home.css">
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link rel="stylesheet" href="css/simple-sidebar.css">
+ 
   	<link rel="stylesheet" href="css/fixedbar.css">
   	
-	<link type="text/css" rel="stylesheet" href="plugin/theme-default/materialadmin.css?1425466319" />
-
+		<link type="text/css" rel="stylesheet" href="plugin/theme-default/materialadmin.css?1425466319" />
+  	
     <script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
      <title>Dashboard</title>

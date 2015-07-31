@@ -12,19 +12,15 @@
   <link rel="stylesheet" href="css/formstyle.css">
   <link href="css/simple-sidebar.css" rel="stylesheet">
   
-  <script src="js/jquery.js"></script>
-  <script src="bootstrape/js/bootstrap.min.js"></script>
+ 
 
-<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
- 	<link rel="stylesheet" href="css/home.css">
-  	<link rel="stylesheet" href="css/formstyle.css">
-  	<link rel="stylesheet" href="css/simple-sidebar.css">
+
+
   	<link rel="stylesheet" href="css/fixedbar.css">
   	<link rel="stylesheet" href="css/classlist.css">
 	
-  	<script src="js/jquery.js"></script>
-  	<script src="bootstrape/js/bootstrap.min.js"></script>
+ <script src="js/jquery.js"></script>
+  <script src="bootstrape/js/bootstrap.min.js"></script>
 
 
 </head>
@@ -96,7 +92,7 @@
 											</div>
 										
 										</div>
-										<a href="specificstudent.jsp"><div class="col-sm-12">
+										<a href="specificstudentlist.jsp"><div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #42A5F5;">
 												<p class="textpple"><i class="fa fa-user iconstyle"></i>20 Students<p>
 											</div>
