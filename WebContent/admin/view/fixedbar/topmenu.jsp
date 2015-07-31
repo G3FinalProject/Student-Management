@@ -42,7 +42,7 @@
 	</div>
 </nav>
 <!--close head fix -->
-<script src="../js/jquery.js"></script>
+
 <script>
 	
     $("#menu-toggle").click(function(e) {

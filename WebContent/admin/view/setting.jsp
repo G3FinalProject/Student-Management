@@ -50,7 +50,7 @@
 					<div class="row">
 						<div class="col-sm-12 wrapper-cover" >
 							<div class="row">
-								<div class="col-sm-12 background-cover"  id="background-cover"> 
+								<div class="col-sm-12 background-cover"  id="background-cover" style="margin-top:-20px;"> 
 									
 									<div class="col-sm-2 box-background" >
 										<div class="col-sm-12 box-space"  >
@@ -209,12 +209,7 @@
 	</div>
 	
 	<!-- Menu Toggle Script -->
-	<script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+
 	
 	<script>
 		
