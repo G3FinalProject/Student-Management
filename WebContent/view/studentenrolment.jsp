@@ -14,20 +14,12 @@
   
     <script src="plugin/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
-  <!-- BEGIN STYLESHEETS -->
-		 <link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/> 
-		<!-- <link type="text/css" rel="stylesheet" href="css/theme-default/bootstrap.css?1422792965" />  -->
-		<link type="text/css" rel="stylesheet" href="css/theme-default/materialadmin.css?1425466319" />
-		  <link type="text/css" rel="stylesheet" href="css/theme-default/font-awesome.min.css?1422529194" /> 
-		 <link type="text/css" rel="stylesheet" href="css/theme-default/material-design-iconic-font.min.css?1421434286" /> 
-		 <link type="text/css" rel="stylesheet" href="css/theme-default/libs/jquery-ui/jquery-ui-theme.css?1423393666" /> 
-		 <link type="text/css" rel="stylesheet" href="css/theme-default/libs/nestable/nestable.css?1423393667" />  
-		<!-- END STYLESHEETS -->
+
     <!--for calendar time picker-->
     <script type="text/javascript" src="plugin/TimePicki-master/TimePicki-master/js/jquery.min.js"></script>
-   
+  
     <link rel="stylesheet" href="plugin/Zebra_Datepicker-master/public/css/default.css" type="text/css"/>
- 
+	
   <style>
 	p.mylabel{
 		margin-top: 5px;
@@ -57,6 +49,7 @@
 					<!--content row-->
 					<div class="row">
 						<div class="col-sm-12" >
+						<form role="form">
 							<fieldset>
 								<div class="col-sm-12" >
 									<legend><h3><i class="fa fa-pencil"></i>Fill Student's Information</h3></legend>
@@ -74,16 +67,21 @@
                                             </div>
 										</div>												
 									</div>
+									
+								
+									
 									<!--form input student's detail-->
+								
 									<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Student's ID :<p>
 											<div class="col-sm-3">
 												<input class="form-control txttext" type="text" name="sid" placeholder="Enter Student ID" onkeypress="focusMe(this)" id="sid"/>
 											</div>
-											
+									
 											<div class="col-sm-1"></div>
 										</div>
+									
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Student's Name :<p>
 											<div class="col-sm-3">
@@ -240,9 +238,11 @@
 										</div>
 										 
 									</div>
+									
 									<!--close input student's detail-->
 								</div>
 							</fieldset>
+							</form>
 						</div>
 					</div>
 					<!--close row-->
@@ -252,25 +252,8 @@
 			<!--close row-->
 		</div>
 	</div>
-	
-	
-	
-	 <script src="js/libs/jquery/jquery-1.11.2.min.js"></script>
 		
 	
-		<script src="js/libs/bootstrap/bootstrap.min.js"></script>
-		
-		<script src="js/libs/autosize/jquery.autosize.min.js"></script>
-		
-		
-		
-		<script src="js/libs/spin.js/spin.min.js"></script>
-		<script src="js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
-		<script src="js/core/source/App.js"></script> 
-		<script src="js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
-		<script src="js/libs/nestable/jquery.nestable.js"></script>
-			<script src="js/libs/jquery-ui/jquery-ui.min.js"></script>
-		<script src="js/core/source/AppNavigation.js"></script>
 	
 	 <script type="text/javascript" src="plugin/Zebra_Datepicker-master/public/javascript/zebra_datepicker.js"></script>
 	 <script>
@@ -282,6 +265,7 @@
 
 			});
 		</script>
+		
  
 </body>
 </html>
