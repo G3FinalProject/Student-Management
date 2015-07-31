@@ -58,7 +58,7 @@
 										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Course's
 											Name :
 										<p>
-										<div class="col-sm-3">
+										<div class="col-sm-4">
 											<input class="form-control txttext" type="text" id="clid"
 												onkeypress="focusMe(this)" name="cid"
 												placeholder="Enter Course's Name" />
@@ -67,7 +67,7 @@
 										<p class="col-sm-1 mylabel" style="margin-top: 4px;">
 											Generation :
 										<p>
-										<div class="col-sm-2">
+										<div class="col-sm-4">
 											<select class="form-control"><option>--SELECT
 													Generation--</option>
 												<option>BASIC</option>
@@ -80,7 +80,7 @@
 									<p class="col-sm-2 mylabel" style="margin-top: 15px;">Start
 											Date :
 										<p>
-										<div class="col-sm-3">
+										<div class="col-sm-4">
 											<input class="form-control txttext datepicker" type="text" id="clid"
 												onkeypress="focusMe(this)" name="cid"
 												 />
@@ -88,7 +88,7 @@
 										<p class="col-sm-1 mylabel" style="margin-top: 4px;">Finish
 											Date :
 										<p>
-										<div class="col-sm-3">
+										<div class="col-sm-4">
 											<input class="form-control txttext datepicker" type="text" id="clid"
 												onkeypress="focusMe(this)" name="cid"
 												 />
