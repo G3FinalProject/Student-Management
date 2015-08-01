@@ -86,11 +86,14 @@ body {
 i {
 	margin-right: 10px;
 }
-
+/*fixedbar style*/
 a.mynav-left {
 	margin-left: -25px;
+	padding-bottom: 5px;
 }
 
+
+/*close fixedbar style*/
 p.describe {
 	text-align: center;
 	font-size: 30px;

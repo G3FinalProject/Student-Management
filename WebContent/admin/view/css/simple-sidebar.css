@@ -67,11 +67,11 @@
 .sidebar-nav li a {
     display: block;
     text-decoration: none;
-	height: 65px;
+	height: 50px;
 	border-top: 1px solid #157355;
 	color: white;
 	font-weight: bold;
-	line-height:60px;
+	line-height:50px;
 }
 
 .sidebar-nav li a:hover {
