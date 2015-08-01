@@ -22,7 +22,7 @@
 	<!-- 	<link href="plugin/assets/plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet">
 		<link href="plugin/assets/plugins/owl-carousel/owl.theme.min.css" rel="stylesheet">
 		<link href="plugin/assets/plugins/owl-carousel/owl.transitions.min.css" rel="stylesheet"> -->
-		<link href="plugin/assets/plugins/chosen/chosen.min.css" rel="stylesheet">
+		
 		<!-- <link href="plugin/assets/plugins/icheck/skins/all.css" rel="stylesheet">
 		<link href="plugin/assets/plugins/datepicker/datepicker.min.css" rel="stylesheet"> -->
 		<!-- <link href="plugin/assets/plugins/timepicker/bootstrap-timepicker.min.css" rel="stylesheet">
@@ -36,9 +36,9 @@
 		
 		<!-- MAIN CSS (REQUIRED ALL PAGE)-->
 		<link href="plugin/assets/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet">
-		<link href="plugin/assets/css/style.css" rel="stylesheet">
+	<!-- 	<link href="plugin/assets/css/style.css" rel="stylesheet"> -->
 		<link href="plugin/assets/css/style-responsive.css" rel="stylesheet">
- 
+ 		<link href="plugin/assets/plugins/chosen/chosen.min.css" rel="stylesheet">
 		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
 		<!--[if lt IE 9]>
 		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -63,7 +63,7 @@
 							<form role="form">
 								<div class="form-group">
 								<label>Standard Select</label>
-									<select class="form-control chosen-select" multiple tabindex="4">
+									<select class="form-control chosen-single"  tabindex="4">
 										<option value="United States">United States</option>
 										<option value="United Kingdom">United Kingdom</option>
 										<option value="Afghanistan">Afghanistan</option>
@@ -79,6 +79,7 @@
 									</select>
 								</div>
 							</form>
+</div>
 <!-- MAIN JAVASRCIPT (REQUIRED ALL PAGE)-->
 		<!-- required -->
 		<script src="plugin/assets/js/jquery.min.js"></script>
@@ -87,6 +88,7 @@
 		<script src="plugin/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
 		<script src="plugin/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
 		<script src="plugin/assets/plugins/chosen/chosen.jquery.min.js"></script>
+		<script src="plugin/assets/js/apps.js"></script>
 		<!--required  -->
 		
 		
@@ -134,7 +136,7 @@
 		<script src="plugin/assets/plugins/c3-chart/c3.min.js"></script>
 		 -->
 		<!-- MAIN APPS JS -->
-		<script src="plugin/assets/js/apps.js"></script>
+		
 
 
 
