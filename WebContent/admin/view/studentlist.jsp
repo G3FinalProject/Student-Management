@@ -13,9 +13,11 @@
   	<link href="css/simple-sidebar.css" rel="stylesheet">
   	<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
   	<link rel="stylesheet" href="css/fixedbar.css">
+  	<link rel="stylesheet" href="plugin/bootstrap-toggle-master/css/bootstrap-toggle.min.css"/>
    
   	<script src="js/jquery.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
+  	<script src="plugin/bootstrap-toggle-master/js/bootstrap-toggle.min.js"></script>
 	<style>
 		a.mylink{
 			display:inline;
@@ -29,6 +31,8 @@ img.circle{
 		height: 35px;
 		
 	}
+	 .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
     </style>
   
 	<!--  data table-->
@@ -106,12 +110,14 @@ img.circle{
 										<th >Gender</th>
 										<th >Generation</th>
 										<th >Course</th>
+										
 										<th >Class</th>
-										<th >University</th>
 										<th >Email</th>
+										
 										<th >Phone</th>
-										<th >Action</th>
-										<th >Status</th>
+										<th >Action</th>								
+										<th >Statusdfs</th>
+										
 									</tr>
 								    
 								    
@@ -126,49 +132,26 @@ img.circle{
 										<td>male</td>
 										<td>1st Generation</td>
 										<td>BASIC</td>
-										<td>SiemReap	</td>
-										<td>NU</td>
-										<td>Kakada@gmail.com</td>
-										<td>010 888888</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
-										<td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
-									</tr>
-									<tr class="myrow">
-										<td>001</td>
-										<td><img src="images/pic.jpg" class="img-circle circle"/></td>
-										<td><a href="#" class="linkname">KIM</a></td>
 										
-										<td>male</td>
-										<td>1st Generation</td>
-										<td>BASIC</td>
-										<td>SiemReap	</td>
-										<td>NU</td>
-										<td>Kakada@gmail.com</td>
-										<td>010 888888</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
-										<td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
-									</tr>
-									<tr class="myrow">
-										<td>001</td>
-										<td><img src="images/pic.jpg" class="img-circle circle"/></td>
-										<td><a href="#" class="linkname">KIM</a></td>
+										<td>SiemReap</td>
 										
-										<td>male</td>
-										<td>1st Generation</td>
-										<td>BASIC</td>
-										<td>SiemReap	</td>
-										<td>NU</td>
 										<td>Kakada@gmail.com</td>
+										
 										<td>010 888888</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
-										<td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
+										<td><input type="checkbox"  data-toggle="toggle" data-style="ios"></td>
+										
 									</tr>
+					
 									
 									
 								    </tbody>
 								   
 								</table>
 								</div>
+								
+							
+								
 							</div>
 							
 						</div>
@@ -181,12 +164,7 @@ img.circle{
 	</div>
 	<script src="plugin/sweetalert/sweetalert.min.js"></script>
 	<script>$(document).ready(function() {
-	    $('#myTable').dataTable( {
-	        "columnDefs": [ {
-	            "visible": false,
-	            "targets": -1
-	        } ]
-	    } );
+	   
 	} );</script>
 	<script>
     $(document).ready( function () {
