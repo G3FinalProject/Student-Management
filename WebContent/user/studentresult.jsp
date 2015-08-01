@@ -5,17 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
-	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
-  	<link rel="stylesheet" href="css/home.css">
-  	<link rel="stylesheet" href="css/formstyle.css">
-  	<link href="css/simple-sidebar.css" rel="stylesheet">
-  	<link rel="stylesheet" href="css/score.css">
-  	<link rel="stylesheet" href="css/fixedbar.css">
-  	<link rel="stylesheet" href="css/studentresult.css">
+	<link rel="stylesheet" href="../admin/view/bootstrape/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="../admin/view/plugin/fontawesome/css/font-awesome.min.css">	
+  	<link rel="stylesheet" href="../admin/view/css/home.css">
+  	<link rel="stylesheet" href="../admin/view/css/formstyle.css">
+  	<link href="../admin/view/css/simple-sidebar.css" rel="stylesheet">
+  	<link rel="stylesheet" href="../admin/view/css/score.css">
+  	<link rel="stylesheet" href="../admin/view/css/fixedbar.css">
+  	<link rel="stylesheet" href="../admin/view/css/studentresult.css">
    
- 	<script src="js/jquery.js"></script>
-  	<script src="bootstrape/js/bootstrap.min.js"></script>
+ 	<script src="../admin/view/js/jquery.js"></script>
+  	<script src="../admin/view/bootstrape/js/bootstrap.min.js"></script>
 	  <style>
 		button.extra{
 	
@@ -23,8 +23,8 @@
 }
 	  </style>
 	<!--dataTable-->
-  	<link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
-  	<script src="plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
+  	<link rel="stylesheet" href="../admin/view/plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
+  	<script src="../admin/view/plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
 </head>
 <body>
 	<%@include file="fixedbar/topmenu.jsp" %>
@@ -48,22 +48,15 @@
 							
 								<div class="col-sm-12" >
                                   
-										<legend><h3><i class="fa fa-graduation-cap"></i><b>Result</b></h3></legend>
+										<legend><h3><i class="fa fa-graduation-cap"></i><b><span id="des-generation">3rd Generation</span> Result</b></h3></legend>
 								</div>
 								
 							</fieldset>
 						</div>
 						<div class="col-sm-12" style="padding-bottom: 20px;">
-							<div class="col-sm-3"><button type="button" class="btn btn-primary extra">print</button>
-							<button type="button" class="btn btn-success extra">Export</button></div>
+							<div class="col-sm-3"></div>
 							<div class="col-sm-3">
-								<select name="score_gener" class="form-control" style="margin-top:20px;" onchange="changeGeneration()" id="gen">
-												
-									<option value="1st">1st Generation</option>
-									<option value="2nd">2nd Generation</option>
-									<option value="3rd" selected>3rd Generation</option>
-							
-								</select>
+								
 							</div>
 							<div class="col-sm-3">
 								<select name="gender" class="form-control" style="margin-top:20px;">

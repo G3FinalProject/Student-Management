@@ -44,6 +44,11 @@ p.mylabel {
 a.mylink {
 	display: inline;
 }
+img.circle{
+		width: 35px;
+		height: 35px;
+		
+	}
 </style>
 
 <!--  data table-->
@@ -234,10 +239,12 @@ a.mylink {
 										<thead>
 											<tr>
 												<th>ID</th>
+												<th>Image</th>
 												<th>Name</th>
 												<th>Gender</th>
 												<th>Email</th>
 												<th>Phone</th>
+												<th>Position</th>
 												<th>Action</th>
 												<th>Status</th>
 											</tr>
@@ -248,10 +255,12 @@ a.mylink {
 
 											<tr class="myrow">
 												<td>001</td>
+												<td><img src="images/pic.jpg" class="img-circle circle"/></td>
 												<td><a href="#" class="linkname">KIM</a></td>
 												<td>male</td>
 												<td>Kakada@gmail.com</td>
 												<td>010 888888</td>
+												<td>teacher</td>
 												<td><button class="btn btn-success btnedit"
 														type="button">
 														<span class="glyphicon glyphicon-pencil"></span>
@@ -261,66 +270,7 @@ a.mylink {
 														<span class="glyphicon glyphicon-trash"></span>
 													</button></td>
 											</tr>
-											<tr class="myrow">
-												<td>001</td>
-												<td><a href="#" class="linkname">KIM</a></td>
-												<td>male</td>
-												<td>Kakada@gmail.com</td>
-												<td>010 888888</td>
-												<td><button class="btn btn-success btnedit"
-														type="button">
-														<span class="glyphicon glyphicon-pencil"></span>
-													</button></td>
-												<td><button type="button"
-														class="btn btn-danger btn-delete" id="btn-delete">
-														<span class="glyphicon glyphicon-trash"></span>
-													</button></td>
-											</tr>
-											<tr class="myrow">
-												<td>003</td>
-												<td><a href="#" class="linkname">Kakada</a></td>
-												<td>female</td>
-												<td>Kakada@gmail.com</td>
-												<td>010 888888</td>
-												<td><button class="btn btn-success btnedit"
-														type="button">
-														<span class="glyphicon glyphicon-pencil"></span>
-													</button></td>
-												<td><button type="button"
-														class="btn btn-danger btn-delete" id="btn-delete">
-														<span class="glyphicon glyphicon-trash"></span>
-													</button></td>
-											</tr>
-											<tr class="myrow">
-												<td>004</td>
-												<td><a href="#" class="linkname">Kakada</a></td>
-												<td>female</td>
-												<td>Kakada@gmail.com</td>
-												<td>010 888888</td>
-												<td><button class="btn btn-success btnedit"
-														type="button">
-														<span class="glyphicon glyphicon-pencil"></span>
-													</button></td>
-												<td><button type="button"
-														class="btn btn-danger btn-delete" id="btn-delete">
-														<span class="glyphicon glyphicon-trash"></span>
-													</button></td>
-											</tr>
-											<tr class="myrow">
-												<td>001</td>
-												<td><a href="#" class="linkname">Kakada</a></td>
-												<td>female</td>
-												<td>Kakada@gmail.com</td>
-												<td>010 888888</td>
-												<td><button class="btn btn-success btnedit"
-														type="button">
-														<span class="glyphicon glyphicon-pencil"></span>
-													</button></td>
-												<td><button type="button"
-														class="btn btn-danger btn-delete" id="btn-delete">
-														<span class="glyphicon glyphicon-trash"></span>
-													</button></td>
-											</tr>
+											
 
 										</tbody>
 

@@ -65,7 +65,7 @@
 											</div>
 										
 										</div>
-										<a href="specificstudent.jsp">
+										<a href="specificstudentlist.jsp">
 										<div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #EF5350;">
 												<p class="textpple"><i class="fa fa-user iconstyle"></i>21 Students<p>
@@ -118,7 +118,7 @@
 											</div>
 										
 										</div>
-										<a href="specificstudent.jsp"><div class="col-sm-12">
+										<a href="specificstudentlist.jsp"><div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #66BB6A;">
 												<p class="textpple"><i class="fa fa-user iconstyle"></i>20 Students<p>
 											</div>

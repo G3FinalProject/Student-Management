@@ -9,7 +9,7 @@
 					class="icon-bar"></span>
 			</button>
 			<a class="navbar-brand" style="margin-top: -5px;"><img
-				src="images/hrdlogo.png" /></a> <a class="navbar-brand text-menu"
+				src="../admin/view/images/hrdlogo.png" /></a> <a class="navbar-brand text-menu"
 				style="color: white" href="dashboard.jsp">Student Management</a>
 			<!--head fix -->
 			 <a href="#menu-toggle" class="navbar-brand box-menu"
@@ -26,7 +26,7 @@
 				onclick="toggleFullScreen()">
 				<i class="fa fa-arrows-v" style="color: white;margin-left: 5px;"></i></a></li>
 				<li class="dropdown-toggle whiteText" data-toggle="dropdown">Hi,
-					Robert&nbsp;&nbsp;<img src="images/pic.jpg"
+					Robert&nbsp;&nbsp;<img src="../admin/view/images/pic.jpg"
 					class="img-circle myprofile" />
 				</li>
 				<ul class="dropdown-menu" role="menu">

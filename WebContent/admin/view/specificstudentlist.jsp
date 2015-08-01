@@ -49,16 +49,20 @@
 					<!--content row-->
 					<div class="row">
 						<div class="col-sm-12" >
-							<div class="col-sm-12 myspace"></div>
+							
 							<div class="col-sm-12">
-								
-								<h3 class="col-sm-12"><i class="fa fa-list"></i>List of Class</h3>
+							<form role="form">
+							<fieldset>
+								<div class="col-sm-12" >
+                                  
+										<legend><h3><i class="fa fa-users"></i><b>List of students</b></h3></legend>
+								</div>
 								<div class="col-sm-12" style="padding-bottom:15px;">
-									<div class="col-sm-1">
-										<strong><p style="font-size:20px;">Description:</p>
-									</div>
+									<div class="col-sm-1"><div class="row">
+										<strong><p style="font-size:16px;font-style:italic">Description:</p></strong>
+									</div></div>
 									<div class="col-sm-11">
-									    <p style="font-size:16px;text-indent:100px; margin-top:5px;"> <span class="bold-style">Siem Reap</span> class in <span class="bold-style">Basic</span> course and <span class="bold-style">1st-Generation</span>.Taugh by <span class="bold-style">Bunnrong</span></p>
+									    <p style="font-size:16px;"> <span class="bold-style">Siem Reap</span> class in <span class="bold-style">Basic</span> course and <span class="bold-style">1st-Generation</span>.Taugh by <span class="bold-style">Bunnrong</span></p>
 									
 									</div>
 								</div>
@@ -110,6 +114,8 @@
 
 									</table>
 								</div>
+							</fieldset>
+							</form>
 							</div>
 							
 						</div>

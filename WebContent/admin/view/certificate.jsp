@@ -24,7 +24,7 @@
 	
 	margin-top: 15px;
 }
-img.circle{
+	img.circle{
 		width: 35px;
 		height: 35px;
 		
@@ -53,24 +53,21 @@ img.circle{
 					<!--content row-->
 					<div class="row">
 						<div class="col-sm-12" >
-							<div class="col-sm-12 myspace"></div>
+							
 							<div class="col-sm-12">
 								
-								<div class="col-sm-12">
-									<a href="studentenrolment.jsp" class=" navbar-left btn btn-primary  btnownstyle"><i class="fa fa-user-plus" ></i>Add Student</a>
-								</div>
+								
 								<div class="col-sm-12" >
 								<legend>
 									
 										<h3 >
-											<i class="fa fa-pencil"></i>List of Students
+											<i class="fa fa-users"></i>List of Students
 										</h3>
 									
 								</legend>
 								</div>
 							<div class="col-sm-12" style="padding-bottom: 20px;">
-							<div class="col-sm-3"><button type="button" class="btn btn-primary extra">print</button>
-							<button type="button" class="btn btn-success extra">Export</button>
+							<div class="col-sm-3">
 							</div>
 							<div class="col-sm-3"></div>
 							<div class="col-sm-3">
@@ -100,18 +97,16 @@ img.circle{
 								<thead>
 								    <tr>
 										<th >ID</th>
-										<th>Image</th>
+										<th >Image</th>
 										<th >Name</th>
-										
 										<th >Gender</th>
 										<th >Generation</th>
 										<th >Course</th>
 										<th >Class</th>
-										<th >University</th>
 										<th >Email</th>
 										<th >Phone</th>
 										<th >Action</th>
-										<th >Status</th>
+									
 									</tr>
 								    
 								    
@@ -122,46 +117,29 @@ img.circle{
 										<td>001</td>
 										<td><img src="images/pic.jpg" class="img-circle circle"/></td>
 										<td><a href="#" class="linkname">KIM</a></td>
-										
 										<td>male</td>
 										<td>1st Generation</td>
 										<td>BASIC</td>
-										<td>SiemReap	</td>
-										<td>NU</td>
+										<td>SiemReap</td>
+										
 										<td>Kakada@gmail.com</td>
 										<td>010 888888</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
-										<td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success btnedit" type="button"><i class="fa fa-print" style="margin-left:10px;"></i></button> 	</td>
+									
 									</tr>
 									<tr class="myrow">
 										<td>001</td>
-										<td><img src="images/pic.jpg" class="img-circle circle"/></td>
+										<td><img src="images/user.jpg" class="img-circle circle"/></td>
 										<td><a href="#" class="linkname">KIM</a></td>
-										
 										<td>male</td>
 										<td>1st Generation</td>
 										<td>BASIC</td>
-										<td>SiemReap	</td>
-										<td>NU</td>
-										<td>Kakada@gmail.com</td>
-										<td>010 888888</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
-										<td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
-									</tr>
-									<tr class="myrow">
-										<td>001</td>
-										<td><img src="images/pic.jpg" class="img-circle circle"/></td>
-										<td><a href="#" class="linkname">KIM</a></td>
+										<td>SiemReap</td>
 										
-										<td>male</td>
-										<td>1st Generation</td>
-										<td>BASIC</td>
-										<td>SiemReap	</td>
-										<td>NU</td>
 										<td>Kakada@gmail.com</td>
 										<td>010 888888</td>
-										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
-										<td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>
+										<td ><button class="btn btn-success btnedit" type="button"><i class="fa fa-print" style="margin-left:10px;"></i></button> 	</td>
+									
 									</tr>
 									
 									
@@ -180,14 +158,6 @@ img.circle{
 		</div>
 	</div>
 	<script src="plugin/sweetalert/sweetalert.min.js"></script>
-	<script>$(document).ready(function() {
-	    $('#myTable').dataTable( {
-	        "columnDefs": [ {
-	            "visible": false,
-	            "targets": -1
-	        } ]
-	    } );
-	} );</script>
 	<script>
     $(document).ready( function () {
     $('#myTable').DataTable();

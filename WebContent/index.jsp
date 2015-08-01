@@ -14,10 +14,10 @@
 
 		<!-- BEGIN STYLESHEETS -->
 		<link href='http://fonts.googleapis.com/css?family=Roboto:300italic,400italic,300,400,500,700,900' rel='stylesheet' type='text/css'/>
-		<link type="text/css" rel="stylesheet" href="view/plugin/theme-default/bootstrap.css?1422792965" />
-		<link type="text/css" rel="stylesheet" href="view/plugin/theme-default/materialadmin.css?1425466319" />
-		<link type="text/css" rel="stylesheet" href="view/plugin/theme-default/font-awesome.min.css?1422529194" />
-		<link type="text/css" rel="stylesheet" href="view/plugin/theme-default/material-design-iconic-font.min.css?1421434286" />
+		<link type="text/css" rel="stylesheet" href="admin/view/plugin/theme-default/bootstrap.css?1422792965" />
+		<link type="text/css" rel="stylesheet" href="admin/view/plugin/theme-default/materialadmin.css?1425466319" />
+		<link type="text/css" rel="stylesheet" href="admin/view/plugin/theme-default/font-awesome.min.css?1422529194" />
+		<link type="text/css" rel="stylesheet" href="admin/view/plugin/theme-default/material-design-iconic-font.min.css?1421434286" />
 		<!-- END STYLESHEETS -->
 		<!-- BEGIN JAVASCRIPT -->
 			
@@ -34,7 +34,7 @@
 
 		<!-- BEGIN LOGIN SECTION -->
 		<section class="section-account">
-			<div class="img-backdrop" style="background-image: url('view/images/img16.jpg')"></div>
+			<div class="img-backdrop" style="background-image: url('admin/view/images/img16.jpg')"></div>
 			<div class="spacer"></div>
 			<div class="card contain-sm style-transparent">
 				<div class="card-body">
@@ -43,7 +43,7 @@
 							<br/>
 							<span class="text-lg text-bold text-primary">WELCOME TO KOREA SOFTWARE HRD</span>
 							<br/><br/>
-							<form class="form floating-label" action="view/dashboard.jsp" accept-charset="utf-8" method="post">
+							<form class="form floating-label" action="user/dashboard.jsp" accept-charset="utf-8" method="post">
 								<div class="form-group">
 									<input type="text" class="form-control" id="username" name="username">
 									<label for="username">Username</label>
@@ -75,7 +75,7 @@
 				</section>
 				<!-- END LOGIN SECTION -->
 
-		 <script src="view/js/jquery.js"></script>	
-         <script src="view/plugin/theme-default/js/AppForm.js"></script>
+		 <script src="admin/view/js/jquery.js"></script>	
+         <script src="admin/view/plugin/theme-default/js/AppForm.js"></script>
 			</body>
 		</html>
