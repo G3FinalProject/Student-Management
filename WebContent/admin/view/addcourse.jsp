@@ -16,11 +16,12 @@
 	href="plugin/Zebra_Datepicker-master/public/css/default.css" />
 <link rel="stylesheet"
 	href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
-
+<link rel="stylesheet" href="plugin/bootstrap-toggle-master/css/bootstrap-toggle.min.css"/>
 <link rel="stylesheet" type="text/css"
 	href="plugin/sweetalert/sweetalert.css">
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
+<script src="plugin/bootstrap-toggle-master/js/bootstrap-toggle.min.js"></script>
 <style>
 .modal-header
          {
@@ -28,7 +29,10 @@
              border-bottom:1px solid #eee;
              background-color: #0480be;
              color:white;
-         }</style>
+         }
+             .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
+         </style>
 <title>Course</title>
 </head>
 <body>
@@ -176,10 +180,7 @@
 													data-toggle="modal" data-target="#myModal">
 													<span class="glyphicon glyphicon-eye-open"></span>
 												</button></td>
-											<td><button type="button"
-													class="btn btn-danger btn-delete" id="btn-delete">
-													<span class="glyphicon glyphicon-trash"></span>
-												</button></td>
+											<td><input type="checkbox"  data-toggle="toggle" data-style="ios"></td>
 										</tr>
 										<tr class="" id="">
 											<td>002</td>
@@ -195,10 +196,7 @@
 													data-toggle="modal" data-target="#myModal">
 													<span class="glyphicon glyphicon-eye-open"></span>
 												</button></td>
-											<td><button type="button"
-													class="btn btn-danger btn-delete" id="btn-delete">
-													<span class="glyphicon glyphicon-trash"></span>
-												</button></td>
+											<td><input type="checkbox"  data-toggle="toggle" data-style="ios"></td>
 										</tr>
 
 
