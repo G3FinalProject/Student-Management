@@ -16,13 +16,16 @@
 	href="plugin/Zebra_Datepicker-master/public/css/default.css" />
 <link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
 	<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
+	<link rel="stylesheet" href="plugin/bootstrap-toggle-master/css/bootstrap-toggle.min.css"/>
    
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
+<script src="plugin/bootstrap-toggle-master/js/bootstrap-toggle.min.js"></script>
 <title>Addcourse</title>
 
 <style>
-
+ .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
 </style>
 </head>
 <body>
@@ -140,6 +143,8 @@
 										<th class="col-sm-1">Subject</th>
 										<th class="col-sm-1">create-date</th>
 										<th class="col-sm-1">class</th>
+										<th class="col-sm-1">Course</th>
+										<th class="col-sm-1">Generation</th>
 										<th class="col-sm-1">Instructor</th>
 										<th class="col-sm-1">action</th>
 										<th class="col-sm-1">status</th>
@@ -153,9 +158,11 @@
 										<td>JAVA</td>
 										<td>2013-01-04</td>
 										<td>siem reap</td>
+										<td>Basic</td>
+										<td>1st Generation</td>
 										<td>Bunnrong</td>
 										<td ><button class="btn btn-success btnedit" type="button"><span class="glyphicon glyphicon-pencil"></span></button> 	</td>
-										<td><button type="button" class="btn btn-danger btn-delete"  id="btn-delete" ><span class="glyphicon glyphicon-trash"></span></button></td>		
+										<td><input type="checkbox"  data-toggle="toggle" data-style="ios"></td>		
 									</tr>
 					
 									
