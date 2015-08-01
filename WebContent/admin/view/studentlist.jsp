@@ -124,6 +124,14 @@
 		</div>
 	</div>
 	<script src="plugin/sweetalert/sweetalert.min.js"></script>
+	<script>$(document).ready(function() {
+	    $('#myTable').dataTable( {
+	        "columnDefs": [ {
+	            "visible": false,
+	            "targets": -1
+	        } ]
+	    } );
+	} );</script>
 	<script>
     $(document).ready( function () {
     $('#myTable').DataTable();
