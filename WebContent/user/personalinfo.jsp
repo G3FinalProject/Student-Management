@@ -120,49 +120,8 @@
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
-										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;">Class's detail :<p>
-											<p class="col-sm-1 mylabel">Generation<p>
-											<div class="col-sm-2">
-												<select  class="form-control txttext"name="" id="">
-											    <option value="">1st</option>
-											    <option value="">2nd</option>
-											   
-											    
-											</select>
-											</div>
-											<p class="col-sm-1 mylabel">Course<p>
-											
-											<div class="col-sm-2">
-												<select  class="form-control txttext"name="" id="">
-											    <option value="">BASIC</option>
-											    <option value="">ADVANCED</option>
-											    
-											    
-											</select>
-											</div>
-											<p class="col-sm-1 mylabel">Room<p>
-											<div class="col-sm-2">
-												<select name="class" class="form-control txttext">
-													<option value="male">Siem Reap</option>
-													<option value="female">Phnom Penh</option>
-													<option value="female">Battombong</option>
-												</select>
-											</div>
-											
-											
-											<div class="col-sm-1"></div>
-											
-										</div>
-										<div class="col-sm-12">
-											<p class="col-sm-2 mylabel" style="margin-top:15px;"><p>
-											<p class="col-sm-1 mylabel">Register Date<p>
-											<div class="col-sm-8">
-											
-												<input class="form-control txttext datepicker" type="text" name="txtstartdate" placeholder="DD/MM/YYYY" onblur="focusMe(this)" id="stdate"/>
-											</div>
-											<div class="col-sm-1"></div>
-										</div>
+									
+										
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact :<p>
 											<p class="col-sm-1 mylabel">Phone<p>
