@@ -18,12 +18,13 @@
 <link rel="stylesheet"
 	href="plugin/jasny-bootstrap/css/jasny-bootstrap.min.css">
 <link rel="stylesheet" href="css/fixedbar.css">
+<link rel="stylesheet" href="plugin/bootstrap-toggle-master/css/bootstrap-toggle.min.css"/>
 
 
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
 <script src="plugin/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
-
+<script src="plugin/bootstrap-toggle-master/js/bootstrap-toggle.min.js"></script>
 
 <link rel="stylesheet"
 	href="plugin/Zebra_Datepicker-master/public/css/default.css"
@@ -49,6 +50,8 @@ img.circle{
 		height: 35px;
 		
 	}
+	 .toggle.ios, .toggle-on.ios, .toggle-off.ios { border-radius: 20px; }
+  .toggle.ios .toggle-handle { border-radius: 20px; }
 </style>
 
 <!--  data table-->
@@ -265,10 +268,7 @@ img.circle{
 														type="button">
 														<span class="glyphicon glyphicon-pencil"></span>
 													</button></td>
-												<td><button type="button"
-														class="btn btn-danger btn-delete" id="btn-delete">
-														<span class="glyphicon glyphicon-trash"></span>
-													</button></td>
+												<td><input type="checkbox"  data-toggle="toggle" data-style="ios"></td>
 											</tr>
 											
 
