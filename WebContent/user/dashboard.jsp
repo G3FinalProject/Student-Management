@@ -9,18 +9,18 @@
 <meta name="keywords" content="your,keywords">
 <meta name="description" content="Short explanation about this website">
  
-    <link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
-  	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
- 	<link rel="stylesheet" href="css/home.css">
-  	<link rel="stylesheet" href="css/formstyle.css">
-  	<link rel="stylesheet" href="css/simple-sidebar.css">
+    <link rel="stylesheet" href="../admin/view/bootstrape/css/bootstrap.min.css">
+  	<link rel="stylesheet" href="../admin/view/plugin/fontawesome/css/font-awesome.min.css">	
+ 	<link rel="stylesheet" href="../admin/view/css/home.css">
+  	<link rel="stylesheet" href="../admin/view/css/formstyle.css">
+  	<link rel="stylesheet" href="../admin/view/css/simple-sidebar.css">
  
-  	<link rel="stylesheet" href="css/fixedbar.css">
+  	<link rel="stylesheet" href="../admin/view/css/fixedbar.css">
   	
-		<link type="text/css" rel="stylesheet" href="plugin/theme-default/materialadmin.css?1425466319" />
+		<link type="text/css" rel="stylesheet" href="../admin/view/plugin/theme-default/materialadmin.css?1425466319" />
   	
-    <script src="js/jquery.js"></script>
-  	<script src="bootstrape/js/bootstrap.min.js"></script>
+    <script src="../admin/view/js/jquery.js"></script>
+  	<script src="../admin/view/bootstrape/js/bootstrap.min.js"></script>
      <title>Dashboard</title>
 	<style>
 	a.detail-info{
@@ -52,61 +52,59 @@
 				<div class="row">
 					<div class="col-sm-12" >
 						<div class="col-sm-12">
-							<img src="images/student.png" style="margin-top:-20px" class="img-responsive col-sm-12 imgstyle"/>
+							<img src="../admin/view/images/student.png" style="margin-top:-20px" class="img-responsive col-sm-12 imgstyle"/>
 						</div>
-						<div class="col-sm-12">
-							<p class="describe" class="col-sm-12" style="">សូមស្វាគមន៍មកកាន់ទំព័រគ្រប់គ្រងសិស្ស</p>
-						</div>	
+						
 						
 						<!-- 4 boxes -->
 						<div class="col-sm-12" style="height:30px;"></div>
 							<div class="col-sm-12">
 								<div class="col-sm-3 ">
-									<a href="studentlist.jsp">
+									<a href="personalinfo.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#EF5350;">
 										<div class="col-sm-12" align="center">
-											<i class="fa fa-users fa-5x iconstyle" ></i>
+											<i class="fa fa-user fa-5x iconstyle" ></i>
 										</div>
 										<div class="col-sm-12">
-											<h4 class="textdash">60 Students</h4>
+											<h4 class="textdash">Personal Infomation</h4>
 										</div>
 									</div>
 									</a>
 								</div>
 								<div class="col-sm-3">
-									<a href="classlist.jsp">
+									<a href="studentresult.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#66BB6A;">
 										<div class="col-sm-12" align="center">
-											<i class="fa fa-sitemap fa-5x iconstyle"></i>
+											<i class="fa fa-graduation-cap fa-5x iconstyle"></i>
 										</div>
 										<div class="col-sm-12">
-											<h4 class="textdash">4 Classes</h4>
+											<h4 class="textdash">Student Result</h4>
 										</div>
 										
 									</div>
 									</a>
 								</div>
 								<div class="col-sm-3">
-									<a href="scoremanage.jsp">
+									<a href="scoreinformation.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#42A5F5;">
 										<div class="col-sm-12" align="center">
 											<i class="fa fa-bar-chart fa-5x iconstyle"></i>
 										</div>
 										<div class="col-sm-12">
-											<h4 class="textdash">Score Management</h4>
+											<h4 class="textdash">Score Information</h4>
 										</div>
 									
 									</div>
 									</a>
 								</div>	
 								<div class="col-sm-3">
-									<a href="checkAttendance.jsp">
+									<a href="scoreinformation.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#78909C;">
 										<div class="col-sm-12" align="center">
-											<i class="fa fa-pie-chart fa-5x iconstyle"></i>
+											<i class="fa fa-print fa-5x iconstyle"></i>
 										</div>
 										<div class="col-sm-12">
-											<h4 class="textdash">Student Attendance</h4>
+											<h4 class="textdash">Print Transcript</h4>
 										</div>
 									</div>
 									</a>
@@ -114,223 +112,7 @@
 								
 								
 							</div>	
-							<!-- BEGIN NEW REGISTRATIONS -->
-							<div class="col-md-4">
-								<div class="col-md-12">
-								<div class="card-box">
-									<div class="card-head" style="background:#42A5F5;color:white">
-										<header class="box-text-style"><i class="fa fa-line-chart"></i>TOP STUDENTS</header>
-										<div class="tools hidden-md">
-											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
-										</div>
-									</div><!--end .card-head -->
-									<div class="">
-										<ul class="list divider-full-bleed ul-style">
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											
-										
-											
-										</ul>
-									</div><!--end .card-body -->
-								</div><!--end .card -->
-							</div><!--end .col -->
-						</div><!-- END NEW REGISTRATIONS -->
-						
-						
-						<!-- BEGIN NEW REGISTRATIONS -->
-							<div class="col-md-4">
-								<div class="col-md-12">
-								<div class="card-box">
-									<div class="card-head" style="background:#42A5F5;color:white">
-										<header class="box-text-style"><i class="fa fa-users"></i>NEW USERS</header>
-										<div class="tools hidden-md">
-											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
-										</div>
-									</div><!--end .card-head -->
-									<div class="">
-										<ul class="list divider-full-bleed ul-style">
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											
-											
-										</ul>
-									</div><!--end .card-body -->
-								</div><!--end .card -->
-							</div><!--end .col -->
-						</div><!-- END NEW REGISTRATIONS -->
-									
-						<!-- BEGIN SITE ACTIVITY -->
-							<div class="col-md-4">
-								<div class="col-sm-12">
-								<div class="mycard">
-									<div class="row">
-									
-										<div class="col-md-12">
-											<div class="card-head" style="background:#42A5F5;color:white">
-												<header class="box-text-style"><i class="fa fa-bar-chart"></i>TOTAL's STATS</header>
-											</div>
-											<div class="card-body height-8">
-												<a href="studentlist.jsp" class="detail-info"><strong>100</strong> students</a>
-											
-												<div class="progress progress-hairline">
-													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
-												</div>
-												<a href="stafflist.jsp" class="detail-info">8 teachers</a>
-												
-												<div class="progress progress-hairline">
-													<div class="progress-bar progress-bar-primary-dark" style="width:50%"></div>
-												</div>
-												<a href="stafflist.jsp" class="detail-info">3 admins</a>
-												
-												<div class="progress progress-hairline">
-													<div class="progress-bar progress-bar-primary-dark" style="width:80%"></div>
-												</div>
-												<a href="usermanage.jsp" class="detail-info">111 users</a>
-												
-												<div class="progress progress-hairline">
-													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
-												</div>
-												<a href="classlist.jsp" class="detail-info">6 classes</a>
-												
-												<div class="progress progress-hairline">
-													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
-												</div>
-											</div><!--end .card-body -->
-										</div><!--end .col -->
-									</div><!--end .row -->
-								</div><!--end .card -->
-								</div>
-							</div><!--end .col -->
-							<!-- END SITE ACTIVITY -->
+							
 					</div> <!-- end of 4 boxes -->
 				</div> <!-- end of row -->
 			</div> <!-- end of container-fluid -->
