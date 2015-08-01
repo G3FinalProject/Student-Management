@@ -2980,7 +2980,7 @@ var Grid = fc.Grid = RowRenderer.extend({
 	// If the grid is leveraging cellDuration, this doesn't need to be defined. Only computeCellDate does.
 	// If being overridden, should return a range with reference-free date copies.
 	computeCellRange: function(cell) {
-		var date = this.computeCellDate(cell);
+		var date = this.computeCellDate(origcell);
 
 		return {
 			start: date,
