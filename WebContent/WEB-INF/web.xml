@@ -9,4 +9,20 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  <servlet>
+    <servlet-name>addgeneration</servlet-name>
+    <servlet-class>controllergeneration.AddGeneration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addgeneration</servlet-name>
+    <url-pattern>/view/addgeneration</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>listgeneration</servlet-name>
+    <servlet-class>controllergeneration.ListGeneration</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>listgeneration</servlet-name>
+    <url-pattern>/view/listgeneration</url-pattern>
+  </servlet-mapping>
 </web-app>
