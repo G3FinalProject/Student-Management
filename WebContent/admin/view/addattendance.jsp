@@ -11,7 +11,8 @@
 <link rel="stylesheet" href="css/formstyle.css">
 <link rel="stylesheet" href="css/simple-sidebar.css">
 <link rel="stylesheet" href="css/fixedbar.css">
-
+<link rel="stylesheet" type="text/css"
+	href="plugin/sweetalert/sweetalert.css">
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
 <title>Attendance</title>
@@ -163,7 +164,7 @@ div.mybox {
 											Barbuda</option>
 									</select>
 								</div>
-								<button class="btn btn-success">Save</button>
+								<button class="btn btn-success" id="btn-save">Save</button>
 							</form>
 
 
@@ -409,7 +410,14 @@ div.mybox {
 				<script src='plugin/fullcalendar/lib/moment.min.js'></script>
 				<script src='plugin/fullcalendar/fullcalendar.js'></script>
 				<script src='plugin/fullcalendar/fullcalendar.min.js'></script>
-
+				<script src="plugin/sweetalert/sweetalert.min.js"></script>
+				<script>
+				$("#btn-save").click(function() {
+		
+					swal("New Attendance Saved!", "DONE!", "success");
+		
+				})
+	</script>
 
 				<!--FULL CALENDAR  -->
 </body>
