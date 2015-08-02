@@ -5,20 +5,17 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="plugin/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/home.css">
 <link rel="stylesheet" href="css/formstyle.css">
 <link rel="stylesheet" href="css/simple-sidebar.css">
 <link rel="stylesheet" href="css/fixedbar.css">
-<link rel="stylesheet" type="text/css"
-	href="plugin/sweetalert/sweetalert.css">
+<link rel="stylesheet" type="text/css" href="plugin/sweetalert/sweetalert.css">
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
 <title>Attendance</title>
 <link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
-<link rel="stylesheet"
-	href="plugin/fontawesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">
 <link rel="stylesheet" href="css/home.css">
 <link rel="stylesheet" href="css/formstyle.css">
 <link href="css/simple-sidebar.css" rel="stylesheet">
@@ -144,10 +141,14 @@ div.mybox {
 
 								<div class="form-group">
 
-									<label>Select type</label> <select class="form-control">
+									<label>Select type</label> 
+									<select id="atype" class="form-control">
 										<option>Absent</option>
 										<option>Late</option>
-									</select> <label> Select Students</label> <select
+									</select>
+									 
+									<label> Select Students</label> 
+									<select id="aname"
 										class="form-control chosen-select" multiple tabindex="4">
 										<option value="United States">United States</option>
 										<option value="United Kingdom">United Kingdom</option>
@@ -209,10 +210,7 @@ div.mybox {
 
 							</table>
 
-
 							<div id='calendar'></div>
-
-
 						</div>
 
 					</div>
@@ -250,8 +248,7 @@ div.mybox {
 						jQuery document ready
 					 */
 
-					$(document)
-							.ready(
+					$(document).ready(
 									function() {
 										/*
 											date store today date.
@@ -322,13 +319,13 @@ div.mybox {
 																		&& !end
 																				.hasTime();
 
-																alert([ "Event Start date: "
+																 [ "Event Start date: "
 																		+ moment(
 																				start)
 																				.format(
-																						"YYYY/MM/DD") ]);
+																						"YYYY/MM/DD") ];
 																var format=start.format("YYYY/MM/DD");
-																$("#attdate").text(format);
+																$("#attdate").text(format); 
 
 																/* mybtn.click(); */
 																/*
@@ -414,8 +411,10 @@ div.mybox {
 				<script>
 				$("#btn-save").click(function() {
 		
-					swal("New Attendance Saved!", "DONE!", "success");
-		
+					/* swal("New Attendance Saved!", "DONE!", "success"); */
+					var type  = $("#atype").val();
+					var name = $("#aname").val();
+					alert(name);
 				})
 	</script>
 
