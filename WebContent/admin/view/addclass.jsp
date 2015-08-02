@@ -47,7 +47,7 @@
    		 <!--content right-->
 		<div id="page-content-wrapper" >
 			<div class="row">
-						<!-- <form role="form">
+						 <form role="form">
 							<div class="col-sm-12" >
 								<fieldset>
 									<div class="col-sm-12" >
@@ -126,9 +126,9 @@
 									</div>
 								</fieldset>
 							</div>
-						</form> -->
+						</form> 
 						
-						<div class="col-lg-offset-1 col-md-8">
+						<!-- <div class="col-lg-offset-1 col-md-8">
 								<form class="form form-validate floating-label" novalidate="novalidate">
 									<div class="card">
 										<div class="card-body">
@@ -167,17 +167,17 @@
 													</label>
 												</div>
 											</div>
-										</div><!--end .card-body -->
+										</div>end .card-body
 										<div class="card-actionbar">
 											<div class="card-actionbar-row">
 												<button type="submit" class="btn btn-flat btn-primary ink-reaction">Validate</button>
 											</div>
-										</div><!--end .card-actionbar -->
-									</div><!--end .card -->
+										</div>end .card-actionbar
+									</div>end .card
 									<em class="text-caption">Basic validation</em>
 								</form>
-							</div><!--end .col -->
-						
+							</div>end .col
+						 -->
 	
 	<script>				
 	var ID=function(id){
