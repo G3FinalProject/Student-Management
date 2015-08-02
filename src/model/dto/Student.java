@@ -35,7 +35,6 @@ public class Student {
   	  
     }
 	//Save Construtor
-
 	public Student(String stu_id, String fname, String lname, String username, String pwd, char gender, Date dob,
 			String pob, String paddr, int course_id, String phone, String email, String fa_name, String fa_phone,
 			String mo_name, String mo_phone, String parents_addr, String emergency_contact, String universit,
@@ -295,4 +294,16 @@ public class Student {
 	public void setG_name(String g_name) {
 		this.g_name = g_name;
 	}
+
+	@Override
+	public String toString() {
+		return "Student [stu_id=" + stu_id + ", fname=" + fname + ", lname=" + lname + ", username=" + username
+				+ ", pwd=" + pwd + ", gender=" + gender + ", dob=" + dob + ", pob=" + pob + ", paddr=" + paddr
+				+ ", course_id=" + course_id + ", phone=" + phone + ", email=" + email + ", fa_name=" + fa_name
+				+ ", fa_phone=" + fa_phone + ", mo_name=" + mo_name + ", mo_phone=" + mo_phone + ", parents_addr="
+				+ parents_addr + ", emergency_contact=" + emergency_contact + ", universit=" + universit + ", re_date="
+				+ re_date + ", img=" + img + ", profiles=" + profiles + ", bg_img=" + bg_img + ", status=" + status
+				+ ", course=" + course + ", class_name=" + class_name + ", g_name=" + g_name + "]";
+	}
+	
 }

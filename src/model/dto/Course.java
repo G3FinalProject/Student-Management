@@ -89,6 +89,11 @@ public class Course {
 	public void setStatus(int status){
 		this.status=status;
 	}
+	@Override
+	public String toString() {
+		return "Course [id=" + id + ", course_type=" + course_type + ", description=" + description + ", startdate="
+				+ startdate + ", enddate=" + enddate + ", c_date=" + c_date + ", g_id=" + g_id + ", status=" + status
+				+ ", g_name=" + g_name + "]";
+	}
 	
-
 }

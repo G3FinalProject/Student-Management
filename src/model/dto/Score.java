@@ -89,4 +89,11 @@ public class Score {
 	public void setSubject(String subject) {
 		this.subject = subject;
 	}
+	@Override
+	public String toString() {
+		return "Score [id=" + id + ", score_date=" + score_date + ", month=" + month + ", subj_id=" + subj_id
+				+ ", stu_id=" + stu_id + ", staff_id=" + staff_id + ", score=" + score + ", stu_name=" + stu_name
+				+ ", subject=" + subject + "]";
+	}
+	
 }

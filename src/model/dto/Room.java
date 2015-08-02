@@ -99,5 +99,11 @@ public class Room {
 	public void setGeneration(String generation) {
 		this.generation = generation;
 	}
+	@Override
+	public String toString() {
+		return "Room [id=" + id + ", name=" + name + ", color=" + color + ", c_date=" + c_date + ", course_id="
+				+ course_id + ", description=" + description + ", staus=" + staus + ", course_name=" + course_name
+				+ ", total_studen=" + total_studen + ", generation=" + generation + "]";
+	}
 
 }

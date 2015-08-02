@@ -101,5 +101,13 @@ public class Scholarship {
 	}
 	public void setStu_name(String stu_name){
 		this.stu_name=stu_name;
+	}
+	@Override
+	public String toString() {
+		return "Scholarship [id=" + id + ", totalscore=" + totalscore + ", amount=" + amount + ", stu_id=" + stu_id
+				+ ", approve_id=" + approve_id + ", approve_date=" + approve_date + ", staff_name=" + staff_name
+				+ ", class_name=" + class_name + ", course=" + course + ", generation=" + generation + ", stu_name="
+				+ stu_name + "]";
 	}	
+	
 }

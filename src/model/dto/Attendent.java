@@ -3,6 +3,7 @@ package model.dto;
 import java.util.Date;
 
 public class Attendent {
+	
 	private int id;
 	private Date at_date;
 	private int stu_id;
@@ -99,6 +100,12 @@ public class Attendent {
 	}
 	public void setClass_name(String class_name) {
 		this.class_name = class_name;
+	}
+	@Override
+	public String toString() {
+		return "Attendent [id=" + id + ", at_date=" + at_date + ", stu_id=" + stu_id + ", description=" + description
+				+ ", absent=" + absent + ", permission=" + permission + ", late=" + late + ", student_name="
+				+ student_name + ", studentgeneder=" + studentgeneder + ", class_name=" + class_name + "]";
 	}
 	
 }
