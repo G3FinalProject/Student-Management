@@ -6,21 +6,35 @@ public class Scholarship {
 	private int id;
 	private double totalscore;
 	private double amount;
-	private int stu_id;
+	private String stu_id;
 	private int approve_id;
 	private Date approve_date;
+	private String staff_name;
+	private String class_name;
+	private String course;
+	private String generation;
+	private String stu_name;
 	public Scholarship(){
 		
 	}
-	public Scholarship(int id, double totalscore, double amount, int stu_id,
-			int approve_id, Date approve_date) {
+	//Save constructor
+	public Scholarship(double totalscore, double amount, String stu_id, int approve_id) {
 		super();
-		this.id = id;
 		this.totalscore = totalscore;
 		this.amount = amount;
 		this.stu_id = stu_id;
 		this.approve_id = approve_id;
-		this.approve_date = approve_date;
+	}
+	//Diplay Constructor
+	public Scholarship(double totalscore, double amount, String stu_id, String class_name, String course,
+			String generation,String stu_name) {
+		this.totalscore = totalscore;
+		this.amount = amount;
+		this.stu_id = stu_id;
+		this.class_name = class_name;
+		this.course = course;
+		this.generation = generation;
+		this.stu_name=stu_name;
 	}
 	public int getId() {
 		return id;
@@ -40,10 +54,10 @@ public class Scholarship {
 	public void setAmount(double amount) {
 		this.amount = amount;
 	}
-	public int getStu_id() {
+	public String getStu_id() {
 		return stu_id;
 	}
-	public void setStu_id(int stu_id) {
+	public void setStu_id(String stu_id) {
 		this.stu_id = stu_id;
 	}
 	public int getApprove_id() {
@@ -58,5 +72,34 @@ public class Scholarship {
 	public void setApprove_date(Date approve_date) {
 		this.approve_date = approve_date;
 	}
-	
+	public String getStaff_name() {
+		return staff_name;
+	}
+	public void setStaff_name(String staff_name) {
+		this.staff_name = staff_name;
+	}
+	public String getClass_name() {
+		return class_name;
+	}
+	public void setClass_name(String class_name) {
+		this.class_name = class_name;
+	}
+	public String getCourse() {
+		return course;
+	}
+	public void setCourse(String course) {
+		this.course = course;
+	}
+	public String getGeneration() {
+		return generation;
+	}
+	public void setGeneration(String generation) {
+		this.generation = generation;
+	}
+	public String getStu_name(){
+		return stu_name;
+	}
+	public void setStu_name(String stu_name){
+		this.stu_name=stu_name;
+	}	
 }

@@ -23,23 +23,10 @@ public class Generation {
 		this.orient_date = orient_date;
 		this.finish_date = finish_date;
 		this.status = status;
-		this.c_date = c_date;
-		this.description = description;
 	}
 
 	public Generation(String name, Date orient_date, Date finish_date,String description) {
 		super();
-		this.name = name;
-		this.orient_date = orient_date;
-		this.finish_date = finish_date;
-		this.description = description;
-	}
-	
-
-	public Generation(int id, String name, Date orient_date, Date finish_date,
-			String description) {
-		super();
-		this.id = id;
 		this.name = name;
 		this.orient_date = orient_date;
 		this.finish_date = finish_date;

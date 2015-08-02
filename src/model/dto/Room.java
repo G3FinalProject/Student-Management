@@ -11,35 +11,33 @@ public class Room {
 	private String description;
 	private int staus;
 	private String course_name;
+	private int total_studen;
+	private String generation;
 	
 	
 	public Room(){
 		
 	}
-	
-	public Room(int id, String name, String color, Date c_date, int course_id,
-			String description, int staus, String course_name) {
+	//Save contructor
+	public Room(String name, String color, int course_id, String description) {
+		super();
+		this.name = name;
+		this.color = color;
+		this.course_id = course_id;
+		this.description = description;
+	}
+	//Display contructor
+	public Room(int id, String name, String color, Date c_date, int staus, String course_name, int total_studen,
+			String generation) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.color = color;
 		this.c_date = c_date;
-		this.course_id = course_id;
-		this.description = description;
 		this.staus = staus;
 		this.course_name = course_name;
-	}
-
-	public Room(int id, String name, String color, Date c_date, int course_id,
-			String description, int staus) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.color = color;
-		this.c_date = c_date;
-		this.course_id = course_id;
-		this.description = description;
-		this.staus = staus;
+		this.total_studen = total_studen;
+		this.generation = generation;
 	}
 	public int getId() {
 		return id;
@@ -89,5 +87,17 @@ public class Room {
 	public void setCourse_name(String course_name) {
 		this.course_name = course_name;
 	}
-	
+	public int getTotal_studen() {
+		return total_studen;
+	}
+	public void setTotal_studen(int total_studen) {
+		this.total_studen = total_studen;
+	}
+	public String getGeneration() {
+		return generation;
+	}
+	public void setGeneration(String generation) {
+		this.generation = generation;
+	}
+
 }

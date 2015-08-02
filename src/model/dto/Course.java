@@ -3,30 +3,37 @@ package model.dto;
 import java.util.Date;
 
 public class Course {
-	   private int id;
-	   private String course_type;
-	   private String description;
-	   private Date c_date;
-	   private int g_id;
-	   private String g_name;
-	public Course(int id, String course_type, String description, Date c_date,
-			int g_id, String d_name) {
-		super();
-		this.id = id;
-		this.course_type = course_type;
-		this.description = description;
-		this.c_date = c_date;
-		this.g_id = g_id;
-		this.g_name = d_name;
+	private int id;
+	private String course_type;
+	private String description;
+	private Date startdate;
+	private Date enddate;
+	private Date c_date;
+	private int g_id;
+	private int status;
+	private String g_name;
+
+	public Course() {
+
 	}
-	public Course(int id, String course_type, String description, Date c_date,
-			int g_id) {
+    //For save Contructor
+	public Course(String course_type, String description, Date startdate, Date enddate, int g_id) {
+		super();
+		this.course_type = course_type;
+		this.description = description;
+		this.startdate = startdate;
+		this.enddate = enddate;
+		this.g_id = g_id;
+	}
+	//Diplay contructor
+	public Course(int id, String course_type,Date startdate, Date enddate,String g_name,int status) {
 		super();
 		this.id = id;
 		this.course_type = course_type;
-		this.description = description;
-		this.c_date = c_date;
-		this.g_id = g_id;
+		this.startdate = startdate;
+		this.enddate = enddate;
+		this.g_name = g_name;
+		this.status=status;
 	}
 	public int getId() {
 		return id;
@@ -46,6 +53,18 @@ public class Course {
 	public void setDescription(String description) {
 		this.description = description;
 	}
+	public Date getStartdate() {
+		return startdate;
+	}
+	public void setStartdate(Date startdate) {
+		this.startdate = startdate;
+	}
+	public Date getEnddate() {
+		return enddate;
+	}
+	public void setEnddate(Date enddate) {
+		this.enddate = enddate;
+	}
 	public Date getC_date() {
 		return c_date;
 	}
@@ -58,11 +77,18 @@ public class Course {
 	public void setG_id(int g_id) {
 		this.g_id = g_id;
 	}
-	public String getD_name() {
+	public String getG_name() {
 		return g_name;
 	}
-	public void setD_name(String d_name) {
-		this.g_name = d_name;
+	public void setG_name(String g_name) {
+		this.g_name = g_name;
 	}
-	  
+	public int getStatus(){
+		return status;
+	}
+	public void setStatus(int status){
+		this.status=status;
+	}
+	
+
 }
