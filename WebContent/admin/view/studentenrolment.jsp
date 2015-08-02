@@ -4,11 +4,6 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-
-
-
-
 <title>Insert title here</title>
 	<link rel="stylesheet" href="bootstrape/css/bootstrap.min.css">
   	<link rel="stylesheet" href="plugin/fontawesome/css/font-awesome.min.css">	
@@ -16,13 +11,12 @@
   	<link rel="stylesheet" href="css/formstyle.css">
   	<link rel="stylesheet" href="plugin/jasny-bootstrap/css/jasny-bootstrap.min.css">
   	<link href="css/simple-sidebar.css" rel="stylesheet">
-  	<link rel="stylesheet" href="css/fixedbar.css">
   
-  	<script src="js/jquery.js"></script>
     <script src="plugin/jasny-bootstrap/js/jasny-bootstrap.min.js"></script>
   	<script src="bootstrape/js/bootstrap.min.js"></script>
-	
+
     <!--for calendar time picker-->
+    <script type="text/javascript" src="plugin/TimePicki-master/TimePicki-master/js/jquery.min.js"></script>
   
     <link rel="stylesheet" href="plugin/Zebra_Datepicker-master/public/css/default.css" type="text/css"/>
 	
@@ -36,6 +30,8 @@
 /*	   border-color:rgb(128,128,255);*/
 	}
   </style>
+  <%@include file="fixedbar/cssAdmin.jsp" %>
+  
 </head>
 <body>
 	<%@include file="fixedbar/topmenu.jsp" %>
@@ -55,7 +51,8 @@
 					<!--content row-->
 					<div class="row">
 						<div class="col-sm-12" >
-						<form role="form">
+						
+						<form role="form" class="form form-validate" novalidate="novalidate">
 							<fieldset>
 								<div class="col-sm-12" >
 									<legend><h3><i class="fa fa-pencil"></i>Fill Student's Information</h3></legend>
@@ -74,8 +71,8 @@
 										</div>												
 									</div>
 									
-								
 									
+									 	
 									<!--form input student's detail-->
 								
 									<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
@@ -91,10 +88,10 @@
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Student's Name :<p>
 											<div class="col-sm-3">
-												<input class="form-control txttext" type="text" name="txtfname" placeholder="First Name" onkeypress="focusMe(this)" id="fn"/>
+												<input class="form-control txttext" type="text" name="txtfname" placeholder="First Name" onkeypress="focusMe(this)" id="fn" required data-rule-minlength="2"/>
 											</div>
 											<div class="col-sm-3">
-												<input class="form-control txttext" type="text" name="txtlname" placeholder="Last Name" onkeypress="focusMe(this)"  id="ln"/>
+												<input class="form-control txttext" type="text" name="txtlname" placeholder="Last Name" onkeypress="focusMe(this)"  id="ln" required data-rule-minlength="2"/>
 											</div>
 											<p class="col-sm-1 mylabel">Gender :<p>
 											<div class="col-sm-2">
@@ -109,21 +106,23 @@
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Date of Birth :<p>
 											<div class="col-sm-9">
-												<input class="form-control txttext datepicker" type="text" name="dob" onblur="focusMe(this)" placeholder="Your Birth's Date" id="dob"/>
+												<input class="form-control txttext" type="text" name="dob" data-inputmask="'alias': 'date'" onblur="focusMe(this)" 
+												placeholder="Your Birth's Date" id="dob" data-source="../../html/forms/data/countries.json.html" required/>
+												<input type="hidden" id="autocomplete1" class="form-control" data-source="../../html/forms/data/countries.json.html" placeholder="Countries">
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Place of Birth :<p>
 											<div class="col-sm-9">
-												<textarea class="form-control txttext" name="listpob" onkeypress="focusMe(this)"  placeholder="( N , Serg Khat , Khan , city/province... )" id="plb"></textarea>
+												<textarea class="form-control txttext" name="listpob" onkeypress="focusMe(this)"  placeholder="( N , Serg Khat , Khan , city/province... )" id="plb" required></textarea>
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Permanent Address :<p>
 											<div class="col-sm-9">
-												<textarea class="form-control txttext" name="listadd" placeholder="( N , Serg Khat , Khan , city/province... )" onkeypress="focusMe(this)"  id="padd"></textarea>
+												<textarea class="form-control txttext" name="listadd" placeholder="( N , Serg Khat , Khan , city/province... )" onkeypress="focusMe(this)"  id="padd" required></textarea>
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
@@ -174,11 +173,11 @@
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact :<p>
 											<p class="col-sm-1 mylabel">Phone<p>
 											<div class="col-sm-3">
-												<input class="form-control txttext" type="text" name="txtstuphone" placeholder="Phone" onkeypress="focusMe(this)" id="mphone"/>
+												<input class="form-control txttext" type="text" name="txtstuphone" placeholder="Phone" onkeypress="focusMe(this)" id="mphone" required/>
 											</div>
 											<p class="col-sm-1 mylabel">Email<p>
 											<div class="col-sm-4">
-												<input class="form-control txttext" type="text" name="txtstuemail" placeholder="Email" onkeypress="focusMe(this)" id="memail"/>
+												<input class="form-control txttext" type="text" name="txtstuemail" placeholder="Email" onkeypress="focusMe(this)" id="memail" required/>
 											</div>
 											<div class="col-sm-1" ></div>
 										</div>
@@ -186,11 +185,11 @@
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Father's Detail :<p>
 											<p class="col-sm-1 mylabel">Name<p>
 											<div class="col-sm-3">
-												<input class="form-control txttext" type="text" name="txtfathername" placeholder="Name" onkeypress="focusMe(this)" id="faname"/>
+												<input class="form-control txttext" type="text" name="txtfathername" placeholder="Name" onkeypress="focusMe(this)" id="faname" required/>
 											</div>
 											<p class="col-sm-1 mylabel">Phone<p>
 											<div class="col-sm-4">
-												<input class="form-control txttext" type="text" name="txtfatherphone" placeholder="phone" onkeypress="focusMe(this)" id="faphone"/>
+												<input class="form-control txttext" type="text" name="txtfatherphone" placeholder="phone" onkeypress="focusMe(this)" id="faphone" required/>
 											</div>
 											
 										
@@ -202,11 +201,11 @@
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Mother's Detail :<p>
 											<p class="col-sm-1 mylabel">Name<p>
 											<div class="col-sm-3">
-												<input class="form-control txttext" type="text" name="txtmothername" placeholder="Name" onkeypress="focusMe(this)" id="mname"/>
+												<input class="form-control txttext" type="text" name="txtmothername" placeholder="Name" onkeypress="focusMe(this)" id="mname" required/>
 											</div>
 											<p class="col-sm-1 mylabel">Phone<p>
 											<div class="col-sm-4">
-												<input class="form-control txttext" type="text" name="txtmotherphone" placeholder="phone" onkeypress="focusMe(this)" id="maphone"/>
+												<input class="form-control txttext" type="text" name="txtmotherphone" placeholder="phone" onkeypress="focusMe(this)" id="maphone" required/>
 											</div>
 											
 										
@@ -225,7 +224,7 @@
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Emergency Contact :<p>
 											<div class="col-sm-9">
-												<input class="form-control txttext" type="text" name="ecphone" placeholder="Enter Phone" onkeypress="focusMe(this)" id="ecphon"/>
+												<input class="form-control txttext" type="text" name="ecphone" placeholder="Enter Phone" onkeypress="focusMe(this)" id="ecphon" required/>
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
@@ -270,8 +269,9 @@
 				$('input.datepicker').Zebra_DatePicker();
 
 			});
-		</script>
+	</script>
 		
- 
+ 	<%@include file="fixedbar/scriptAdmin.jsp" %>
+ 	
 </body>
 </html>
