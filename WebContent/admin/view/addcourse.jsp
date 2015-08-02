@@ -14,25 +14,25 @@
 <link rel="stylesheet" href="css/fixedbar.css">
 <link rel="stylesheet"
 	href="plugin/Zebra_Datepicker-master/public/css/default.css" />
-<<<<<<< .mine
+
 <link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
-=======
+
 <link rel="stylesheet"
 	href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
 <link rel="stylesheet" href="plugin/bootstrap-toggle-master/css/bootstrap-toggle.min.css"/>
 <link rel="stylesheet" type="text/css"
 	href="plugin/sweetalert/sweetalert.css">
->>>>>>> .r104
+
 <script src="js/jquery.js"></script>
 <script src="bootstrape/js/bootstrap.min.js"></script>
-<<<<<<< .mine
+
 <title>Addcourse</title>
 
-=======
+
 <script src="plugin/bootstrap-toggle-master/js/bootstrap-toggle.min.js"></script>
->>>>>>> .r104
+
 <style>
-<<<<<<< .mine
+
 div.mybox {
 	border-radius: 0;
 }
@@ -48,7 +48,7 @@ div.mybox {
 	margin-top: 5px;
 	border: 2px solid black;
 }
-=======
+
 .modal-header
          {
              padding:9px 15px;
@@ -63,7 +63,7 @@ div.mybox {
 </head>
 <body>
 	<%@include file="fixedbar/topmenu.jsp"%>
->>>>>>> .r104
+
 
 div.mybox{
 			border-radius:0;
@@ -169,11 +169,11 @@ div.mybox{
 			<!--end row  -->
 			<div class="row">
 				<div class="col-sm-12">
-<<<<<<< .mine
+
 				<form role="form">
 					<div class="col-sm-12">
 						<fieldset>
-=======
+
 					<form role="form">
 						<div class="col-sm-12">
 							<fieldset>
@@ -265,7 +265,7 @@ div.mybox{
 						<!--form input student's detail-->
 						<div class="col-sm-12"
 							style="margin-top: 20px; padding-bottom: 50px;">
->>>>>>> .r104
+
 							<div class="col-sm-12">
 								<legend>
 									<h3>
