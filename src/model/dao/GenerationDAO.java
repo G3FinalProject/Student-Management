@@ -66,33 +66,13 @@ public class GenerationDAO {
 		}
 		return all;
 	}
-	public boolean editGeneration(Generation g){
-		try{
-			con.setAutoCommit(false);
-			CallableStatement update=con.prepareCall("{ call update_generation(?,?,?,?,?)}");
-			update.setInt(1,g.getId());
-			update.setString(2,g.getName());
-			update.setDate(3,new java.sql.Date(g.getOrient_date().getTime()));
-			update.setDate(4,new java.sql.Date(g.getFinish_date().getTime()));
-			update.setString(5, g.getDescription());
-			if(update.execute()){
-				con.commit();
-				return true;
-			}
-			else{
-				con.rollback();
-			}
-		}catch(Exception e){
-			System.out.println(e.getMessage());
-		}
-		return false;
+	public static void main(String[] args) {
+		Generation g=new Generation("2nd Generation",new java.util.Date("2014/04/01"),new java.util.Date("2014/08/31"),"90 Students");
+		new GenerationDAO().insertGeneration(g);
+	/*	ArrayList<Generation> arr=new GenerationDAO().getAllGeneration();
+		for(Generation g:arr){
+			System.out.println(g.toString());
+		}*/
 	}
-//	public static void main(String[] args) {
-//		Generation g=new Generation(2,"2nd Generation",new java.util.Date("2014/04/01"),new java.util.Date("2014/08/31"),"80 Students");
-//		new GenerationDAO().editGeneration(g);
-//		ArrayList<Generation> arr=new GenerationDAO().getAllGeneration();
-//		for(Generation g1:arr){
-//			System.out.println(g1.toString());
-//		}
-//	}
+	
 }
