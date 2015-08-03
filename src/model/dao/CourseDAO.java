@@ -96,13 +96,13 @@ public class CourseDAO {
 		 }
 		return false;
 	}
-	public ArrayList<Course> getAllCourse(){
+	/*public ArrayList<Course> getAllCourse(){
 		try{
 			CallableStatement getcourse=con.prepareCall("{call }");
 		}catch(Exception e){
 			System.out.println(e.getMessage());
 		}
-	}
+	}*/
 	public static void main(String[] args) {
 		int id=new CourseDAO().getGenerationId("1st Generation");
 		System.out.println(id);
