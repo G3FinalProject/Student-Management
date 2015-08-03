@@ -67,7 +67,7 @@
 											<i class="fa fa-users fa-5x iconstyle" ></i>
 										</div>
 										<div class="col-sm-12">
-											<h4 class="textdash">60 Students</h4>
+											<h4 class="textdash"><span id="stdcount"></span></h4>
 										</div>
 									</div>
 									</a>
