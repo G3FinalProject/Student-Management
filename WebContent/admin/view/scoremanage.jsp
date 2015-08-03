@@ -137,8 +137,8 @@
 						</div>
 					<!--col-12-->	
 					<div class="col-sm-12">
-						<div class="col-sm-1"><span class="description-text">Description: </span></div>
-						<div class="col-sm-11"></div> <p class="des-mo">Modifying score in <span id="monscore">January</span> for students</p></div>
+						<div class="col-sm-2"><span class="description-text">Description: </span></div>
+						<div class="col-sm-10"></div> <p class="des-mo">Modifying score in <span id="monscore">January</span> for students</p></div>
 					</div>
 					<!-- description table -->
 					<div class="col-sm-12" style="padding-bottom: 20px;">
