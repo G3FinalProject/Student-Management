@@ -19,7 +19,7 @@
  	 <script src="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.js"></script>
  	 <link rel="stylesheet" href="plugin/simplecolorpicker/jquery-simplecolorpicker-master/jquery.simplecolorpicker.css">
  	 
-  	 <link type="text/css" rel="stylesheet" href="plugin/theme-default/materialadmin.css?1425466319" /> 
+  	<!--  <link type="text/css" rel="stylesheet" href="plugin/theme-default/materialadmin.css?1425466319" />  -->
    
  	 
 	<style>
@@ -33,6 +33,8 @@
 		border:2px solid black;
 		}
   </style>
+<%@include file="fixedbar/cssAdmin.jsp" %>
+  
 </head>
 <body>
 	<%@include file="fixedbar/topmenu.jsp" %>
@@ -47,26 +49,26 @@
    		 <!--content right-->
 		<div id="page-content-wrapper" >
 			<div class="row">
-						 <form role="form">
+						<form role="form" class="form form-validate" novalidate="novalidate">
 							<div class="col-sm-12" >
 								<fieldset>
 									<div class="col-sm-12" >
 										<legend><h3><i class="fa fa-pencil"></i>Fill Class's Information</h3></legend>
 									</div>
 									<div class="form-group">
-									form input student's detail
+									<!-- form input student's detail -->
 										<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
 											<div class="col-sm-12">
-												<p class="col-sm-2 mylabel" style="margin-top:15px;">Class's ID :<p>
-												<div class="col-sm-9">
-													<input class="form-control txttext" type="text" id="clid"  onkeypress="focusMe(this)" name="cid" placeholder="Enter Class ID"/>
+												<p class="col-sm-2 mylabel" style="margin-top:15px;">Course Name :<p>
+												<div class="col-sm-4">
+													<select class="form-control"><option>BASIC</option><option>ADVANCED</option></select>
 												</div>
 												<div class="col-sm-1"></div>
 											</div>
 											<div class="col-sm-12">
 												<p class="col-sm-2 mylabel" style="margin-top:15px;">Class's Name :<p>
 												<div class="col-sm-9">
-													<input class="form-control txttext" type="text" id="clname"  onkeypress="focusMe(this)" name="cname" placeholder="Enter Class Name"/>
+													<input class="form-control txttext" type="text" id="clname"  onkeypress="focusMe(this)" name="cname" placeholder="Enter Class Name" required/>
 												</div>
 												<div class="col-sm-1"></div>
 											</div>
@@ -116,13 +118,13 @@
 												<div class="col-sm-8"></div>
 												<div class="col-sm-3">
 													<div class="col-sm-12">
-														<input type="button" class=" navbar-right btn btn-primary  btnownstyle " onclick="saveInfo()" value="Update"/>
+														<input type="submit" class=" navbar-right btn btn-primary  btnownstyle " onclick="saveInfo()" value="Update"/>
 													</div>
 												</div>
 												<div class="col-sm-1"></div>
 											</div>
 										</div>
-										close input student's detail			
+										<!-- close input student's detail		 -->	
 									</div>
 								</fieldset>
 							</div>
@@ -176,8 +178,8 @@
 									</div>end .card
 									<em class="text-caption">Basic validation</em>
 								</form>
-							</div>end .col
-						 -->
+							</div>end .col -->
+						
 	
 	<script>				
 	var ID=function(id){
@@ -268,24 +270,7 @@
   });
    </script>
    
-   <!-- BEGIN JAVASCRIPT -->
-		<script src="plugin/theme-default/assets/js/libs/jquery/jquery-1.11.2.min.js"></script>
-		<script src="plugin/theme-default/assets/js/libs/jquery/jquery-migrate-1.2.1.min.js"></script>
-		<script src="plugin/theme-default/assets/js/libs/bootstrap/bootstrap.min.js"></script>
-		<script src="plugin/theme-default/assets/js/libs/spin.js/spin.min.js"></script>
-		<script src="plugin/theme-default/assets/js/libs/autosize/jquery.autosize.min.js"></script>
-		<script src="plugin/theme-default/assets/js/libs/nanoscroller/jquery.nanoscroller.min.js"></script>
-		<script src="plugin/theme-default/assets/js/libs/jquery-validation/dist/jquery.validate.min.js"></script>
-		<script src="plugin/theme-default/assets/js/libs/jquery-validation/dist/additional-methods.min.js"></script>
-		<script src="plugin/theme-default/assets/js/core/source/App.js"></script>
-		<script src="plugin/theme-default/assets/js/core/source/AppNavigation.js"></script>
-		<script src="plugin/theme-default/assets/js/core/source/AppOffcanvas.js"></script>
-		<script src="plugin/theme-default/assets/js/core/source/AppCard.js"></script>
-		<script src="plugin/theme-default/assets/js/core/source/AppForm.js"></script>
-		<script src="plugin/theme-default/assets/js/core/source/AppNavSearch.js"></script>
-		<script src="plugin/theme-default/assets/js/core/source/AppVendor.js"></script>
-		<script src="plugin/theme-default/assets/js/core/demo/Demo.js"></script>
-		<!-- END JAVASCRIPT -->
-  
+   
+  <%@include file="fixedbar/scriptAdmin.jsp" %>
 </body>
 </html>
