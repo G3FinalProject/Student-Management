@@ -173,11 +173,11 @@
 											<p class="col-sm-2 mylabel"  style="margin-top:15px;">Contact :<p>
 											<p class="col-sm-1 mylabel">Phone<p>
 											<div class="col-sm-3">
-												<input class="form-control txttext" type="text" name="txtstuphone" placeholder="Phone" onkeypress="focusMe(this)" id="mphone" required/>
+												<input class="form-control txttext" type="text" name="txtstuphone" data-inputmask="'mask': '(999) 999-9999'" data-source="../../html/forms/data/countries.json.html" placeholder="Phone" onkeypress="focusMe(this)" id="mphone" required/>
 											</div>
 											<p class="col-sm-1 mylabel">Email<p>
 											<div class="col-sm-4">
-												<input class="form-control txttext" type="text" name="txtstuemail" placeholder="Email" onkeypress="focusMe(this)" id="memail" required/>
+												<input class="form-control txttext" type="email" name="txtstuemail" placeholder="Email" onkeypress="focusMe(this)" id="memail" required/>
 											</div>
 											<div class="col-sm-1" ></div>
 										</div>
@@ -189,7 +189,7 @@
 											</div>
 											<p class="col-sm-1 mylabel">Phone<p>
 											<div class="col-sm-4">
-												<input class="form-control txttext" type="text" name="txtfatherphone" placeholder="phone" onkeypress="focusMe(this)" id="faphone" required/>
+												<input class="form-control txttext" type="text" name="txtfatherphone" data-inputmask="'mask': '(999) 999-9999'" data-source="../../html/forms/data/countries.json.html" placeholder="phone" onkeypress="focusMe(this)" id="faphone" required/>
 											</div>
 											
 										
@@ -205,7 +205,7 @@
 											</div>
 											<p class="col-sm-1 mylabel">Phone<p>
 											<div class="col-sm-4">
-												<input class="form-control txttext" type="text" name="txtmotherphone" placeholder="phone" onkeypress="focusMe(this)" id="maphone" required/>
+												<input class="form-control txttext" type="text" name="txtmotherphone" data-inputmask="'mask': '(999) 999-9999'" data-source="../../html/forms/data/countries.json.html" placeholder="phone" onkeypress="focusMe(this)" id="maphone" required/>
 											</div>
 											
 										
@@ -224,7 +224,7 @@
 										<div class="col-sm-12">
 											<p class="col-sm-2 mylabel" style="margin-top:15px;">Emergency Contact :<p>
 											<div class="col-sm-9">
-												<input class="form-control txttext" type="text" name="ecphone" placeholder="Enter Phone" onkeypress="focusMe(this)" id="ecphon" required/>
+												<input class="form-control txttext" type="text" name="ecphone" data-inputmask="'mask': '(999) 999-9999'" data-source="../../html/forms/data/countries.json.html" placeholder="Enter Phone" onkeypress="focusMe(this)" id="ecphon" required/>
 											</div>
 											<div class="col-sm-1"></div>
 										</div>
