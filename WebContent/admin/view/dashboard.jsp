@@ -298,7 +298,7 @@
 												<header class="box-text-style"><i class="fa fa-bar-chart"></i>TOTAL's STATS</header>
 											</div>
 											<div class="card-body height-8">
-												<a href="studentlist.jsp" class="detail-info"><strong>100</strong> students</a>
+												<a href="studentlist.jsp" class="detail-info"><strong><span id="stdcountstat"></span></strong> Students</a>
 											
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
@@ -336,7 +336,20 @@
 		</div>	<!-- end of row -->
 	</div> <!-- end of content right -->
   </div> <!-- end of wrapper -->
+	<script>
+		$.ajax({
+			url:"dashboard",
+			method:"GET",
+			success: function(data){
+				$("#stdcount").append(data+"&nbsp;Students");
+				$("#stdcountstat").append(data);
+			}
+			
+			
+		});
+		
 	
+	</script>
 </body>
 </html>
 
