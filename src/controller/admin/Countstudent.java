@@ -8,6 +8,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import com.google.gson.Gson;
+
 import model.dao.AdminDAO;
 
 /**
@@ -30,13 +32,19 @@ public class Countstudent extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-			int count=Integer.parseInt(request.getParameter("stdcount"));
+			/*int count=Integer.parseInt(request.getParameter("stdcount"));*/
 			AdminDAO admin;
 			
 			admin=new AdminDAO();
-			admin.countStudent();
-			System.out.println("WORKED!");
-			response.sendRedirect("dashboard");
+			int count=admin.countStudent();
+			response.setContentType("application/json");
+			response.setCharacterEncoding("UTF-8");
+			String countall= new Gson().toJson(count);
+			
+			response.getWriter().write(countall);
+		
+
+			
 	}
 	
 
