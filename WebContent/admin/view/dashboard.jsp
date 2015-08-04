@@ -79,7 +79,7 @@
 											<i class="fa fa-sitemap fa-5x iconstyle"></i>
 										</div>
 										<div class="col-sm-12">
-											<h4 class="textdash">4 Classes</h4>
+											<h4 class="textdash"><span id="cclass"></span></h4>
 										</div>
 										
 									</div>
@@ -110,91 +110,20 @@
 									</div>
 									</a>
 								</div>	
-								
-								
 							</div>	
+							
 							<!-- BEGIN NEW REGISTRATIONS -->
 							<div class="col-md-4">
 								<div class="col-md-12">
 								<div class="card-box">
-									<div class="card-head" style="background:#42A5F5;color:white">
+									 <div class="card-head" style="background:#42A5F5;color:white">
 										<header class="box-text-style"><i class="fa fa-line-chart"></i>TOP STUDENTS</header>
 										<div class="tools hidden-md">
 											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
-									</div><!--end .card-head -->
-									<div class="">
-										<ul class="list divider-full-bleed ul-style">
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											
+									</div>
+									<div id="display">
 										
-											
-										</ul>
 									</div><!--end .card-body -->
 								</div><!--end .card -->
 							</div><!--end .col -->
@@ -248,7 +177,7 @@
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
 												</div>
-												<a href="stafflist.jsp" class="detail-info">8 teachers</a>
+												<a href="stafflist.jsp" class="detail-info"><span id="cteacher"></span></a>
 												
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:50%"></div>
@@ -263,7 +192,7 @@
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
 												</div>
-												<a href="classlist.jsp" class="detail-info">6 classes</a>
+												<a href="classlist.jsp" class="detail-info"><span id="tclass"></span></a>
 												
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
@@ -308,6 +237,64 @@
 		})
 		
 	
+<<<<<<< .mine
+	<script>
+	
+	
+		$.ajax({
+			url: "countclass" , 
+			method: "GET",	
+			success: function(data){
+				$("#cclass").append(data+"&nbsp;Class");
+				$("#tclass").append(data+"&nbsp;Class");
+			}
+		});
+		$.ajax({
+			url : "countstaff",
+			method: "GET",
+			success: function(data){
+				$("#cteacher").append(data+"&nbsp;Teachers");
+			}
+		});
+		
+		
+		listtopstudent();
+		function listtopstudent(){
+			$.ajax({
+				url : "gettopstudent",
+				method : "GET",
+				success : function(data){
+					$("#display").html(listtopscore(data));
+				}
+			});
+		}
+		function listtopscore(data){
+			 var str="";
+			 
+				for(var i=0; i<data.length; i++){
+					str += "<ul class='list divider-full-bleed ul-style'>"+ 
+						"<li class='tile'>"+
+								"<div class='tile-content'>"+
+										"<div class='tile-icon'>"+
+											"<img src='images/user.jpg' alt=''' />"+
+										"</div>"+
+									"<div class='tile-text'>" + data[i].stu_name + "</div>"+
+								"</div>"+
+								"<a class='btn btn-flat ink-reaction eye-wrapper'>"+
+									"<i class='fa fa-eye eye-icon' ></i>"+
+								"</a>"+
+						"</li>"+
+					"</ul>";
+				}
+				
+				return str;
+		}
+		
+		
+		
+	</script>
+	
+=======
 		/* new staffs */
 		function listsnewstaff()
 		{
@@ -353,6 +340,7 @@
 		
 	
 	</script>
+>>>>>>> .r146
 </body>
 </html>
 
