@@ -10,14 +10,29 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-  	<servlet-name>countstudent</servlet-name>
-  	<servlet-class>controller.admin.Countstudent</servlet-class>
+    <servlet-name>countstudent</servlet-name>
+    <servlet-class>controller.admin.Countstudent</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>countstudent</servlet-name>
-  	<url-pattern>/admin/view/dashboard</url-pattern>
+    <servlet-name>countstudent</servlet-name>
+    <url-pattern>/admin/view/countstudent</url-pattern>
   </servlet-mapping>
-  
+  <servlet>
+    <servlet-name>countadmin</servlet-name>
+    <servlet-class>controller.admin.Countadmin</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>countadmin</servlet-name>
+    <url-pattern>/admin/view/countadmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>newuser</servlet-name>
+    <servlet-class>controller.admin.Newuser</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>newuser</servlet-name>
+    <url-pattern>/admin/view/newstaff</url-pattern>
+  </servlet-mapping>
   <servlet>
     <servlet-name>addgeneration</servlet-name>
     <servlet-class>controllergeneration.AddGeneration</servlet-class>
