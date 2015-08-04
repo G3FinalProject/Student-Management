@@ -187,7 +187,7 @@
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:80%"></div>
 												</div>
-												<a href="usermanage.jsp" class="detail-info">111 users</a>
+												<a href="usermanage.jsp" class="detail-info"><span id="cuser"></span></a>
 												
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:100%"></div>
@@ -251,6 +251,14 @@
 			method: "GET",
 			success: function(data){
 				$("#cteacher").append(data+"&nbsp;Teachers");
+			}
+		});
+		$.ajax({
+			url : "countuser",
+			method : "GET",
+			success : function(data){
+				 $("#cuser").append(data+"&nbsp;Users"); 
+				
 			}
 		});
 		
