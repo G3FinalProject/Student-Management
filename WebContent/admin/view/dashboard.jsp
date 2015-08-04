@@ -211,6 +211,7 @@
 	</div> <!-- end of content right -->
   </div> <!-- end of wrapper -->
 	<script>
+	// chun
 	listsnewstaff();
 		/*countstudent  */
 		$.ajax({
@@ -236,11 +237,7 @@
 			
 		})
 		
-	
-<<<<<<< .mine
-	<script>
-	
-	
+		//kheang
 		$.ajax({
 			url: "countclass" , 
 			method: "GET",	
@@ -258,6 +255,7 @@
 		});
 		
 		
+		//kheang
 		listtopstudent();
 		function listtopstudent(){
 			$.ajax({
@@ -291,11 +289,7 @@
 		}
 		
 		
-		
-	</script>
-	
-=======
-		/* new staffs */
+		//chun
 		function listsnewstaff()
 		{
 			$.ajax({
@@ -337,10 +331,11 @@
 			
 		}
 		
-		
-	
 	</script>
->>>>>>> .r146
+	
+
+		
+
 </body>
 </html>
 
