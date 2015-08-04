@@ -80,12 +80,29 @@ public class AdminDAO {
 		return 0;
 
 	}
+	
+	public int countUser(){
+		try {
+			con.setAutoCommit(false);
+			CallableStatement cs = con.prepareCall("{call count_userf()}");
+			cs.execute();
+			ResultSet rs = cs.getResultSet();
+			while(rs.next()){
+				int rowcount = rs.getInt(1);
+				return rowcount;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return 0;
+	}
 
 	/*count admin*/
 
 	
 	public int countTeacher(){
-		String sql = "SELECT COUNT(*) FROM tbl_staffs";
+		String sql = "SELECT COUNT(*) FROM tbl_staffs WHERE position='teacher' ";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
@@ -119,10 +136,11 @@ public class AdminDAO {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		
-		
 		return 0;
 	}
+	
+	
+	
 	public ArrayList<Score> getTopStudent(){
 		ArrayList<Score> scores=new ArrayList<Score>();
 		try {
@@ -153,10 +171,7 @@ public class AdminDAO {
 	
 	public static void main(String[] args) {
 		AdminDAO a = new AdminDAO();
-		ArrayList<Score> scores=new AdminDAO().getTopStudent();
-		for(Score sc : scores){
-			System.out.println(sc.getStu_name());
-		}
+		System.out.println(a.countUser());
 
 	}
 	
