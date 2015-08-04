@@ -211,63 +211,8 @@
 											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
 									</div><!--end .card-head -->
-									<div class="">
-										<ul class="list divider-full-bleed ul-style">
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
-											<li class="tile">
-												<div class="tile-content">
-													<div class="tile-icon">
-														<img src="images/user.jpg" alt="" />
-													</div>
-													<div class="tile-text">Ann Laurens</div>
-												</div>
-												<a class="btn btn-flat ink-reaction eye-wrapper">
-													<i class="fa fa-eye eye-icon" ></i>
-												</a>
-											</li>
+									<div id="mytest">
+										<!-- <ul class="list divider-full-bleed ul-style">
 											<li class="tile">
 												<div class="tile-content">
 													<div class="tile-icon">
@@ -281,7 +226,7 @@
 											</li>
 											
 											
-										</ul>
+										</ul> -->
 									</div><!--end .card-body -->
 								</div><!--end .card -->
 							</div><!--end .col -->
@@ -337,6 +282,7 @@
 	</div> <!-- end of content right -->
   </div> <!-- end of wrapper -->
 	<script>
+	listsnewstaff();
 		/*countstudent  */
 		$.ajax({
 			url:"countstudent",
@@ -361,19 +307,48 @@
 			
 		})
 		
-		
+	
 		/* new staffs */
-		$.ajax({
-			
-			url:"newuser",
-			method:"GET",
-			success: function(data){
-				alert(data);
+		function listsnewstaff()
+		{
+			$.ajax({
 				
+				url:"newstaff",
+				method:"GET",
+				
+				success: function(data){
+				$("#mytest").html(listnewstaffdetails(data));
+					
+				}
+			})
+			
+			
+		}
+		function listnewstaffdetails(data)
+		{
+			var str="";
+			for(var i=0; i<data.length; i++){
+			 str+="<ul class='list divider-full-bleed ul-style' >"+
+			"<li class='tile'>"+
+			"<div class='tile-content'>"+
+				"<div class='tile-icon'>"+
+					"<img src="+data[i].imagesrc+" />"+
+				"</div>"+
+				"<div class='tile-text'>"+data[i].name+"</div>"+
+			"</div>"+
+			"<a class='btn btn-flat ink-reaction eye-wrapper'>"+
+				"<i class='fa fa-eye eye-icon' ></i>"+
+			"</a>"+
+			"</li>"+
+		
+		
+		"</ul>";
+			 
+			/*  str+="<table>"+"<tr>"+"<th>"+data[i].name+"</th>"+"</tr>"; */
 			}
+			return str;
 			
-			
-		})
+		}
 		
 		
 	
