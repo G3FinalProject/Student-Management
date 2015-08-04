@@ -10,13 +10,38 @@
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
-    <servlet-name>countstudent</servlet-name>
-    <servlet-class>controller.admin.Countstudent</servlet-class>
+
+    <servlet-name>countclass</servlet-name>
+    <servlet-class>controller.admin.CountClass</servlet-class>
+
+    
   </servlet>
   <servlet-mapping>
+
+    
     <servlet-name>countstudent</servlet-name>
     <url-pattern>/admin/view/countstudent</url-pattern>
+
   </servlet-mapping>
+
+  <servlet>
+    <servlet-name>countstaff</servlet-name>
+    <servlet-class>controller.admin.CountStaff</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>countstaff</servlet-name>
+    <url-pattern>/admin/view/countstaff</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>gettopstudent</servlet-name>
+  	<servlet-class>controller.admin.GetTopStudent</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>gettopstudent</servlet-name>
+  	<url-pattern>/admin/view/gettopstudent</url-pattern>
+  </servlet-mapping>
+  
+
   <servlet>
     <servlet-name>countadmin</servlet-name>
     <servlet-class>controller.admin.Countadmin</servlet-class>
