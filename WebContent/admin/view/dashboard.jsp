@@ -206,7 +206,7 @@
 								<div class="col-md-12">
 								<div class="card-box">
 									<div class="card-head" style="background:#42A5F5;color:white">
-										<header class="box-text-style"><i class="fa fa-users"></i>NEW USERS</header>
+										<header class="box-text-style"><i class="fa fa-users"></i>New Staffs</header>
 										<div class="tools hidden-md">
 											<a class="btn btn-icon-toggle btn-close"><i class="md md-close"></i></a>
 										</div>
@@ -308,7 +308,7 @@
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:50%"></div>
 												</div>
-												<a href="stafflist.jsp" class="detail-info">3 admins</a>
+												<a href="stafflist.jsp" class="detail-info"><span id="admincountstat"></span><strong> Admins</strong></a>
 												
 												<div class="progress progress-hairline">
 													<div class="progress-bar progress-bar-primary-dark" style="width:80%"></div>
@@ -337,8 +337,9 @@
 	</div> <!-- end of content right -->
   </div> <!-- end of wrapper -->
 	<script>
+		/*countstudent  */
 		$.ajax({
-			url:"dashboard",
+			url:"countstudent",
 			method:"GET",
 			success: function(data){
 				$("#stdcount").append(data+"&nbsp;Students");
@@ -347,6 +348,33 @@
 			
 			
 		});
+		/*count admin  */
+		$.ajax({
+			url:"countadmin",
+			method:"GET",
+			success:function(data){
+				
+				$("#admincountstat").append(data)
+			}
+			
+			
+			
+		})
+		
+		
+		/* new staffs */
+		$.ajax({
+			
+			url:"newuser",
+			method:"GET",
+			success: function(data){
+				alert(data);
+				
+			}
+			
+			
+		})
+		
 		
 	
 	</script>
