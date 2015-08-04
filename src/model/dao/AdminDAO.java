@@ -7,6 +7,8 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+
+import model.dto.Staff;
 import model.dto.Score;
 import Utility.DBConnection;
 
@@ -18,6 +20,34 @@ public class AdminDAO {
 		con = DBConnection.getConnect();
 
 	}
+
+	/*NEW STAFFS*/
+	public ArrayList<Staff> newStaff()
+	{
+		ArrayList<Staff> staff=new ArrayList<Staff>();
+		try {
+			CallableStatement cs=con.prepareCall("{call new_user()}");
+			cs.execute();
+			ResultSet rs=cs.getResultSet();
+			while(rs.next())
+			{
+				Staff staffs=new Staff();
+				staffs.setName(rs.getString(1));
+				staffs.setImagesrc(rs.getString(2));
+				staff.add(staffs);
+			}
+			
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return staff;
+
+	}
+	
 
 	public int countStudent() {
 		try {
@@ -36,7 +66,7 @@ public class AdminDAO {
 	}
 	
 	public int countClass(){
-		String sql = "SELECT COUNT(*) FROM tbl_class";
+		String sql = "SELECT COUNT(*) FROM tbl_class ";
 		try {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ResultSet rs = ps.executeQuery();
@@ -50,6 +80,9 @@ public class AdminDAO {
 		return 0;
 
 	}
+
+	/*count admin*/
+
 	
 	public int countTeacher(){
 		String sql = "SELECT COUNT(*) FROM tbl_staffs";
@@ -65,8 +98,31 @@ public class AdminDAO {
 		}
 		return 0;
 
+
 	}
 	
+
+	public int countAdmin()
+	{
+		String sql="SELECT COUNT(staff_id) FROM tbl_staffs WHERE position='admin'";
+		try {
+			PreparedStatement ps=con.prepareStatement(sql);
+			ResultSet rs=ps.executeQuery();
+			while(rs.next())
+			{
+				int rowcount=rs.getInt(1);
+				return rowcount;
+				
+			}
+			
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		
+		
+		return 0;
+	}
 	public ArrayList<Score> getTopStudent(){
 		ArrayList<Score> scores=new ArrayList<Score>();
 		try {
@@ -101,6 +157,9 @@ public class AdminDAO {
 		for(Score sc : scores){
 			System.out.println(sc.getStu_name());
 		}
+
 	}
+	
+	
 
 }
