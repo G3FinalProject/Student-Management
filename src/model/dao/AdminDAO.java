@@ -7,9 +7,9 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
-
-import model.dto.Staff;
 import model.dto.Score;
+import model.dto.Staff;
+import model.dto.Student;
 import Utility.DBConnection;
 
 public class AdminDAO {
@@ -118,7 +118,6 @@ public class AdminDAO {
 
 	}
 	
-
 	public int countAdmin()
 	{
 		String sql="SELECT COUNT(staff_id) FROM tbl_staffs WHERE position='admin'";
@@ -139,7 +138,40 @@ public class AdminDAO {
 		return 0;
 	}
 	
+	public int selectStuByClass(String cls){
+		try {
+			con.setAutoCommit(false);
+			CallableStatement cs = con.prepareCall("{CALL select_studentf(?)}");
+			cs.setString(1,cls);
+			cs.execute();
+			ResultSet rs = cs.getResultSet();
+			if(rs.next()){
+				return rs.getInt(1);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return 0;
+	}
 	
+	public ArrayList<Student> selectAllStudents(){
+		ArrayList<Student> students = new ArrayList<Student>();
+		try {
+			con.setAutoCommit(false);
+			CallableStatement cs = con.prepareCall("{CALL select_allstudentsf()}");
+			cs.execute();
+			ResultSet rs = cs.getResultSet();
+			while(rs.next()){
+				Student student = new Student();
+				student.setLname(rs.getString(1));
+				student.setFname(rs.getString(2));
+				students.add(student);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return students;
+	}
 	
 	public ArrayList<Score> getTopStudent(){
 		ArrayList<Score> scores=new ArrayList<Score>();
@@ -171,7 +203,10 @@ public class AdminDAO {
 	
 	public static void main(String[] args) {
 		AdminDAO a = new AdminDAO();
-		System.out.println(a.countUser());
+		ArrayList<Student> students = a.selectAllStudents();
+		for(Student stu : students){
+			System.out.println(stu.getLname().concat(' '+stu.getFname()));
+		}
 
 	}
 	
