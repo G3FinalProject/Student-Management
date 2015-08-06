@@ -397,35 +397,36 @@ div.mybox {
 						});
 					}
 					function listallstudent(data){
-						var str="";
-						var i=0;
+						 var str="";
+						var j=0;
 					    str += "<select class='form-control chosen-select' id=stuname tabindex=4 multiple style='display: none;'> ";
 						for(var i=0; i<data.length; i++){
 							str += "<option>"+ data[i].fname + data[i].lname +"</option>";
 						}
 					 	str += "</select>";
 					 	
-					 	str += "<div id='stuname_chosen' class='chosen-container chosen-container-multi' style='width: 760px;' title=''>";
+						str += "<div id='stuname_chosen' class='chosen-container chosen-container-multi' style='width: 760px;' title=''>";
 						
 					 	str += "<ul class='chosen-choices'>";
 					 		str += "<li class='search-field'>";
 								str += "<input class='default' type='text' style='width: 149px;' autocomplete='off' value='Select Some Options' tabindex='4'>";
 								str += "</li>";
-							str + "</ul>";
+								str + "</ul>";
 								
 								str += "<div class='chosen-drop'>";
-									str += "<ul class='chosen-results'>"
+								str += "<ul class='chosen-results'>"
 									for(var i=0; i<data.length;i++){
-										i++;
-										str += "<li class='active-result' style="" data-option-array-index='"+i+"'>"+ data[i].fname +"</li>";
+										
+										str += "<li class='active-result' style='' data-option-array-index='"+ j +"'>"+ data[i].fname +"</li>";
+										j++;
 									}
 								
 								
 						str += "</ul>";
-						
-						str += "</div>";
+					
+					str += "</div>";
 								
-						return str;  
+						return str;   
 					}
 				</script>
 </body>
