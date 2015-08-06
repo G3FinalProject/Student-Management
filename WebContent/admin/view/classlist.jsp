@@ -68,7 +68,7 @@
 										<a href="specificstudentlist.jsp">
 										<div class="col-sm-12">
 											<div class="totalbox col-sm-12" style="background: #EF5350;">
-												<p class="textpple"><i class="fa fa-user iconstyle"></i>21 Students<p>
+												<p class="textpple"><i class="fa fa-user iconstyle"></i><span id="csr"></span><p>
 											</div>
 										</div></a>
 										<div class="col-sm-12">
@@ -168,5 +168,15 @@
 		</div> <!-- end of right content -->
 	
 	</div> <!-- end of wrapper -->
+	
+	<script>
+		$.ajax({
+			url : "countstudentbyclass",
+			method : "GET",
+			success : function(data){
+				$("#csr").html(data+"&nbsp;Students");
+			}
+		});
+	</script>
 </body>
 </html>

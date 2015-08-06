@@ -22,9 +22,23 @@
 	margin-top: 20px;
 }
 	  </style>
+	  
+	  <!-- export -->
+	  <script src="plugin/tableExport/jquery.base64.js"></script>
+	  <script src="plugin/tableExport/tableExport.js"></script>
+	  <script src="plugin/tableExport/html2canvas.js"></script>
+	  <script src="plugin/jspdf/libs/sprintf.js"></script>
+	  <script src="plugin/jspdf/jspdf.js"></script>
+	  <script src="plugin/jspdf/libs/base64.js"></script>
+	  
+	  <script src="plugin/printMe-master/jquery-printme.js"></script>
+	 
+	  
 	<!--dataTable-->
   	<link rel="stylesheet" href="plugin/DataTables-1.10.7/DataTables-1.10.7/media/css/jquery.dataTables.css">
   	<script src="plugin/DataTables-1.10.7/DataTables-1.10.7/media/js/jquery.dataTables.js"></script>
+  	
+  	
 </head>
 <body>
 	<%@include file="fixedbar/topmenu.jsp" %>
@@ -36,6 +50,7 @@
 	  	<%@include file="fixedbar/leftmenu.jsp" %>
 	    <!-- end of left menu -->
     
+     
 	    <!--content right-->
 		<div id="page-content-wrapper" >
 			<div class="row">
@@ -54,8 +69,8 @@
 							</fieldset>
 						</div>
 						<div class="col-sm-12" style="padding-bottom: 20px;">
-							<div class="col-sm-3"><button type="button" class="btn btn-primary extra">print</button>
-							<button type="button" class="btn btn-success extra">Export</button></div>
+							<div class="col-sm-3"><button type="button" class="btn btn-primary extra" id="btnprint">print</button>
+							<button type="button" class="btn btn-success extra" onclick="export1()" id="btnexport">Export</button></div>
 							<div class="col-sm-3">
 								<select name="score_gener" class="form-control" style="margin-top:20px;" onchange="changeGeneration()" id="gen">
 												
@@ -243,7 +258,7 @@
 						    
 						  
 						</tr>
-                       <tr>
+                        <tr>
 						    <td>011</td>
 						    <td>King</td>
 						    <td>PhnomPenh</td>
@@ -255,8 +270,7 @@
 						    <td class="yellow">C</td>
 						    
 						</tr>
-                       
-                     <tr>
+                    	 <tr>
 						    <td>012</td>
 						    <td>ABC</td>
 						    <td>Siem Reap</td>
@@ -265,13 +279,9 @@
 						    <td>30%</td>
 						    <td>10%</td>
 						    <td>100%</td>
-						    <td class="orange">B</td>
-						    
-						  
-						</tr>
-                     
-                     
-                    <tr>
+						    <td class="orange">B</td>  
+						</tr>  
+	                    <tr>
 						    <td>013</td>
 						    <td>ABC</td>
 						    <td>Siem Reap</td>
@@ -281,7 +291,7 @@
 						    <td>10%</td>
 						    <td>100%</td>
 						    <td class="red">F</td>
-				    </tr>
+				    	</tr>
 						</tbody>
 					</table>
 					</div></div><!--close col-12-->	
@@ -295,16 +305,29 @@
 		</div>
 	</div>
 	
-	<script>
-    
-$(document).ready( function () {
-    $('#myTable').DataTable();
-} );    
+<script>
+	$(document).ready( function () {
+	    $('#myTable').DataTable();
+	} );    
 </script>
 <script>
-function myFunction() {
-    window.print();
-}
+	function myFunction() {
+	    window.print();
+	}
+	
+	$("#btnexport").click(function (e) {
+		$('#myTable').tableExport({type:'excel',escape:'false'});
+	});
+	
+	$("#btnprint").click(function(){ 
+		/* $("#myTable").printMe(); */
+	  /*   $("#myTable").printMe({ "path": "path_to/eternal.css" }); */
+		 $("#myTable").printMe({ "title": "The title" }); 
+	});
+	
+		
+
 </script>
+
 </body>
 </html>

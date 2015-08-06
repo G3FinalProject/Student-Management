@@ -145,12 +145,17 @@ div.mybox {
 
 								<div class="form-group">
 
-									<label>Select type</label> <select class="form-control">
+									<label>Select type</label> 
+									<select class="form-control">
 										<option>Absent</option>
 										<option>Late</option>
-									</select> <label> Select Students</label> <select
-										class="form-control chosen-select" multiple tabindex="4">
-										<option value="United States">United States</option>
+									</select> <label> Select Students</label> 
+									
+									 <div id='stulist'>
+									 <!-- <select id='stuname'
+										class='form-control chosen-select' multiple tabindex='4'> 
+										
+										   <option value="United States">United States</option>
 										<option value="United Kingdom">United Kingdom</option>
 										<option value="Afghanistan">Afghanistan</option>
 										<option value="Aland Islands">Aland Islands</option>
@@ -162,8 +167,10 @@ div.mybox {
 										<option value="Anguilla">Anguilla</option>
 										<option value="Antarctica">Antarctica</option>
 										<option value="Antigua and Barbuda">Antigua and
-											Barbuda</option>
-									</select>
+											Barbuda</option>   
+									</select>  -->
+									</div>	
+									
 								</div>
 								<button class="btn btn-success" id="btn-save">Save</button>
 							</form>
@@ -375,5 +382,51 @@ div.mybox {
 	</script>
 
 				<!--FULL CALENDAR  -->
+				
+				<script>
+					
+					
+					liststudent();
+					function liststudent(){
+						$.ajax({
+							url : "selectallstudents",
+							method : "GET",
+							success : function(data){
+								$("#stulist").html(listallstudent(data));
+							}
+						});
+					}
+					function listallstudent(data){
+						var str="";
+						var i=0;
+					    str += "<select class='form-control chosen-select' id=stuname tabindex=4 multiple style='display: none;'> ";
+						for(var i=0; i<data.length; i++){
+							str += "<option>"+ data[i].fname + data[i].lname +"</option>";
+						}
+					 	str += "</select>";
+					 	
+					 	str += "<div id='stuname_chosen' class='chosen-container chosen-container-multi' style='width: 760px;' title=''>";
+						
+					 	str += "<ul class='chosen-choices'>";
+					 		str += "<li class='search-field'>";
+								str += "<input class='default' type='text' style='width: 149px;' autocomplete='off' value='Select Some Options' tabindex='4'>";
+								str += "</li>";
+							str + "</ul>";
+								
+								str += "<div class='chosen-drop'>";
+									str += "<ul class='chosen-results'>"
+									for(var i=0; i<data.length;i++){
+										i++;
+										str += "<li class='active-result' style="" data-option-array-index='"+i+"'>"+ data[i].fname +"</li>";
+									}
+								
+								
+						str += "</ul>";
+						
+						str += "</div>";
+								
+						return str;  
+					}
+				</script>
 </body>
 </html>
