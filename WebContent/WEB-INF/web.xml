@@ -34,6 +34,14 @@
     <url-pattern>/admin/view/countstaff</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>countstudentbyclass</servlet-name>
+    <servlet-class>controller.admin.CountStudentByClass</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>countstudentbyclass</servlet-name>
+    <url-pattern>/admin/view/countstudentbyclass</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>countuser</servlet-name>
     <servlet-class>controller.admin.CountUser</servlet-class>
   </servlet>
@@ -80,5 +88,13 @@
   <servlet-mapping>
     <servlet-name>listgeneration</servlet-name>
     <url-pattern>/view/listgeneration</url-pattern>
+  </servlet-mapping>
+  <servlet>
+  	<servlet-name>selectallstudents</servlet-name>
+  	<servlet-class>controller.admin.SelectAllStudents</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>selectallstudents</servlet-name>
+  	<url-pattern>/admin/view/selectallstudents</url-pattern>
   </servlet-mapping>
 </web-app>
