@@ -90,11 +90,19 @@
     <url-pattern>/view/listgeneration</url-pattern>
   </servlet-mapping>
   <servlet>
-  	<servlet-name>selectallstudents</servlet-name>
-  	<servlet-class>controller.admin.SelectAllStudents</servlet-class>
+    <servlet-name>selectallstudents</servlet-name>
+    <servlet-class>controller.admin.SelectAllStudents</servlet-class>
   </servlet>
   <servlet-mapping>
-  	<servlet-name>selectallstudents</servlet-name>
-  	<url-pattern>/admin/view/selectallstudents</url-pattern>
+    <servlet-name>selectallstudents</servlet-name>
+    <url-pattern>/admin/view/selectallstudents</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>addattendance</servlet-name>
+    <servlet-class>controller.admin.AddAttendance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>addattendance</servlet-name>
+    <url-pattern>/admin/view/addattendance</url-pattern>
   </servlet-mapping>
 </web-app>
