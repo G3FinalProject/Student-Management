@@ -134,7 +134,7 @@ div.mybox {
 				<div class="col-sm-6">
 					<div class="panel panel-success">
 						<div class="panel-heading">
-							Attendance For: <label id="attdate">2015/08/01</label>
+							Attendance For: <label id="attdate"><span id="datef"></span></label>
 						</div>
 						<div class="panel-body">
 
@@ -146,16 +146,16 @@ div.mybox {
 								<div class="form-group">
 
 									<label>Select type</label> 
-									<select class="form-control">
-										<option>Absent</option>
-										<option>Late</option>
+									<select class="form-control" id="atype">
+										<option value="L">Late</option>
+										<option value="P">Permission</option>
+										<option value="A">Absent</option>
 									</select> <label> Select Students</label> 
 									
 									 <div id='stulist'>
-									 <!-- <select id='stuname'
-										class='form-control chosen-select' multiple tabindex='4'> 
+									    <select id='stuname' class='form-control chosen-select' multiple tabindex='4'> 
 										
-										   <option value="United States">United States</option>
+										<!--    <option value="United States">United States</option>
 										<option value="United Kingdom">United Kingdom</option>
 										<option value="Afghanistan">Afghanistan</option>
 										<option value="Aland Islands">Aland Islands</option>
@@ -167,8 +167,8 @@ div.mybox {
 										<option value="Anguilla">Anguilla</option>
 										<option value="Antarctica">Antarctica</option>
 										<option value="Antigua and Barbuda">Antigua and
-											Barbuda</option>   
-									</select>  -->
+											Barbuda</option>  -->  
+									</select>    
 									</div>	
 									
 								</div>
@@ -235,7 +235,7 @@ div.mybox {
 
 
 				<script>
-					/*  $(document).ready( function () {
+					 /*  $(document).ready( function () {
 					
 					 $('#calendar').fullCalendar({
 					 // put your options and callbacks here
@@ -249,8 +249,8 @@ div.mybox {
 					
 					
 					 });
-					 } );     
-					 */
+					 } );   */   
+					 
 				</script>
 
 				<script type="text/javascript">
@@ -258,8 +258,7 @@ div.mybox {
 						jQuery document ready
 					 */
 
-					$(document)
-							.ready(
+					$(document).ready(
 									function() {
 										/*
 											date store today date.
@@ -279,7 +278,20 @@ div.mybox {
 											In order to modify its option later.
 										 */
 
-										$('#calendar').fullCalendar({
+										  $('#calendar').fullCalendar({
+											 dayClick: function(date, jsEvent, view) {
+
+											    //    alert('Clicked on: ' + date.format());
+
+											 		$("#datef").html(date.format());
+											        // change the day's background color just for fun
+											        $(this).css('background-color', 'red');
+											        
+											        
+											        
+											        
+
+											  },
 											header: {
 												left: 'prev,next today',
 												center: 'title',
@@ -294,14 +306,16 @@ div.mybox {
 												
 												var eventData;
 												 		
-									/*			if (title) {
+										/* 		if (title) {
 													eventData = {
 														title: title,
 														start: start
 													};
 										
-											}
-									*/				//	$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+												} */
+												
+									
+											//	$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
 												
 //												$('#calendar').fullCalendar('unselect');
 											},
@@ -309,11 +323,13 @@ div.mybox {
 										/*	eventLimit: true, // allow "more" link when too many events
 									*/		/*  events:{url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd'  }, */
 											 
-											events:{  url: 'attendance_sum.hrd'}
-										/* 	eventSources: [
+											events:{  url: 'attendance_sum.hrd'},
+											
+											
+										 	/* eventSources: [
 
 											               // your event source
-											               {
+											               {  
 											                   url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd', // use the `url` property
 											                   color: 'yellow',    // an option!
 											                   textColor: 'black'  // an option!
@@ -321,8 +337,8 @@ div.mybox {
 
 											               // any other sources...
 
-											           ]
- */
+											 ] */
+ 
 										});
 
 									});
@@ -334,7 +350,7 @@ div.mybox {
 
 
 				<script>
-					/* $('#calendar').fullCalendar({
+ 					/*  $('#calendar').fullCalendar({
 					
 					 events: source,
 					 header: {
@@ -348,7 +364,8 @@ div.mybox {
 					 $("#eventLink").attr('href', event.url);
 					 $("#eventContent").dialog({ modal: true, title: event.title });
 					 }
-					 }); */
+					 });  */ 
+					 
 				</script>
 
 				<script>
@@ -376,58 +393,62 @@ div.mybox {
 				<script>
 				$("#btn-save").click(function() {
 		
-					swal("New Attendance Saved!", "DONE!", "success");
-		
-				})
+					/* swal("New Attendance Saved!", "DONE!", "success"); */
+					
+					var type = $("#atype").val();
+					
+					var stu = $("#stuname").val(); 
+					alert(stu);
+					//alert(stu.length+" "+type);
+					
+					/* for(var i=0;i<stu.length;i++){
+						alert(i.length);
+					} */
+					
+					
+					
+				});
+				
 	</script>
 
 				<!--FULL CALENDAR  -->
 				
 				<script>
-					
-					
+				$(document).ready(function(){
 					liststudent();
 					function liststudent(){
 						$.ajax({
 							url : "selectallstudents",
 							method : "GET",
 							success : function(data){
-								$("#stulist").html(listallstudent(data));
+								listallstudent(data);
 							}
 						});
 					}
 					function listallstudent(data){
-						 var str="";
-						var j=0;
-					    str += "<select class='form-control chosen-select' id=stuname tabindex=4 multiple style='display: none;'> ";
+												
 						for(var i=0; i<data.length; i++){
-							str += "<option>"+ data[i].fname + data[i].lname +"</option>";
+							// new option(text,value);
+							$("#stuname").append(new Option(""+ data[i].lname +" "+ data[i].fname +"", ""+ data[i].stu_id +""));
+							/* $("#stuname").append(new Option(""+ data[i].lname +" "+ data[i].fname +"", ""+ data[i].lname + data[i].fname +"")); */
 						}
-					 	str += "</select>";
-					 	
-						str += "<div id='stuname_chosen' class='chosen-container chosen-container-multi' style='width: 760px;' title=''>";
-						
-					 	str += "<ul class='chosen-choices'>";
-					 		str += "<li class='search-field'>";
-								str += "<input class='default' type='text' style='width: 149px;' autocomplete='off' value='Select Some Options' tabindex='4'>";
-								str += "</li>";
-								str + "</ul>";
-								
-								str += "<div class='chosen-drop'>";
-								str += "<ul class='chosen-results'>"
-									for(var i=0; i<data.length;i++){
-										
-										str += "<li class='active-result' style='' data-option-array-index='"+ j +"'>"+ data[i].fname +"</li>";
-										j++;
-									}
-								
-								
-						str += "</ul>";
-					
-					str += "</div>";
-								
-						return str;   
+						chooseselect();
 					}
+					function chooseselect(){
+						"use strict";
+						var configChosen = {
+						  '.chosen-select'           : {},
+						  '.chosen-select-deselect'  : {allow_single_deselect:true},
+						  '.chosen-select-no-single' : {disable_search_threshold:10},
+						  '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+						  '.chosen-select-width'     : {width:"100%"}
+						}
+						for (var selector in configChosen) {
+						  $(selector).chosen(configChosen[selector]);
+						}
+					}
+				})	;
+				
 				</script>
 </body>
 </html>

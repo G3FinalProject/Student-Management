@@ -99,7 +99,7 @@
 									</a>
 								</div>	
 								<div class="col-sm-3">
-									<a href="checkAttendance.jsp">
+									<a href="addattendance.jsp">
 									<div class="col-sm-12 thumbnail mybox" style="height: 170px;background:#78909C;">
 										<div class="col-sm-12" align="center">
 											<i class="fa fa-pie-chart fa-5x iconstyle"></i>
