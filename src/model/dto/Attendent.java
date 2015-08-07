@@ -1,12 +1,14 @@
 package model.dto;
 
-import java.util.Date;
+import java.sql.Date;
+
+
 
 public class Attendent {
 	
 	private int id;
 	private Date at_date;
-	private int stu_id;
+	private String stu_id;
 	private String description;
 	private int absent;
 	private int permission;
@@ -19,7 +21,7 @@ public class Attendent {
 		
 	}
 	//Save Contructor
-	public Attendent(Date at_date, int stu_id, String description, int absent, int permission, int late) {
+	public Attendent(Date at_date, String stu_id, String description, int absent, int permission, int late) {
 		super();
 		this.at_date = at_date;
 		this.stu_id = stu_id;
@@ -29,7 +31,7 @@ public class Attendent {
 		this.late = late;
 	}
 	//Display Contructor
-	public Attendent(Date at_date, int stu_id,int absent, int permission, int late,
+	public Attendent(Date at_date, String stu_id,int absent, int permission, int late,
 			String student_name, String studentgeneder, String class_name) {
 		super();
 		this.at_date = at_date;
@@ -47,16 +49,16 @@ public class Attendent {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public Date getAt_date() {
+	public java.sql.Date getAt_date() {
 		return at_date;
 	}
-	public void setAt_date(Date at_date) {
+	public void setAt_date(java.sql.Date at_date) {
 		this.at_date = at_date;
 	}
-	public int getStu_id() {
+	public String getStu_id() {
 		return stu_id;
 	}
-	public void setStu_id(int stu_id) {
+	public void setStu_id(String stu_id) {
 		this.stu_id = stu_id;
 	}
 	public String getDescription() {
