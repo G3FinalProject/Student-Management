@@ -180,7 +180,7 @@ $(document).ready(function(){
    
 
 	/** BEGIN CHOSEN JS **/
-	$(function () {
+	/*$(function () {
 		"use strict";
 		var configChosen = {
 		  '.chosen-select'           : {},
@@ -192,7 +192,7 @@ $(document).ready(function(){
 		for (var selector in configChosen) {
 		  $(selector).chosen(configChosen[selector]);
 		}
-	});
+	});*/
 	/** END CHOSEN JS **/
 	
 	
