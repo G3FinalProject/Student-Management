@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+import model.dto.Attendent;
 import model.dto.Score;
 import model.dto.Staff;
 import model.dto.Student;
@@ -163,8 +164,9 @@ public class AdminDAO {
 			ResultSet rs = cs.getResultSet();
 			while(rs.next()){
 				Student student = new Student();
-				student.setLname(rs.getString(1));
+				student.setStu_id(rs.getString(1));
 				student.setFname(rs.getString(2));
+				student.setLname(rs.getString(3));
 				students.add(student);
 			}
 		} catch (SQLException e) {
@@ -199,13 +201,36 @@ public class AdminDAO {
 		
 		return scores;
 	}
+	
+	public boolean addAttendance(Attendent attn){
+		String sql = "INSERT INTO tbl_attendance VALUES(?,?,?,?,?,?,?)";
+		try {
+			PreparedStatement ps = con.prepareStatement(sql);
+			ps.setInt(1, attn.getId());
+			ps.setDate(2, attn.getAt_date());
+			ps.setString(3, attn.getStu_id());
+			ps.setString(4, attn.getDescription());
+			ps.setInt(5, attn.getAbsent());
+			ps.setInt(6, attn.getPermission());
+			ps.setInt(7, attn.getLate());
+			int i = ps.executeUpdate();
+			if(i>0){
+				return true;
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return false;
+	}
 
 	
 	public static void main(String[] args) {
 		AdminDAO a = new AdminDAO();
 		ArrayList<Student> students = a.selectAllStudents();
+		
 		for(Student stu : students){
-			System.out.println(stu.getLname().concat(' '+stu.getFname()));
+			System.out.println(stu.getStu_id());
 		}
 
 	}
