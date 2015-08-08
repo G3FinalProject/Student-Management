@@ -53,8 +53,8 @@ public class AddAttendance extends HttpServlet {
 		
 		String datef = request.getParameter("datef");
 		
-		String outerArray= request.getParameterValues("stuname");
-		System.out.println(outerArray);
+		
+		System.out.println(stuname);
 
 	
 		System.out.println(request.getParameter("atype"));
