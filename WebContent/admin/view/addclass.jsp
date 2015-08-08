@@ -57,6 +57,7 @@
 									</div>
 									<div class="form-group">
 									<!-- form input student's detail -->
+									
 										<div class="col-sm-12" style="margin-top:20px;padding-bottom: 50px;">
 											<div class="col-sm-12">
 												<p class="col-sm-2 mylabel" style="margin-top:15px;">Course Name :<p>

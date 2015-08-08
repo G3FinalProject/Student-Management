@@ -57,6 +57,9 @@
 							</div>
 							<div class="form-group">
 								<!--form input student's detail-->
+								<div class="col-sm-12">
+									<a href="addsubjectform.jsp" class="navbar-left btn btn-primary  btnownstyle" style="margin-left:30px;"><i class="fa fa-book"></i>Add Class</a>
+								</div>
 								<div class="col-sm-12"
 									style="margin-top: 20px; padding-bottom: 50px;">
 									<div class="col-sm-12">
@@ -64,16 +67,19 @@
 											Name :
 										<p>
 										<div class="col-sm-3">
-											<input class="form-control txttext" type="text" id="clid"
-												onkeypress="focusMe(this)" name="cid"
-												placeholder="Enter Subject's Name" required />
+											<select class="form-control" required>
+														<option>&nbsp;</option>
+														<option>Java</option>
+														<option>Web</option>
+														<option>Korea</option>
+											</select>
 										</div>
 										<p class="col-sm-1 mylabel" style="margin-top: 4px;">Class
 										<p>
 										<div class="col-sm-2">
-											<select name="classlist" style="margin-top: -2px;" class="form-control"  onchange="changeClass()" >
-												<option value="all">All</option>
-												<option value="Siem Reap" selected>Siem Reap</option>
+											<select name="classlist" style="margin-top: -2px;" class="form-control"  onchange="changeClass()" required>
+												<option value="">&nbsp;</option>
+												<option value="Siem Reap">Siem Reap</option>
 												<option value="Battombong">Battambang</option>
 												<option value="Phnom Penh">Phnom Penh</option>
 												<option value="Kom Pot">Kom Pot</option>
@@ -84,27 +90,13 @@
 										</p>
 										<div class="col-sm-2" style="margin-top: 4px;">
 											<select name="classlist" class="form-control" style="margin-top: -5px;" onchange="changeClass()" required>
-									<option value="" selected>&nbsp;</option>
-									<option value="Siem Reap">Siem Reap</option>
-									<option value="Battombong">Battambang</option>
-									<option value="Phnom Penh">Phnom Penh</option>
-									<option value="Kom Pot">Kom Pot</option>
-							    </select>
+												<option value="" selected>&nbsp;</option>
+												<option value="Leang Bunrong">Leang Bunrong</option>
+												<option value="Chheng Vuthea">Chheng Vuthea</option>
+												<option value="Sak Sonita">Sak Sonita</option>
+							  			  </select>
 										</div>
 									</div>
-									
-									<div class="col-sm-12">
-										<p class="col-sm-2 mylabel" style="margin-top: 15px;">Subeject's
-											Description :
-										<p>
-										<div class="col-sm-9">
-											<textarea class="form-control txttext" id="cldesc"
-												name="listadd" onkeypress="focusMe(this)"
-												placeholder="( some info)"></textarea>
-										</div>
-										<div class="col-sm-1"></div>
-									</div>
-
 									<div class="col-sm-12" style="margin-top: 30px;">
 										<div class="col-sm-8"></div>
 										<div class="col-sm-3">
@@ -142,11 +134,11 @@
 									<tr>
 										<th class="col-sm-1">ID</th>
 										<th class="col-sm-1">Subject</th>
-										<th class="col-sm-1">create-date</th>
-										<th class="col-sm-1">class</th>
-										<th class="col-sm-1">Course</th>
 										<th class="col-sm-1">Generation</th>
+										<th class="col-sm-1">Course</th>
+										<th class="col-sm-1">class</th>
 										<th class="col-sm-1">Instructor</th>
+										<th class="col-sm-1">create-date</th>
 										<th class="col-sm-1">action</th>
 										<th class="col-sm-1">status</th>
 										
