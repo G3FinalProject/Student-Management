@@ -1,6 +1,7 @@
 package model.dto;
 
-import java.sql.Date;
+import java.util.Date;
+
 
 
 
@@ -49,10 +50,10 @@ public class Attendent {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public java.sql.Date getAt_date() {
+	public Date getAt_date() {
 		return at_date;
 	}
-	public void setAt_date(java.sql.Date at_date) {
+	public void setAt_date(Date at_date) {
 		this.at_date = at_date;
 	}
 	public String getStu_id() {
