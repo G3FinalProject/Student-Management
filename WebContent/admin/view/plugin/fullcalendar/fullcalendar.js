@@ -1150,20 +1150,20 @@ newMomentProto.format = function() {
 		return formatDate(this, arguments[0]); // our extended formatting
 	}
 	if (this._ambigTime) {
-		return oldMomentFormat(this, 'YYYY-MM-DD');
+		return oldMomentFormat(this, 'YYYY/MM/DD');
 	}
 	if (this._ambigZone) {
-		return oldMomentFormat(this, 'YYYY-MM-DD[T]HH:mm:ss');
+		return oldMomentFormat(this, 'YYYY/MM/DD[T]HH:mm:ss');
 	}
 	return oldMomentProto.format.apply(this, arguments);
 };
 
 newMomentProto.toISOString = function() {
 	if (this._ambigTime) {
-		return oldMomentFormat(this, 'YYYY-MM-DD');
+		return oldMomentFormat(this, 'YYYY/MM/DD');
 	}
 	if (this._ambigZone) {
-		return oldMomentFormat(this, 'YYYY-MM-DD[T]HH:mm:ss');
+		return oldMomentFormat(this, 'YYYY/MM/DD[T]HH:mm:ss');
 	}
 	return oldMomentProto.toISOString.apply(this, arguments);
 };
@@ -3444,7 +3444,7 @@ var Grid = fc.Grid = RowRenderer.extend({
 		classes.unshift('fc-day', view.widgetContentClass);
 
 		return '<td class="' + classes.join(' ') + '"' +
-			' data-date="' + date.format('YYYY-MM-DD') + '"' + // if date has a time, won't format it
+			' data-date="' + date.format('YYYY/MM/DD') + '"' + // if date has a time, won't format it
 			'></td>';
 	},
 
