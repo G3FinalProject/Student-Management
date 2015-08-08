@@ -142,7 +142,7 @@
             //  "days" for the "view" property makes no sense if the date format doesn't allow the selection of days.
             //
             //  default is Y-m-d
-            format: 'Y-m-d',
+            format: 'Y/m/d',
 
             //  captions in the datepicker's header, for the 3 possible views: days, months, years
             //
