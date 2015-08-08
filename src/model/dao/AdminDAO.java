@@ -2,6 +2,7 @@ package model.dao;
 
 import java.sql.CallableStatement;
 import java.sql.Connection;
+import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -202,37 +203,79 @@ public class AdminDAO {
 		return scores;
 	}
 	
-	public boolean addAttendance(Attendent attn){
-		String sql = "INSERT INTO tbl_attendance VALUES(?,?,?,?,?,?,?)";
+	public boolean addAttendance_permission(Attendent attn){
+		String sql = "{CALL addattendance_permission(?,?,?)}";
 		try {
-			PreparedStatement ps = con.prepareStatement(sql);
-			ps.setInt(1, attn.getId());
-			ps.setDate(2, attn.getAt_date());
-			ps.setString(3, attn.getStu_id());
-			ps.setString(4, attn.getDescription());
-			ps.setInt(5, attn.getAbsent());
-			ps.setInt(6, attn.getPermission());
-			ps.setInt(7, attn.getLate());
-			int i = ps.executeUpdate();
-			if(i>0){
+			con.setAutoCommit(false);
+			CallableStatement cs = con.prepareCall(sql);
+			cs.setDate(1,new java.sql.Date(attn.getAt_date().getTime()));
+			cs.setString(2,attn.getStu_id());
+			cs.setInt(3, attn.getPermission());
+			if(cs.execute()){
+				con.commit();
 				return true;
+			}else{
+				con.rollback();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
-		
+		return false;
+	}
+	
+	public boolean addAttendance_absence(Attendent attn){
+		String sql = "{CALL addattendance_absence(?,?,?)}";
+		try {
+			con.setAutoCommit(false);
+			CallableStatement cs = con.prepareCall(sql);
+			cs.setDate(1,new java.sql.Date(attn.getAt_date().getTime()));
+			cs.setString(2,attn.getStu_id());
+			cs.setInt(3, attn.getAbsent());
+			if(cs.execute()){
+				con.commit();
+				return true;
+			}else{
+				con.rollback();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+	
+	public boolean addAttendance_late(Attendent attn){
+		String sql = "{CALL addattendance_late(?,?,?)}";
+		try {
+			con.setAutoCommit(false);
+			CallableStatement cs = con.prepareCall(sql);
+			cs.setDate(1,new java.sql.Date(attn.getAt_date().getTime()));
+			cs.setString(2,attn.getStu_id());
+			cs.setInt(3, attn.getLate());
+			if(cs.execute()){
+				con.commit();
+				return true;
+			}else{
+				con.rollback();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
 		return false;
 	}
 
+
 	
 	public static void main(String[] args) {
-		AdminDAO a = new AdminDAO();
-		ArrayList<Student> students = a.selectAllStudents();
 		
-		for(Student stu : students){
-			System.out.println(stu.getStu_id());
-		}
-
+		AdminDAO a = new AdminDAO();
+		Attendent attn = new Attendent();
+		attn.setStu_id("stu001    ");
+		attn.setAt_date(new java.util.Date("2015/04/05"));
+		attn.setLate(1);
+		if(a.addAttendance_late(attn))
+		System.out.println("ok");
+		else
+			System.out.println("error");
 	}
 	
 	
