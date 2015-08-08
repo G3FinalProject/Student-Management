@@ -139,17 +139,15 @@ div.mybox {
 						<div class="panel-body">
 
 
-							<form role="form">
-
-
+							
 
 								<div class="form-group">
 
 									<label>Select type</label> 
 									<select class="form-control" id="atype">
-										<option value="L">Late</option>
-										<option value="P">Permission</option>
-										<option value="A">Absent</option>
+										<option value="Late">Late</option>
+										<option value="Permission">Permission</option>
+										<option value="Absent">Absent</option>
 									</select> <label> Select Students</label> 
 									
 									 <div id='stulist'>
@@ -172,8 +170,8 @@ div.mybox {
 									</div>	
 									
 								</div>
-								<button class="btn btn-success" id="btn-save">Save</button>
-							</form>
+								<button role="button" class="btn btn-success" id="btn-save" onclick="addattendance()">Save</button>
+							
 
 
 
@@ -266,7 +264,8 @@ div.mybox {
 											m store current month.
 											y store current year.
 										 */
-										var date = new Date();
+										
+										 var date = new Date();
 										var d = date.getDate();
 										var m = date.getMonth();
 										var y = date.getFullYear();
@@ -282,10 +281,10 @@ div.mybox {
 											 dayClick: function(date, jsEvent, view) {
 
 											    //    alert('Clicked on: ' + date.format());
-
-											 		$("#datef").html(date.format());
+												 dd = date.format();
+											 		$("#datef").html(dd);
 											        // change the day's background color just for fun
-											        $(this).css('background-color', 'red');
+											       // $(this).css('background-color', 'red');
 											        
 											        
 											        
@@ -340,8 +339,12 @@ div.mybox {
 											 ] */
  
 										});
-
+										
+										
+										
+	
 									});
+				
 				</script>
 
 
@@ -395,16 +398,17 @@ div.mybox {
 		
 					/* swal("New Attendance Saved!", "DONE!", "success"); */
 					
-					var type = $("#atype").val();
 					
+					
+					/* var type = $("#atype").val();
 					var stu = $("#stuname").val(); 
-					alert(stu);
+					alert(stu); */
 					//alert(stu.length+" "+type);
 					
 					/* for(var i=0;i<stu.length;i++){
 						alert(i.length);
 					} */
-					
+				
 					
 					
 				});
@@ -414,7 +418,7 @@ div.mybox {
 				<!--FULL CALENDAR  -->
 				
 				<script>
-				$(document).ready(function(){
+				
 					liststudent();
 					function liststudent(){
 						$.ajax({
@@ -447,7 +451,28 @@ div.mybox {
 						  $(selector).chosen(configChosen[selector]);
 						}
 					}
-				})	;
+				
+				
+				function addattendance(){
+					
+					var items = [];
+					$('#stuname option:selected').each(function(){ items.push($(this).val()); });
+					var result = items.join(', ');
+					
+					alert(result);
+					$.ajax({
+						url : "addattendance",
+						method: "POST",
+						data : {
+							atype   : $("#atype").val(),  
+							stuname : result
+						},
+						success: function(data){
+							
+						}	
+					});
+					
+				}
 				
 				</script>
 </body>
