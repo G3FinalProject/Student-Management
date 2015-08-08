@@ -54,10 +54,10 @@ public class AddAttendance extends HttpServlet {
 		String datef = request.getParameter("datef");
 		
 		
-		System.out.println(stuname);
+		System.out.println(datef);
 
 	
-		System.out.println(request.getParameter("atype"));
+	
 	
 		/*if(atype.equalsIgnoreCase("absent")){
 			
