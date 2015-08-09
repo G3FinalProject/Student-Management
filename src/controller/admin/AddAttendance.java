@@ -50,34 +50,43 @@ public class AddAttendance extends HttpServlet {
 		
 		String atype = request.getParameter("atype");
 		String stuname = request.getParameter("stuname");
-		
 		String datef = request.getParameter("datef");
 		
+		String[] each = stuname.split(",");
 		
-		System.out.println(datef);
-
-	
-	
-	
-		/*if(atype.equalsIgnoreCase("absent")){
-			
+		response.setContentType("text/plain");
+		boolean status = true;
+		
+		if(atype.equalsIgnoreCase("absent")){
+			for(int i=0;i<each.length;i++){
+				attn.setAt_date(new java.util.Date(datef));
+				attn.setStu_id(each[i].trim());
+				attn.setAbsent(1);
+				status = admin.addAttendance_absence(attn);
+			}	
 		}else if(atype.equalsIgnoreCase("permission")){
-			
+			for(int i=0;i<each.length;i++){
+				attn.setAt_date(new java.util.Date(datef));
+				attn.setStu_id(each[i].trim());
+				attn.setPermission(1);
+				status = admin.addAttendance_permission(attn);
+			}	
 		}else if(atype.equalsIgnoreCase("late")){
-			attn.setAt_date(new java.util.Date(datef));
-			attn.setStu_id(stuname);
-			attn.setLate(1);
-		    boolean status = admin.addAttendance_late(attn);
-		    response.setContentType("text/plain");
-			if(status==true){
-				System.out.println("INSERT SUCCESS");
-				response.getWriter().write("success");
-			}else{
-				System.err.println("INSERT FAIL");
-				response.getWriter().write("fail");
-			}
+			for(int i=0;i<each.length;i++){
+				attn.setAt_date(new java.util.Date(datef));
+				attn.setStu_id(each[i].trim());
+				attn.setLate(1);
+				status = admin.addAttendance_late(attn);
+			}	
 		}
-		*/
+		
+		if(status==true){
+			System.out.println("INSERT SUCCESS");
+			response.getWriter().write("success");
+		}else{
+			System.err.println("INSERT FAIL");
+			response.getWriter().write("fail");
+		}
+		
 	}	
-
 }
