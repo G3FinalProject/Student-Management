@@ -171,10 +171,7 @@ div.mybox {
 									
 								</div>
 								<button role="button" class="btn btn-success" id="btn-save" onclick="addattendance()">Save</button>
-							
-
-
-
+								<div id="calendarTrash" class="calendar-trash"><img src="images/trash.png"></img></div>
 						</div>
 
 					</div>
@@ -214,7 +211,24 @@ div.mybox {
 								</tbody>
 
 							</table>
-
+							
+							<div class="modal fade" role="dialog" id="modal">
+							    <div class="modal-dialog">
+							        <div class="modal-content">
+							            <div class="modal-header">
+							                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+							                <h4 class="modal-title">title</h4>
+							            </div>
+							            <div class="modal-body">
+							            
+							            </div>
+							            <div class="modal-footer">
+							            	<input type="button" class="btn btn-success" id="editatt" onclick="editatt()" value="Edit"/>
+							            	<input type="button" class="btn btn-danger" id="deleteatt" onclick="deleteatt()" value="Delete"/>
+							            </div>
+							        </div>
+							    </div>
+							</div>
 
 							<div id='calendar'></div>
 
@@ -230,7 +244,21 @@ div.mybox {
 				<!-- Calendar event div -->
 
 
-
+				<script>
+					function editatt(){
+						alert(1);
+					}
+					function deleteatt(){
+						$.ajax({
+							url : "deleteattendance",
+							method: "POST",
+							data : {  att_id : title },
+							successs: function(data){
+								
+							}
+						});
+					}
+				</script>
 
 				<script>
 					 /*  $(document).ready( function () {
@@ -252,105 +280,155 @@ div.mybox {
 				</script>
 
 				<script type="text/javascript">
-					/*
-						jQuery document ready
-					 */
+					$(document).ready(function() {
+						
+						var date = new Date();
+						var d = date.getDate();
+						var m = date.getMonth();
+						var y = date.getFullYear();
 
-					$(document).ready(
-									function() {
-										/*
-											date store today date.
-											d store today date.
-											m store current month.
-											y store current year.
-										 */
-										
-										 var date = new Date();
-										var d = date.getDate();
-										var m = date.getMonth();
-										var y = date.getFullYear();
+					  	$('#calendar').fullCalendar({
+					  		
+							 dayClick: function(date, jsEvent, view) {
+								 	dd = date.format();
+							 		$("#datef").html(dd);
+							   //     $(this).css('background-color', '#8BC34A');
+							  },
+							header: {
+								left: 'prev,next today',
+								center: 'title',
+						//		right: 'month,agendaWeek,agendaDay'
+							},
+							 eventMouseover: function(event, jsEvent, view) {
+						            if (view.name !== 'agendaDay') {
+						                $(jsEvent.target).attr('title', event.title);
+						            }
+						        },
+						        /*  eventClick: function(calEvent, jsEvent, view, event)
+						        {
+						        	
+						            /*  var r=confirm("Delete " + calEvent.title);
+						            if (r===true)
+						              {
+						            	
+						                //  $('#calendar').fullCalendar('removeEvents', calEvent._id);
+						              }  */
+						        	
+						             
+						   //     }, */
+						        
+						       
+					        eventClick: function(event) {
+					            var modal = $("#modal");
+					            modal.find(".modal-title").html(event.title);
+					            modal.modal();
+					        },
+						        
+							// event drag to delete
+							 eventDragStop:  function(event,jsEvent) {
+								var trashEl = jQuery('#calendarTrash');
+							    var ofs = trashEl.offset();
 
-										/*
-											Initialize fullCalendar and store into variable.
-											Why in variable?
-											Because doing so we can use it inside other function.
-											In order to modify its option later.
-										 */
+							    var x1 = ofs.left;
+							    var x2 = ofs.left + trashEl.outerWidth(true);
+							    var y1 = ofs.top;
+							    var y2 = ofs.top + trashEl.outerHeight(true);
 
-										  $('#calendar').fullCalendar({
-											 dayClick: function(date, jsEvent, view) {
-
-											    //    alert('Clicked on: ' + date.format());
-												 dd = date.format();
-											 		$("#datef").html(dd);
-											        // change the day's background color just for fun
-											       // $(this).css('background-color', 'red');
-											        
-											        
-											        
-											        
-
-											  },
-											header: {
-												left: 'prev,next today',
-												center: 'title',
-												right: 'month,agendaWeek,agendaDay'
-											},
-											/* defaultDate: '2015-02-12', */
-											selectable: true,
-											selectHelper: true,
-											select: function(start, end) {
-												
-											
-												
-												var eventData;
-												 		
-										/* 		if (title) {
-													eventData = {
-														title: title,
-														start: start
-													};
-										
-												} */
-												
-									
-											//	$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-												
-//												$('#calendar').fullCalendar('unselect');
-											},
-											editable: true,
-										/*	eventLimit: true, // allow "more" link when too many events
-									*/		/*  events:{url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd'  }, */
-											 
-											events:{  url: 'attendance_sum.hrd'},
-											
-											
-										 	/* eventSources: [
-
-											               // your event source
-											               {  
-											                   url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd', // use the `url` property
-											                   color: 'yellow',    // an option!
-											                   textColor: 'black'  // an option!
-											               }
-
-											               // any other sources...
-
-											 ] */
- 
-										});
-										
-										
-										
+							    if (jsEvent.pageX >= x1 && jsEvent.pageX<= x2 &&
+							        jsEvent.pageY>= y1 && jsEvent.pageY <= y2) {
+							        alert('SIII');
+							        $('#calendario').fullCalendar('removeEvents', event.id);
+							    } 
 	
-									});
+							}, 
+							eventRender: function (event, element) {
+						        element.attr('href', 'javascript:void(0);');
+						        element.click(function() {
+						            $("#startTime").html(moment(event.start).format('MMM Do h:mm A'));
+						            $("#endTime").html(moment(event.end).format('MMM Do h:mm A'));
+						            $("#eventInfo").html(event.description);
+						            $("#eventLink").attr('href', event.url);
+						            $("#eventContent").dialog({ modal: true, title: event.title, width:350});
+						        });
+						    },
+							/* eventDragStop: function(event, jsEvent, ui, view) {			
+								var x = isElemOverDiv(ui, $('div.external-events'));
+								alert(x);			
+								$.ajax({
+									url: "",
+									data: {},
+									method:"POST"
+								});
+								if (x) {
+									$('#calendar').fullCalendar('removeEvents', event.id);
+								}			
+							}, */
+							 /* eventRender: function(event, element) {
+						            element.append( "<span class='closeon'>X</span>" );
+						            element.find(".closeon").click(function() {
+						               $('#calendar').fullCalendar('removeEvents',event._id);
+						              
+						            });
+						        }, */
+							
+							/* defaultDate: '2015-02-12', */
+							selectable: true,
+							selectHelper: true,
+							select: function(start, end) {
+							var eventData;		 		
+						/* 		if (title) {
+									eventData = {
+										title: title,
+										start: start
+									};
+						
+								} */
+							//	$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+							//	$('#calendar').fullCalendar('unselect');
+					   		},
+							editable: true,
+						/*	eventLimit: true, // allow "more" link when too many events
+					*/		/*  events:{url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd'  }, */
+							 
+							events:{  url: 'selectattendance'},
+			
+						 	 /* eventSources: [
+							               // your event source
+							                {  
+							            	   
+							                   url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd', // use the `url` property
+							                   color: 'yellow',    // an option!
+							                   textColor: 'black'  // an option!
+							               } 
+							               // any other sources...
+							 ]  */
+
+							});  // end of select
+							
+							
+						});  // end of calendar
+						
+						var isElemOverDiv = function(draggedItem, dropArea) {
+							// Prep coords for our two elements
+							var a = $(draggedItem).offset;	
+							a.right = $(draggedItem).outerWidth + a.left;
+							a.bottom = $(draggedItem).outerHeight + a.top;
+							
+							var b = $(dropArea).offset;
+							a.right = $(dropArea).outerWidth + b.left;
+							a.bottom = $(dropArea).outerHeight + b.top;
+
+							// Compare
+							if (a.left >= b.left
+								&& a.top >= b.top
+								&& a.right <= b.right
+								&& a.bottom <= b.bottom) { return true; }
+							return false;
+						}
+
+						
 				
 				</script>
-
-
-
-
-
 
 				<script>
  					/*  $('#calendar').fullCalendar({
@@ -371,9 +449,6 @@ div.mybox {
 					 
 				</script>
 
-				<script>
-					
-				</script>
 				<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" id="mybtn" data-target="#myModal">Open Modal</button>
  -->
 
@@ -459,13 +534,14 @@ div.mybox {
 					$('#stuname option:selected').each(function(){ items.push($(this).val()); });
 					var result = items.join(', ');
 					
-					alert(result);
+					
 					$.ajax({
 						url : "addattendance",
 						method: "POST",
 						data : {
 							atype   : $("#atype").val(),  
-							stuname : result
+							stuname : result,
+							datef   : dd
 						},
 						success: function(data){
 							
