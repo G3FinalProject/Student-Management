@@ -9,6 +9,7 @@ import java.sql.SQLException;
 import java.util.ArrayList;
 
 import model.dto.Attendent;
+import model.dto.AttendentSelection;
 import model.dto.Score;
 import model.dto.Staff;
 import model.dto.Student;
@@ -262,22 +263,83 @@ public class AdminDAO {
 		}
 		return false;
 	}
-
+	
+	public ArrayList<Attendent> select_attendance(){
+		ArrayList<Attendent> attn = new ArrayList<Attendent>();
+		try {
+			//con.setAutoCommit(false);
+			String sql = "{CALL select_attendancef()}";
+			CallableStatement cs = con.prepareCall(sql);
+			cs.execute();
+			ResultSet rs = cs.getResultSet();
+			Attendent att=null;
+			while(rs.next()){
+				att=new Attendent();
+				att.setStudent_name(rs.getString(1));
+				att.setAt_date(rs.getDate(2));
+				att.setAbsent(rs.getInt(3));
+				att.setPermission(rs.getInt(4));
+				att.setLate(rs.getInt(5));
+				attn.add(att);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return attn;
+	}
+	
+	//used
+	public ArrayList<AttendentSelection> select_attendenceStu(){
+		ArrayList<AttendentSelection> attn = new ArrayList<AttendentSelection>();
+		
+		try {
+			String sql = "{CALL select_attendancef()}";
+			CallableStatement cs = con.prepareCall(sql);
+			cs.execute();
+			ResultSet rs = cs.getResultSet();
+			AttendentSelection ats = null;
+			while(rs.next()){
+				ats = new AttendentSelection();
+				ats.setTitle(rs.getString(1));
+				ats.setStart(rs.getDate(2));
+				attn.add(ats);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return attn;
+	}
+	
+	public boolean delete_attendance(int att_id){
+		try {
+			con.setAutoCommit(false);
+			CallableStatement cs = con.prepareCall("{CALL delete_attendance(?)}");
+			cs.setInt(1, att_id);
+			if(cs.execute()){
+				con.commit();
+				return true;
+			}else{
+				con.rollback();
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
 
 	
 	public static void main(String[] args) {
 		
 		AdminDAO a = new AdminDAO();
-		Attendent attn = new Attendent();
-		attn.setStu_id("stu001    ");
-		attn.setAt_date(new java.util.Date("2015/04/05"));
-		attn.setLate(1);
-		if(a.addAttendance_late(attn))
-		System.out.println("ok");
-		else
-			System.out.println("error");
+//		Attendent attn = new Attendent();
+//		attn.setStu_id("stu001    ");
+//		attn.setAt_date(new java.util.Date("2015/04/05"));
+//		attn.setLate(1);
+//		if(a.addAttendance_late(attn))
+//		System.out.println("ok");
+//		else
+//			System.out.println("error");
+		boolean status = a.delete_attendance(34);
+		if(status){System.out.println("ok");}
 	}
-	
-	
-
 }
