@@ -105,4 +105,20 @@
     <servlet-name>addattendance</servlet-name>
     <url-pattern>/admin/view/addattendance</url-pattern>
   </servlet-mapping>
+  <servlet>
+    <servlet-name>selectattendance</servlet-name>
+    <servlet-class>controller.admin.SelectAttendance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectattendance</servlet-name>
+    <url-pattern>/admin/view/selectattendance</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>deleteattendance</servlet-name>
+    <servlet-class>contoller.admin.DeleteAttendance</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>deleteattendance</servlet-name>
+    <url-pattern>/admin/view/deleteattendance</url-pattern>
+  </servlet-mapping>
 </web-app>
