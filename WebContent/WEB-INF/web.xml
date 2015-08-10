@@ -114,8 +114,16 @@
     <url-pattern>/admin/view/selectattendance</url-pattern>
   </servlet-mapping>
   <servlet>
+    <servlet-name>selectattendancelist</servlet-name>
+    <servlet-class>controller.admin.SelectAttendanceList</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>selectattendancelist</servlet-name>
+    <url-pattern>/admin/view/selectattendancelist</url-pattern>
+  </servlet-mapping>
+  <servlet>
     <servlet-name>deleteattendance</servlet-name>
-    <servlet-class>contoller.admin.DeleteAttendance</servlet-class>
+    <servlet-class>controller.admin.DeleteAttendance</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>deleteattendance</servlet-name>
