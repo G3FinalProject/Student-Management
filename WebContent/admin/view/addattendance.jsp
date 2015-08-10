@@ -180,9 +180,9 @@ div.mybox {
 
 				<div class="col-sm-12">
 					<div class="panel panel-success">
-						<div class="panel-heading">Attendance List</div>
-						<div class="panel-body">
-							<table class="table" id="myTable" cellspacing="0" width="100%">
+						<div class="panel-heading">Attendance List: <label><span id="attnlist"></span></label></div>
+						<div class="panel-body" id="tblAttn">
+							<!-- <table class="table" id="myTable" cellspacing="0" width="100%">
 								<thead>
 									<th>Name</th>
 									<th>Attendance</th>
@@ -210,7 +210,7 @@ div.mybox {
 									</tr>
 								</tbody>
 
-							</table>
+							</table> -->
 							
 							<div class="modal fade" role="dialog" id="modal">
 							    <div class="modal-dialog">
@@ -249,14 +249,16 @@ div.mybox {
 						alert(1);
 					}
 					function deleteatt(){
-						$.ajax({
+						/* $.ajax({
 							url : "deleteattendance",
 							method: "POST",
-							data : {  att_id : title },
+							data : {  
+								att_id : title
+							},
 							successs: function(data){
 								
 							}
-						});
+						}); */
 					}
 				</script>
 
@@ -286,12 +288,15 @@ div.mybox {
 						var d = date.getDate();
 						var m = date.getMonth();
 						var y = date.getFullYear();
-
+						
+						
 					  	$('#calendar').fullCalendar({
 					  		
 							 dayClick: function(date, jsEvent, view) {
 								 	dd = date.format();
 							 		$("#datef").html(dd);
+							 		$("#attnlist").html(dd);
+							 		attendancelist();
 							   //     $(this).css('background-color', '#8BC34A');
 							  },
 							header: {
@@ -386,7 +391,7 @@ div.mybox {
 							//	$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
 							//	$('#calendar').fullCalendar('unselect');
 					   		},
-							editable: true,
+					//		editable: true,
 						/*	eventLimit: true, // allow "more" link when too many events
 					*/		/*  events:{url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd'  }, */
 							 
@@ -405,7 +410,7 @@ div.mybox {
 
 							});  // end of select
 							
-							
+						
 						});  // end of calendar
 						
 						var isElemOverDiv = function(draggedItem, dropArea) {
@@ -529,12 +534,10 @@ div.mybox {
 				
 				
 				function addattendance(){
-					
 					var items = [];
 					$('#stuname option:selected').each(function(){ items.push($(this).val()); });
 					var result = items.join(', ');
-					
-					
+		
 					$.ajax({
 						url : "addattendance",
 						method: "POST",
@@ -544,10 +547,66 @@ div.mybox {
 							datef   : dd
 						},
 						success: function(data){
-							
+							location.reload();
 						}	
 					});
+				}
 					
+				attendancelist();
+				function attendancelist(){
+					$.ajax({
+						url: "selectattendancelist",
+						method: "POST",
+						data: { datef: dd },
+						success: function(data){
+							$("#tblAttn").html(listattendancestu(data));
+						}
+					});
+				}
+				
+				function listattendancestu(data){
+					var str = "";
+						str += '<table class="table" id="myTable" cellspacing="0" width="100%">'+
+								'<thead>'+
+										'<th>Name</th>'+
+										'<th>Date</th>'+
+										'<th>Late</th>'+
+										'<th>Absent</th>'+
+										'<th>Permission</th>'+
+										'<th>Action</th>'+
+								'</thead>';	
+						
+						str +=  '<tbody>';	
+						for(var i=0;i<data.length;i++){
+							var ilate,iabsense,ipermission = "";
+							
+							if(data[i].late == 0) ilate = "<img src='images/inactive.png'style='display:none'/>";	
+							else ilate = "<img src='images/check1.png'/>";
+							
+							if(data[i].absent == 0) iabsense = "<img src='images/inactive.png'style='display:none'/>";	
+							else iabsense = "<img src='images/check1.png'/>";
+							
+							if(data[i].permission == 0) ipermission = "<img src='images/inactive.png'style='display:none'/>";	
+							else ipermission = "<img src='images/check1.png'/>";
+							
+							var btndelete = '<button type="button" onclick="deletelist("'+ data[i].student_name +'")" class="btn btn-danger">Delete</button>';
+							str += '<tr>'+
+									'<td>'+ data[i].student_name +'</td>'+
+									'<td>'+ data[i].at_date +'</td>'+
+									'<td>'+ ilate +'</td>'+
+									'<td>'+ iabsense +'</td>'+
+									'<td>'+ ipermission +'</td>'+
+									'<td>'+ btndelete +'</td>'+
+								'</tr>';	
+						}
+					
+						str += '</tbody>'; 
+						str += '</table>';
+						return str;
+				}
+				
+				function deletelist(){
+					alert(1);
 				}
 				
 				</script>
