@@ -41,14 +41,6 @@ public class SelectAttendance extends HttpServlet {
 	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		/*AdminDAO admin = new AdminDAO();
-		ArrayList<Attendent> attn = admin.select_attendance();
-		response.setContentType("application/json");
-		response.setCharacterEncoding("UTF-8");
-		String json = new Gson().toJson(attn);
-		response.getWriter().write(json);*/
-		
-		
 		AdminDAO admin = new AdminDAO();
 		ArrayList<AttendentSelection> attn = admin.select_attendenceStu();
 		response.setContentType("application/json");

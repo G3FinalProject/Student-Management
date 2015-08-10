@@ -37,7 +37,7 @@ public class DeleteAttendance extends HttpServlet {
 	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		AdminDAO admin = new AdminDAO();
-		int att_id = Integer.parseInt(request.getParameter("att_id"));
+		String att_id = request.getParameter("att_id");
 		System.out.println(att_id);
 	//	boolean status = admin.delete_attendance(att_id);
 	}
