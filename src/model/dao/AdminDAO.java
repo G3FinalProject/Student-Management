@@ -6,6 +6,7 @@ import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
 import model.dto.Attendent;
@@ -264,12 +265,13 @@ public class AdminDAO {
 		return false;
 	}
 	
-	public ArrayList<Attendent> select_attendance(){
+	public ArrayList<Attendent> select_attendancelist(Date date){
 		ArrayList<Attendent> attn = new ArrayList<Attendent>();
 		try {
-			//con.setAutoCommit(false);
-			String sql = "{CALL select_attendancef()}";
+			con.setAutoCommit(false);
+			String sql = "{CALL select_attendancelistf(?)}";
 			CallableStatement cs = con.prepareCall(sql);
+			cs.setDate(1, date);
 			cs.execute();
 			ResultSet rs = cs.getResultSet();
 			Attendent att=null;
@@ -282,7 +284,13 @@ public class AdminDAO {
 				att.setLate(rs.getInt(5));
 				attn.add(att);
 			}
+			con.commit();
 		} catch (SQLException e) {
+			try {
+				con.rollback();
+			} catch (SQLException e1) {
+				e1.printStackTrace();
+			}
 			e.printStackTrace();
 		}
 		return attn;
@@ -339,7 +347,16 @@ public class AdminDAO {
 //		System.out.println("ok");
 //		else
 //			System.out.println("error");
-		boolean status = a.delete_attendance(34);
-		if(status){System.out.println("ok");}
+		
+		java.util.Date myDate = new java.util.Date("2015/08/08");
+		ArrayList<Attendent> attn = a.select_attendancelist(new java.sql.Date(myDate.getTime()));
+		System.out.println(attn);
 	}
+	
+	// test function to json
+	/*public ResultSet test() throws SQLException{
+		String sql="SELECT tbl_generation.generation as x,tbl_course.course_type,tbl_class.class_name FROM tbl_generation INNER JOIN  tbl_course ON  tbl_course.g_id =  tbl_generation.g_id INNER JOIN  tbl_class ON  tbl_class.course_id =  tbl_course.course_id";
+		return con.createStatement().executeQuery(sql);	
+	}*/
+	
 }
