@@ -123,13 +123,8 @@ div.mybox {
 						<div class="panel-heading">Calendar</div>
 						<div class="panel-body">
 							<div id='calendar'></div>
-
-
 						</div>
-
 					</div>
-
-
 				</div>
 				<div class="col-sm-6">
 					<div class="panel panel-success">
@@ -137,21 +132,15 @@ div.mybox {
 							Attendance For: <label id="attdate"><span id="datef"></span></label>
 						</div>
 						<div class="panel-body">
-
-
-							
-
 								<div class="form-group">
-
 									<label>Select type</label> 
 									<select class="form-control" id="atype">
 										<option value="Late">Late</option>
 										<option value="Permission">Permission</option>
 										<option value="Absent">Absent</option>
-									</select> <label> Select Students</label> 
-									
-									 <div id='stulist'>
-									    <select id='stuname' class='form-control chosen-select' multiple tabindex='4'> 
+									</select> <label> Select Students</label> 						
+									 <div id='stulist' >
+									    <select id='stuname' class='form-control chosen-select col-sm-12' multiple tabindex='4'> 
 										
 										<!--    <option value="United States">United States</option>
 										<option value="United Kingdom">United Kingdom</option>
@@ -167,16 +156,13 @@ div.mybox {
 										<option value="Antigua and Barbuda">Antigua and
 											Barbuda</option>  -->  
 									</select>    
-									</div>	
-									
+									</div>		
 								</div>
 								<button role="button" class="btn btn-success" id="btn-save" onclick="addattendance()">Save</button>
-								<div id="calendarTrash" class="calendar-trash"><img src="images/trash.png"></img></div>
+								<!-- <div id="calendarTrash" class="calendar-trash"><img src="images/trash.png"></img></div> -->
 						</div>
-
 					</div>
-				</div>
-
+				 </div>
 
 				<div class="col-sm-12">
 					<div class="panel panel-success">
@@ -231,13 +217,8 @@ div.mybox {
 							</div>
 
 							<div id='calendar'></div>
-
-
 						</div>
-
 					</div>
-
-
 				</div>
 
 
@@ -249,47 +230,19 @@ div.mybox {
 						alert(1);
 					}
 					function deleteatt(){
-						/* $.ajax({
-							url : "deleteattendance",
-							method: "POST",
-							data : {  
-								att_id : title
-							},
-							successs: function(data){
-								
-							}
-						}); */
+						deletelist(id);
 					}
 				</script>
 
-				<script>
-					 /*  $(document).ready( function () {
+				<script type="text/javascript">				
+				$(document).ready(function(){		
+					var date = new Date();
+					var d = date.getDate();
+					var m = date.getMonth();
+					var y = date.getFullYear();
 					
-					 $('#calendar').fullCalendar({
-					 // put your options and callbacks here
-					 dayClick: function(event) {
-					 var modal = $("#fullCalModal");
-					 modal.find(".modal-title").html(event.title);
-					 modal.modal();
-					 }
-					
-
-					
-					
-					 });
-					 } );   */   
-					 
-				</script>
-
-				<script type="text/javascript">
-					$(document).ready(function() {
-						
-						var date = new Date();
-						var d = date.getDate();
-						var m = date.getMonth();
-						var y = date.getFullYear();
-						
-						
+					calendar();	
+					function calendar(){	
 					  	$('#calendar').fullCalendar({
 					  		
 							 dayClick: function(date, jsEvent, view) {
@@ -299,39 +252,25 @@ div.mybox {
 							 		attendancelist();
 							   //     $(this).css('background-color', '#8BC34A');
 							  },
-							header: {
+							 header: {
 								left: 'prev,next today',
 								center: 'title',
 						//		right: 'month,agendaWeek,agendaDay'
-							},
+							 },
 							 eventMouseover: function(event, jsEvent, view) {
 						            if (view.name !== 'agendaDay') {
 						                $(jsEvent.target).attr('title', event.title);
 						            }
-						        },
-						        /*  eventClick: function(calEvent, jsEvent, view, event)
-						        {
-						        	
-						            /*  var r=confirm("Delete " + calEvent.title);
-						            if (r===true)
-						              {
-						            	
-						                //  $('#calendar').fullCalendar('removeEvents', calEvent._id);
-						              }  */
-						        	
-						             
-						   //     }, */
-						        
-						       
-					        eventClick: function(event) {
+						     },           
+					         eventClick: function(event) {
 					            var modal = $("#modal");
 					            modal.find(".modal-title").html(event.title);
 					            modal.modal();
-					        },
-						        
+					         },
+					        
 							// event drag to delete
 							 eventDragStop:  function(event,jsEvent) {
-								var trashEl = jQuery('#calendarTrash');
+								/* var trashEl = jQuery('#calendarTrash');
 							    var ofs = trashEl.offset();
 
 							    var x1 = ofs.left;
@@ -343,44 +282,13 @@ div.mybox {
 							        jsEvent.pageY>= y1 && jsEvent.pageY <= y2) {
 							        alert('SIII');
 							        $('#calendario').fullCalendar('removeEvents', event.id);
-							    } 
-	
-							}, 
-							eventRender: function (event, element) {
-						        element.attr('href', 'javascript:void(0);');
-						        element.click(function() {
-						            $("#startTime").html(moment(event.start).format('MMM Do h:mm A'));
-						            $("#endTime").html(moment(event.end).format('MMM Do h:mm A'));
-						            $("#eventInfo").html(event.description);
-						            $("#eventLink").attr('href', event.url);
-						            $("#eventContent").dialog({ modal: true, title: event.title, width:350});
-						        });
-						    },
-							/* eventDragStop: function(event, jsEvent, ui, view) {			
-								var x = isElemOverDiv(ui, $('div.external-events'));
-								alert(x);			
-								$.ajax({
-									url: "",
-									data: {},
-									method:"POST"
-								});
-								if (x) {
-									$('#calendar').fullCalendar('removeEvents', event.id);
-								}			
-							}, */
-							 /* eventRender: function(event, element) {
-						            element.append( "<span class='closeon'>X</span>" );
-						            element.find(".closeon").click(function() {
-						               $('#calendar').fullCalendar('removeEvents',event._id);
-						              
-						            });
-						        }, */
-							
+							    }  */
+							 }, 		 
 							/* defaultDate: '2015-02-12', */
-							selectable: true,
-							selectHelper: true,
-							select: function(start, end) {
-							var eventData;		 		
+							 selectable: true,
+							 selectHelper: true,
+							 select: function(start, end) {
+							 var eventData;		 		
 						/* 		if (title) {
 									eventData = {
 										title: title,
@@ -388,14 +296,14 @@ div.mybox {
 									};
 						
 								} */
-							//	$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
-							//	$('#calendar').fullCalendar('unselect');
-					   		},
+								//	$('#calendar').fullCalendar('renderEvent', eventData, true); // stick? = true
+								//	$('#calendar').fullCalendar('unselect');
+					   		   },
 					//		editable: true,
 						/*	eventLimit: true, // allow "more" link when too many events
 					*/		/*  events:{url: 'http://192.168.178.253:8080/HRD_Management/attendance_sum.hrd'  }, */
 							 
-							events:{  url: 'selectattendance'},
+							 events:{  url: 'selectattendance'},
 			
 						 	 /* eventSources: [
 							               // your event source
@@ -408,33 +316,11 @@ div.mybox {
 							               // any other sources...
 							 ]  */
 
-							});  // end of select
-							
-						
-						});  // end of calendar
-						
-						var isElemOverDiv = function(draggedItem, dropArea) {
-							// Prep coords for our two elements
-							var a = $(draggedItem).offset;	
-							a.right = $(draggedItem).outerWidth + a.left;
-							a.bottom = $(draggedItem).outerHeight + a.top;
-							
-							var b = $(dropArea).offset;
-							a.right = $(dropArea).outerWidth + b.left;
-							a.bottom = $(dropArea).outerHeight + b.top;
+							});  // end of fullcalendar		
+					} // end of calendar function
+				});	
 
-							// Compare
-							if (a.left >= b.left
-								&& a.top >= b.top
-								&& a.right <= b.right
-								&& a.bottom <= b.bottom) { return true; }
-							return false;
-						}
-
-						
-				
-				</script>
-
+			</script>
 				<script>
  					/*  $('#calendar').fullCalendar({
 					
@@ -456,159 +342,163 @@ div.mybox {
 
 				<!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" id="mybtn" data-target="#myModal">Open Modal</button>
  -->
-
-				<!-- PLUGINS -->
-				<!-- required -->
-				<script src="plugin/assets/js/jquery.min.js"></script>
-				<script src="plugin/assets/js/bootstrap.min.js"></script>
-				<script src="plugin/assets/plugins/nicescroll/jquery.nicescroll.js"></script>
-				<script
-					src="plugin/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
-				<script src="plugin/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
-				<script src="plugin/assets/plugins/chosen/chosen.jquery.min.js"></script>
-				<script src="plugin/assets/js/apps.js"></script>
-				<!--required  -->
-
-				<script src='plugin/fullcalendar/lib/moment.min.js'></script>
-			<!-- 	<script src='plugin/fullcalendar/fullcalendar.js'></script> -->
-				<script src='plugin/fullcalendar/fullcalendar.min.js'></script>
-				<script src="plugin/sweetalert/sweetalert.min.js"></script>
-				<script>
-				$("#btn-save").click(function() {
-		
-					/* swal("New Attendance Saved!", "DONE!", "success"); */
-					
-					
-					
-					/* var type = $("#atype").val();
-					var stu = $("#stuname").val(); 
-					alert(stu); */
-					//alert(stu.length+" "+type);
-					
-					/* for(var i=0;i<stu.length;i++){
-						alert(i.length);
-					} */
+			
+	<script>
 				
-					
-					
-				});
+		liststudent();
+		function liststudent(){
+			$.ajax({
+				url : "selectallstudents",
+				method : "GET",
+				success : function(data){
+					listallstudent(data);
+				}
+			});
+		}
+		function listallstudent(data){
+									
+			for(var i=0; i<data.length; i++){
+				// new option(text,value);
+				$("#stuname").append(new Option(""+ data[i].lname +" "+ data[i].fname +"", ""+ data[i].stu_id +""));
+				/* $("#stuname").append(new Option(""+ data[i].lname +" "+ data[i].fname +"", ""+ data[i].lname + data[i].fname +"")); */
+			}
+			chooseselect();
+		}
+		function chooseselect(){
+			"use strict";
+			var configChosen = {
+			  '.chosen-select'           : {},
+			  '.chosen-select-deselect'  : {allow_single_deselect:true},
+			  '.chosen-select-no-single' : {disable_search_threshold:10},
+			  '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
+			  '.chosen-select-width'     : {width:"100%"}
+			}
+			for (var selector in configChosen) {
+			  $(selector).chosen(configChosen[selector]);
+			}
+		}
+	
+	
+	function addattendance(){
+		var items = [];
+		$('#stuname option:selected').each(function(){ items.push($(this).val()); });
+		var result = items.join(', ');
+
+		$.ajax({
+			url : "addattendance",
+			method: "POST",
+			data : {
+				atype   : $("#atype").val(),  
+				stuname : result,
+				datef   : dd
+			},
+			success: function(data){
+				calendar();
+			}	
+		});
+	}
+		
+	attendancelist();
+	function attendancelist(){
+		$.ajax({
+			url: "selectattendancelist",
+			method: "POST",
+			data: { datef: dd },
+			success: function(data){
+				
+				$("#tblAttn").html(listattendancestu(data));
+			}
+		});
+	}
+	
+	function listattendancestu(data){
+		var str = "";
+			str += '<table class="table" id="myTable" cellspacing="0" width="100%">'+
+					'<thead>'+
+							'<th>Name</th>'+
+							'<th>Date</th>'+
+							'<th>Late</th>'+
+							'<th>Absent</th>'+
+							'<th>Permission</th>'+
+							'<th>Action</th>'+
+					'</thead>';	
+			
+			str +=  '<tbody>';	
+			for(var i=0;i<data.length;i++){
+				var ilate,iabsense,ipermission = "";
+				
+				if(data[i].late == 0) ilate = "<img src='images/inactive.png'style='display:none'/>";	
+				else ilate = "<img src='images/check1.png'/>";
+				
+				if(data[i].absent == 0) iabsense = "<img src='images/inactive.png'style='display:none'/>";	
+				else iabsense = "<img src='images/check1.png'/>";
+				
+				if(data[i].permission == 0) ipermission = "<img src='images/inactive.png'style='display:none'/>";	
+				else ipermission = "<img src='images/check1.png'/>";
+				
+				var btndelete = '<button type="button" onclick="deletelist('+ data[i].id +')" class="btn btn-danger">Delete</button>';
+				str += '<tr>'+
+						'<td>'+ data[i].student_name +'</td>'+
+						'<td>'+ data[i].at_date +'</td>'+
+						'<td>'+ ilate +'</td>'+
+						'<td>'+ iabsense +'</td>'+
+						'<td>'+ ipermission +'</td>'+
+						'<td>'+ btndelete +'</td>'+
+					'</tr>';	
+			}
+		
+			str += '</tbody>'; 
+			str += '</table>';
+			return str;
+	}
+	
+	function deletelist(id){
+		$.ajax({
+			url : "deleteattendance",
+			method: "POST",
+			data : { id : id},
+			success: function(data){
+			//	calendar();	
+				$('#calendar').fullCalendar();
+				calendar();
+			//	location.reload();
+			}
+		});
+		
+	}
+	
+	$("#btn-save").click(function() {
+
+		/* swal("New Attendance Saved!", "DONE!", "success"); */
+		
+		
+		
+		/* var type = $("#atype").val();
+		var stu = $("#stuname").val(); 
+		alert(stu); */
+		//alert(stu.length+" "+type);
+		
+		/* for(var i=0;i<stu.length;i++){
+			alert(i.length);
+		} */
+	});
 				
 	</script>
+	
+		<!-- PLUGINS -->
+		<!-- required -->
+		<script src="plugin/assets/js/jquery.min.js"></script>
+		<script src="plugin/assets/js/bootstrap.min.js"></script>
+		<script src="plugin/assets/plugins/nicescroll/jquery.nicescroll.js"></script>
+		<script src="plugin/assets/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+		<script src="plugin/assets/plugins/owl-carousel/owl.carousel.min.js"></script>
+		<script src="plugin/assets/plugins/chosen/chosen.jquery.min.js"></script>
+		<script src="plugin/assets/js/apps.js"></script>
+		<!--required  -->
 
-				<!--FULL CALENDAR  -->
-				
-				<script>
-				
-					liststudent();
-					function liststudent(){
-						$.ajax({
-							url : "selectallstudents",
-							method : "GET",
-							success : function(data){
-								listallstudent(data);
-							}
-						});
-					}
-					function listallstudent(data){
-												
-						for(var i=0; i<data.length; i++){
-							// new option(text,value);
-							$("#stuname").append(new Option(""+ data[i].lname +" "+ data[i].fname +"", ""+ data[i].stu_id +""));
-							/* $("#stuname").append(new Option(""+ data[i].lname +" "+ data[i].fname +"", ""+ data[i].lname + data[i].fname +"")); */
-						}
-						chooseselect();
-					}
-					function chooseselect(){
-						"use strict";
-						var configChosen = {
-						  '.chosen-select'           : {},
-						  '.chosen-select-deselect'  : {allow_single_deselect:true},
-						  '.chosen-select-no-single' : {disable_search_threshold:10},
-						  '.chosen-select-no-results': {no_results_text:'Oops, nothing found!'},
-						  '.chosen-select-width'     : {width:"100%"}
-						}
-						for (var selector in configChosen) {
-						  $(selector).chosen(configChosen[selector]);
-						}
-					}
-				
-				
-				function addattendance(){
-					var items = [];
-					$('#stuname option:selected').each(function(){ items.push($(this).val()); });
-					var result = items.join(', ');
-		
-					$.ajax({
-						url : "addattendance",
-						method: "POST",
-						data : {
-							atype   : $("#atype").val(),  
-							stuname : result,
-							datef   : dd
-						},
-						success: function(data){
-							location.reload();
-						}	
-					});
-				}
-					
-				attendancelist();
-				function attendancelist(){
-					$.ajax({
-						url: "selectattendancelist",
-						method: "POST",
-						data: { datef: dd },
-						success: function(data){
-							$("#tblAttn").html(listattendancestu(data));
-						}
-					});
-				}
-				
-				function listattendancestu(data){
-					var str = "";
-						str += '<table class="table" id="myTable" cellspacing="0" width="100%">'+
-								'<thead>'+
-										'<th>Name</th>'+
-										'<th>Date</th>'+
-										'<th>Late</th>'+
-										'<th>Absent</th>'+
-										'<th>Permission</th>'+
-										'<th>Action</th>'+
-								'</thead>';	
-						
-						str +=  '<tbody>';	
-						for(var i=0;i<data.length;i++){
-							var ilate,iabsense,ipermission = "";
-							
-							if(data[i].late == 0) ilate = "<img src='images/inactive.png'style='display:none'/>";	
-							else ilate = "<img src='images/check1.png'/>";
-							
-							if(data[i].absent == 0) iabsense = "<img src='images/inactive.png'style='display:none'/>";	
-							else iabsense = "<img src='images/check1.png'/>";
-							
-							if(data[i].permission == 0) ipermission = "<img src='images/inactive.png'style='display:none'/>";	
-							else ipermission = "<img src='images/check1.png'/>";
-							
-							var btndelete = '<button type="button" onclick="deletelist("'+ data[i].student_name +'")" class="btn btn-danger">Delete</button>';
-							str += '<tr>'+
-									'<td>'+ data[i].student_name +'</td>'+
-									'<td>'+ data[i].at_date +'</td>'+
-									'<td>'+ ilate +'</td>'+
-									'<td>'+ iabsense +'</td>'+
-									'<td>'+ ipermission +'</td>'+
-									'<td>'+ btndelete +'</td>'+
-								'</tr>';	
-						}
-					
-						str += '</tbody>'; 
-						str += '</table>';
-						return str;
-				}
-				
-				function deletelist(){
-					alert(1);
-				}
-				
-				</script>
+		<script src='plugin/fullcalendar/lib/moment.min.js'></script>
+	<!--<script src='plugin/fullcalendar/fullcalendar.js'></script> -->
+		<script src='plugin/fullcalendar/fullcalendar.min.js'></script>
+		<script src="plugin/sweetalert/sweetalert.min.js"></script>
 </body>
 </html>
