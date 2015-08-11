@@ -1,6 +1,7 @@
 package controller.admin;
 
 import java.io.IOException;
+import java.sql.SQLException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -14,6 +15,7 @@ import javax.servlet.http.HttpServletResponse;
 
 import model.dao.AdminDAO;
 import model.dto.Attendent;
+import Utility.Convertor;
 
 import com.google.gson.Gson;
 
@@ -45,15 +47,21 @@ public class SelectAttendanceList extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		AdminDAO admin = new AdminDAO();
 		String datef = request.getParameter("datef");
+		
 		@SuppressWarnings("deprecation")
 		java.util.Date myDate = new java.util.Date(datef);
 		java.sql.Date c_date = new java.sql.Date(myDate.getTime());
 		
+	//	System.out.println(myDate);
 		ArrayList<Attendent> attn = admin.select_attendancelist(c_date);
 		response.setContentType("application/json");
 		response.setCharacterEncoding("UTF-8");
+		
+		
 		String json = new Gson().toJson(attn);
+		//System.out.print(json);
 		response.getWriter().write(json);
+		
 	}
 
 }
