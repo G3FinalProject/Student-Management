@@ -9,6 +9,8 @@ import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 
+import javax.swing.text.Utilities;
+
 import model.dto.Attendent;
 import model.dto.AttendentSelection;
 import model.dto.Score;
@@ -246,6 +248,7 @@ public class AdminDAO {
 	}
 	
 	public boolean addAttendance_late(Attendent attn){
+		con = new DBConnection().getConnect();
 		String sql = "{CALL addattendance_late(?,?,?)}";
 		try {
 			con.setAutoCommit(false);
@@ -261,7 +264,15 @@ public class AdminDAO {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally{
+			try {
+				con.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
 		}
+		
+		
 		return false;
 	}
 	
@@ -277,11 +288,12 @@ public class AdminDAO {
 			Attendent att=null;
 			while(rs.next()){
 				att=new Attendent();
-				att.setStudent_name(rs.getString(1));
-				att.setAt_date(rs.getDate(2));
-				att.setAbsent(rs.getInt(3));
-				att.setPermission(rs.getInt(4));
-				att.setLate(rs.getInt(5));
+				att.setId(rs.getInt(1));
+				att.setStudent_name(rs.getString(2));
+				att.setAt_date(rs.getDate(3));
+				att.setAbsent(rs.getInt(4));
+				att.setPermission(rs.getInt(5));
+				att.setLate(rs.getInt(6));
 				attn.add(att);
 			}
 			con.commit();
@@ -319,6 +331,7 @@ public class AdminDAO {
 	}
 	
 	public boolean delete_attendance(int att_id){
+		con = new DBConnection().getConnect();
 		try {
 			con.setAutoCommit(false);
 			CallableStatement cs = con.prepareCall("{CALL delete_attendance(?)}");
@@ -331,6 +344,13 @@ public class AdminDAO {
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
+		} finally{
+			try {
+				con.close();
+			} catch (SQLException e) {
+				
+				e.printStackTrace();
+			}
 		}
 		return false;
 	}
@@ -353,9 +373,10 @@ public class AdminDAO {
 		System.out.println(attn);
 	}
 	
+	
 	// test function to json
 	/*public ResultSet test() throws SQLException{
-		String sql="SELECT tbl_generation.generation as x,tbl_course.course_type,tbl_class.class_name FROM tbl_generation INNER JOIN  tbl_course ON  tbl_course.g_id =  tbl_generation.g_id INNER JOIN  tbl_class ON  tbl_class.course_id =  tbl_course.course_id";
+		String sql="SELECT tbl_attendance.attendance_id,tbl_students.first_name || ' ' || tbl_students.last_name AS fullname,tbl_attendance.att_date,tbl_attendance.absence,tbl_attendance.permission,tbl_attendance.late FROM tbl_attendance INNER JOIN  tbl_students ON  tbl_attendance.stu_id =  tbl_students.stu_id ORDER BY tbl_attendance.att_date;";
 		return con.createStatement().executeQuery(sql);	
 	}*/
 	
